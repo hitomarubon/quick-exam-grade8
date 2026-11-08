@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "eng-01",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「机の上に1冊の本があります。」\nThere (   ) a book on the desk.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "answerIndex": 0,
+    "explanation": "後ろの名詞が a book（単数）で現在の文なので、be動詞は is を使います。"
+  },
+  {
+    "id": "eng-02",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「公園にたくさんの木があります。」\nThere (   ) many trees in the park.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has"
+    ],
+    "answerIndex": 1,
+    "explanation": "後ろの名詞が many trees（複数）で現在の文なので、be動詞は are を使います。"
+  },
+  {
+    "id": "eng-03",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「昔、この近くに大きなお城がありました。」\nThere (   ) a big castle near here a long time ago.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "answerIndex": 2,
+    "explanation": "a long time ago（昔）という過去を表す語句があり、a big castle（単数）なので was を使います。"
+  },
+  {
+    "id": "eng-04",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「昨日、図書館にたくさんの生徒がいました。」\nThere (   ) a lot of students in the library yesterday.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "answerIndex": 3,
+    "explanation": "yesterday（昨日）という過去を表す語があり、a lot of students（複数）なので were を使います。"
+  },
+  {
+    "id": "eng-05",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「この町には映画館がありません。」\nThere isn't (   ) movie theater in this town.",
+    "options": [
+      "a",
+      "some",
+      "many",
+      "no"
+    ],
+    "answerIndex": 0,
+    "explanation": "単数名詞 movie theater の前で「1つも〜ない」と否定文を作る際、There isn't a ~ の形にします。"
+  },
+  {
+    "id": "eng-06",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「冷蔵庫の中に卵が1つもありません。」\nThere aren't (   ) eggs in the refrigerator.",
+    "options": [
+      "some",
+      "any",
+      "no",
+      "a"
+    ],
+    "answerIndex": 1,
+    "explanation": "否定文（aren't）で複数名詞の前に置き、「1つも〜ない」を表すには any を使います。"
+  },
+  {
+    "id": "eng-07",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の文とほぼ同じ意味になるように、空欄に入る最も適切な語を選びなさい。\nThere aren't any buses after ten.\n= There are (   ) buses after ten.",
+    "options": [
+      "not",
+      "any",
+      "no",
+      "some"
+    ],
+    "answerIndex": 2,
+    "explanation": "not any ~ は no ~（1つも〜ない）に書き換えることができます。"
+  },
+  {
+    "id": "eng-08",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の対話の空欄に入る最も適切な文を選びなさい。\nA: Is there a convenience store near the station?\nB: Yes, (   ).",
+    "options": [
+      "it is",
+      "this is",
+      "there are",
+      "there is"
+    ],
+    "answerIndex": 3,
+    "explanation": "Is there ~? の疑問文に対して「はい、あります」と答えるときは Yes, there is. とします。"
+  },
+  {
+    "id": "eng-09",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の対話の空欄に入る最も適切な語句を選びなさい。\nA: Are there any restaurants on this street?\nB: No, (   ).",
+    "options": [
+      "there aren't",
+      "there isn't",
+      "they aren't",
+      "it isn't"
+    ],
+    "answerIndex": 0,
+    "explanation": "Are there ~? の疑問文に対して「いいえ、ありません」と答えるときは No, there aren't. とします。"
+  },
+  {
+    "id": "eng-10",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「あなたの家の近くにいくつか公園がありますか。」\nAre there (   ) parks near your house?",
+    "options": [
+      "some",
+      "any",
+      "no",
+      "a"
+    ],
+    "answerIndex": 1,
+    "explanation": "疑問文で「いくつかの〜」と尋ねる場合は some ではなく any を使います。"
+  },
+  {
+    "id": "eng-11",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「1年には何日ありますか。」\n(   ) are there in a year?",
+    "options": [
+      "How many day",
+      "How much days",
+      "How many days",
+      "What days"
+    ],
+    "answerIndex": 2,
+    "explanation": "数を尋ねる疑問文は「How many + 複数名詞 + are there ~?」の形になります。"
+  },
+  {
+    "id": "eng-12",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の対話の空欄に入る最も適切な文を選びなさい。\nA: How many classrooms are there on this floor?\nB: (   )",
+    "options": [
+      "Yes, there are five.",
+      "They are five.",
+      "It is five classrooms.",
+      "There are five."
+    ],
+    "answerIndex": 3,
+    "explanation": "How many ~ are there ...? と数を聞かれたら、There are + 数字.（5つあります）のように答えます。"
+  },
+  {
+    "id": "eng-13",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の語句を並べかえて「壁に2枚の絵があります」という文を作るとき、3番目に来る語を選びなさい。\n[ pictures / there / on / are / two / the wall ].",
+    "options": [
+      "two",
+      "there",
+      "are",
+      "pictures"
+    ],
+    "answerIndex": 0,
+    "explanation": "正しい語順は There are two pictures on the wall. なので、3番目は two です。"
+  },
+  {
+    "id": "eng-14",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の4つの英文のうち、文法的に正しいものを1つ選びなさい。",
+    "options": [
+      "There are a cat under the table.",
+      "There is some milk in the glass.",
+      "There has a big library in our city.",
+      "There is many books in the box."
+    ],
+    "answerIndex": 1,
+    "explanation": "milk（牛乳）は数えられない名詞（不可算名詞）なので単数扱いとなり、There is some milk ~ が正しい文です。"
+  },
+  {
+    "id": "eng-15",
+    "subject": "英語",
+    "category": "There is / There are 構文",
+    "question": "次の日本文を英語にするとき、最も適切なものを選びなさい。\n「その箱の中には何もありませんでした。」",
+    "options": [
+      "There were nothing in the box.",
+      "There wasn't nothing in the box.",
+      "There was nothing in the box.",
+      "There had nothing in the box."
+    ],
+    "answerIndex": 2,
+    "explanation": "nothing（何も〜ない）は単数扱いとなり、それ自体に否定の意味が含まれるため There was nothing ~ とします。"
+  },
+  {
+    "id": "eng-16",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私の父は私に新しい時計をくれました。」\nMy father gave (   ).",
+    "options": [
+      "a new watch me",
+      "to me a new watch",
+      "for me a new watch",
+      "me a new watch"
+    ],
+    "answerIndex": 3,
+    "explanation": "give + 人 + もの（人に〜をあげる・くれる）の語順にします。前置詞は不要です。"
+  },
+  {
+    "id": "eng-17",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「あなたのお気に入りの写真を私たちに見せてください。」\nPlease show (   ).",
+    "options": [
+      "us your favorite pictures",
+      "your favorite pictures us",
+      "we your favorite pictures",
+      "to us your favorite pictures"
+    ],
+    "answerIndex": 0,
+    "explanation": "show + 人（目的格）+ もの（人に〜を見せる）の語順になり、「私たちに」は目的格の us を使います。"
+  },
+  {
+    "id": "eng-18",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「ブラウン先生は私たちに英語を教えます。」\nMs. Brown teaches (   ).",
+    "options": [
+      "English us",
+      "us English",
+      "our English",
+      "for us English"
+    ],
+    "answerIndex": 1,
+    "explanation": "teach + 人（目的格）+ もの（人に〜を教える）の語順にします。"
+  },
+  {
+    "id": "eng-19",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「祖母は私に面白い話をしてくれました。」\nMy grandmother told (   ).",
+    "options": [
+      "an interesting story me",
+      "I an interesting story",
+      "me an interesting story",
+      "to me an interesting story"
+    ],
+    "answerIndex": 2,
+    "explanation": "tell + 人 + もの（人に〜を話す・伝える）の語順にします。"
+  },
+  {
+    "id": "eng-20",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「母は私にすてきなバッグを買ってくれました。」\nMy mother bought (   ).",
+    "options": [
+      "a nice bag me",
+      "to me a nice bag",
+      "I a nice bag",
+      "me a nice bag"
+    ],
+    "answerIndex": 3,
+    "explanation": "buy + 人 + もの（人に〜を買ってあげる）の語順にします。"
+  },
+  {
+    "id": "eng-21",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「兄は私に昼食を作ってくれました。」\nMy brother made (   ).",
+    "options": [
+      "me lunch",
+      "lunch me",
+      "my lunch to me",
+      "to me lunch"
+    ],
+    "answerIndex": 0,
+    "explanation": "make + 人 + もの（人に〜を作ってあげる）の語順にします。"
+  },
+  {
+    "id": "eng-22",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の2つの文がほぼ同じ意味になるように、空欄に入る最も適切な前置詞を選びなさい。\nShe showed me the album.\n= She showed the album (   ) me.",
+    "options": [
+      "for",
+      "to",
+      "of",
+      "with"
+    ],
+    "answerIndex": 1,
+    "explanation": "show（見せる）は相手が必要な動詞なので、「show + もの + to + 人」に書き換えます。"
+  },
+  {
+    "id": "eng-23",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の2つの文がほぼ同じ意味になるように、空欄に入る最も適切な前置詞を選びなさい。\nKen sent his friend a birthday card.\n= Ken sent a birthday card (   ) his friend.",
+    "options": [
+      "for",
+      "at",
+      "to",
+      "by"
+    ],
+    "answerIndex": 2,
+    "explanation": "send（送る）は送り先の相手を表す前置詞 to を使って「send + もの + to + 人」に書き換えます。"
+  },
+  {
+    "id": "eng-24",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の2つの文がほぼ同じ意味になるように、空欄に入る最も適切な前置詞を選びなさい。\nCould you lend me your dictionary?\n= Could you lend your dictionary (   ) me?",
+    "options": [
+      "from",
+      "for",
+      "of",
+      "to"
+    ],
+    "answerIndex": 3,
+    "explanation": "lend（貸す）は貸す相手を表す前置詞 to を使って「lend + もの + to + 人」に書き換えます。"
+  },
+  {
+    "id": "eng-25",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の2つの文がほぼ同じ意味になるように、空欄に入る最も適切な前置詞を選びなさい。\nMy father cooked us dinner yesterday.\n= My father cooked dinner (   ) us yesterday.",
+    "options": [
+      "for",
+      "to",
+      "with",
+      "on"
+    ],
+    "answerIndex": 0,
+    "explanation": "cook（料理する）は「（人の）ために」を表す前置詞 for を使って「cook + もの + for + 人」に書き換えます。"
+  },
+  {
+    "id": "eng-26",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の2つの文がほぼ同じ意味になるように、空欄に入る最も適切な前置詞を選びなさい。\nI bought my sister a present.\n= I bought a present (   ) my sister.",
+    "options": [
+      "to",
+      "for",
+      "from",
+      "by"
+    ],
+    "answerIndex": 1,
+    "explanation": "buy（買う）は「（人の）ために」を表す前置詞 for を使って「buy + もの + for + 人」に書き換えます。"
+  },
+  {
+    "id": "eng-27",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の動詞のうち、「動詞 + 人 + もの」の文を「動詞 + もの + ( 前置詞 ) + 人」に書き換えるとき、他の3つと異なる前置詞を使うものを選びなさい。",
+    "options": [
+      "give",
+      "teach",
+      "make",
+      "tell"
+    ],
+    "answerIndex": 2,
+    "explanation": "give, teach, tell は前置詞 to を使いますが、make（作る）は前置詞 for を使います。"
+  },
+  {
+    "id": "eng-28",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の動詞のうち、「動詞 + 人 + もの」の文を「動詞 + もの + ( 前置詞 ) + 人」に書き換えるとき、前置詞に to を使うものを選びなさい。",
+    "options": [
+      "buy",
+      "cook",
+      "find",
+      "pass"
+    ],
+    "answerIndex": 3,
+    "explanation": "buy, cook, find は前置詞 for を使いますが、pass（手渡す）は相手への方向を表す to を使います。"
+  },
+  {
+    "id": "eng-29",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「彼はあなたの誕生日にあなたに何をくれましたか。」\n(   ) on your birthday?",
+    "options": [
+      "What did he give you",
+      "What did he gave you",
+      "What he gave you",
+      "Who did he give you"
+    ],
+    "answerIndex": 0,
+    "explanation": "「何を」を尋ねる過去の疑問文なので、What did he give you ~?（動詞は原形 give）とします。"
+  },
+  {
+    "id": "eng-30",
+    "subject": "英語",
+    "category": "第4文型（SVOO）と書き換え",
+    "question": "次の語句を並べかえて「誰があなたに数学を教えていますか」という文を作るとき、2番目に来る語を選びなさい。\n[ math / teaches / who / you ]?",
+    "options": [
+      "who",
+      "teaches",
+      "you",
+      "math"
+    ],
+    "answerIndex": 1,
+    "explanation": "疑問詞 Who が主語になるため、正しい語順は Who teaches you math? となり、2番目は teaches です。"
+  },
+  {
+    "id": "eng-31",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私は今日、するべき宿題がたくさんあります。」\nI have a lot of (   ) today.",
+    "options": [
+      "to do homework",
+      "homework doing",
+      "homework to do",
+      "homework do"
+    ],
+    "answerIndex": 2,
+    "explanation": "「するべき宿題」は「名詞 + to + 動詞の原形」の語順で homework to do と表します。"
+  },
+  {
+    "id": "eng-32",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「京都には訪れるべき場所がたくさんあります。」\nThere are many (   ) in Kyoto.",
+    "options": [
+      "to visit places",
+      "places visiting",
+      "visit places",
+      "places to visit"
+    ],
+    "answerIndex": 3,
+    "explanation": "「訪れるべき場所」は many places の後ろに不定詞 to visit を置いて修飾します。"
+  },
+  {
+    "id": "eng-33",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私には今、テレビを見る時間がありません。」\nI don't have (   ) TV now.",
+    "options": [
+      "time to watch",
+      "to watch time",
+      "time watching",
+      "watches time"
+    ],
+    "answerIndex": 0,
+    "explanation": "「〜するための時間」は time to + 動詞の原形（time to watch）と表します。"
+  },
+  {
+    "id": "eng-34",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私は週末に読むための本を何冊か買いました。」\nI bought some (   ) on the weekend.",
+    "options": [
+      "to read books",
+      "books to read",
+      "reading books to",
+      "books read"
+    ],
+    "answerIndex": 1,
+    "explanation": "「読むための本」は some books の後ろに不定詞 to read を続けます。"
+  },
+  {
+    "id": "eng-35",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「彼には彼を助けてくれる友達がたくさんいます。」\nHe has many (   ) him.",
+    "options": [
+      "to help friends",
+      "friends help",
+      "friends to help",
+      "helping to friends"
+    ],
+    "answerIndex": 2,
+    "explanation": "「（彼を）助けてくれる友達」は many friends to help (him) と表します。"
+  },
+  {
+    "id": "eng-36",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「あなたは頭を覆うための何かが必要ですか。」\nDo you need (   ) your head?",
+    "options": [
+      "to cover something",
+      "cover to something",
+      "something covering",
+      "something to cover"
+    ],
+    "answerIndex": 3,
+    "explanation": "「〜するための何か」は something + to + 動詞の原形（something to cover）の語順にします。"
+  },
+  {
+    "id": "eng-37",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私はおなかがすいています。何か食べるものがほしいです。」\nI'm hungry. I want (   ).",
+    "options": [
+      "something to eat",
+      "to eat something",
+      "eating something",
+      "anything to eat"
+    ],
+    "answerIndex": 0,
+    "explanation": "肯定文で「何か食べるもの」は something to eat と表します。"
+  },
+  {
+    "id": "eng-38",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「のどが渇きましたか。何か飲むものはいかがですか。」\nAre you thirsty? Would you like (   )?",
+    "options": [
+      "to drink something",
+      "something to drink",
+      "nothing to drink",
+      "drinking something"
+    ],
+    "answerIndex": 1,
+    "explanation": "Would you like ~?（〜はいかがですか）のように人に勧めるときは疑問文でも something を使い、something to drink とします。"
+  },
+  {
+    "id": "eng-39",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私は何か冷たい飲み物がほしいです。」\nI want (   ).",
+    "options": [
+      "cold something to drink",
+      "something to drink cold",
+      "something cold to drink",
+      "to drink something cold"
+    ],
+    "answerIndex": 2,
+    "explanation": "-thing に形容詞と不定詞がつくときは「something + 形容詞 + to + 動詞の原形」の語順になります。"
+  },
+  {
+    "id": "eng-40",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「何か温かい食べるものはありますか。」\nDo you have (   )?",
+    "options": [
+      "hot anything to eat",
+      "anything to eat hot",
+      "to eat anything hot",
+      "anything hot to eat"
+    ],
+    "answerIndex": 3,
+    "explanation": "通常の疑問文なので anything を使い、「anything + 形容詞(hot) + to + 動詞の原形(eat)」の語順にします。"
+  },
+  {
+    "id": "eng-41",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「この図書館には何か面白い読むものがあります。」\nThere is (   ) in this library.",
+    "options": [
+      "something interesting to read",
+      "interesting something to read",
+      "something to read interesting",
+      "to read interesting something"
+    ],
+    "answerIndex": 0,
+    "explanation": "「何か面白い読むもの」は something + interesting + to read の語順にします。"
+  },
+  {
+    "id": "eng-42",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の語句を並べかえて「日曜日にするべきことが何もありませんでした」という文を作るとき、3番目に来る語を選びなさい。\n[ do / had / nothing / I / to ] on Sunday.",
+    "options": [
+      "I",
+      "nothing",
+      "to",
+      "do"
+    ],
+    "answerIndex": 1,
+    "explanation": "正しい語順は I had nothing to do on Sunday. なので、3番目の語は nothing です。"
+  },
+  {
+    "id": "eng-43",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の下線部の不定詞と同じ用法（形容詞的用法「〜するための、〜すべき」）で使われているものを1つ選びなさい。\nI have a lot of things <u>to see</u> in London.",
+    "options": [
+      "I went to the park <u>to play</u> tennis.",
+      "He likes <u>to listen</u> to music.",
+      "Kyoto is a wonderful city <u>to visit</u>.",
+      "My dream is <u>to be</u> a doctor."
+    ],
+    "answerIndex": 2,
+    "explanation": "問題文の to see は things を修飾する形容詞的用法です。a wonderful city to visit（訪れるべき素晴らしい都市）も同じ形容詞的用法です。"
+  },
+  {
+    "id": "eng-44",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の4つの英文のうち、不定詞の用法が他の3つと異なるものを1つ選びなさい。",
+    "options": [
+      "She has many emails to read.",
+      "Please give me something to write with.",
+      "There are a lot of ways to enjoy the festival.",
+      "I got up early to catch the first train."
+    ],
+    "answerIndex": 3,
+    "explanation": "選択肢4の to catch は「始発電車に乗るために（早起きした）」という副詞的用法（目的）で、他の3つは名詞を修飾する形容詞的用法です。"
+  },
+  {
+    "id": "eng-45",
+    "subject": "英語",
+    "category": "不定詞の形容詞的用法",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「そのお土産屋には何か特別な買うものがありましたか。」\nWas there (   ) at the souvenir shop?",
+    "options": [
+      "anything special to buy",
+      "special anything to buy",
+      "anything to buy special",
+      "something special buying"
+    ],
+    "answerIndex": 0,
+    "explanation": "疑問文なので anything を使い、anything + 形容詞(special) + to buy の語順にします。"
+  },
+  {
+    "id": "eng-46",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「私たちは明日、観光に行くつもりです。」\nWe are going to go (   ) tomorrow.",
+    "options": [
+      "shopping",
+      "sightseeing",
+      "swimming",
+      "camping"
+    ],
+    "answerIndex": 1,
+    "explanation": "go sightseeing で「観光に行く」という重要連語です。"
+  },
+  {
+    "id": "eng-47",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「私はその博物館を数回訪れたことがあります。」\nI visited the museum (   ) times.",
+    "options": [
+      "much",
+      "little",
+      "several",
+      "every"
+    ],
+    "answerIndex": 2,
+    "explanation": "several は「いくつかの、数〜」という意味で、several times で「数回」となります。"
+  },
+  {
+    "id": "eng-48",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「私たちは自然環境を守らなければなりません。」\nWe must protect the natural (   ).",
+    "options": [
+      "entrance",
+      "experience",
+      "excitement",
+      "environment"
+    ],
+    "answerIndex": 3,
+    "explanation": "environment は「環境」という意味の名詞で、natural environment で「自然環境」を表します。"
+  },
+  {
+    "id": "eng-49",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「駅からその建物まで屋根付きの歩道があります。」\nThere is a (   ) from the station to the building.",
+    "options": [
+      "covered walkway",
+      "wheelchair access",
+      "traffic light",
+      "shopping mall"
+    ],
+    "answerIndex": 0,
+    "explanation": "covered walkway で「屋根付きの歩道（通路）」という意味になり、雨の日でも濡れずに歩ける設備を指します。"
+  },
+  {
+    "id": "eng-50",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「この寺院には車椅子用の出入り口（バリアフリー設備）があります。」\nThis temple has (   ).",
+    "options": [
+      "local dishes",
+      "wheelchair access",
+      "tourist information",
+      "public transportation"
+    ],
+    "answerIndex": 1,
+    "explanation": "wheelchair access で「車椅子での出入り（バリアフリー設備）」という意味になります。"
+  },
+  {
+    "id": "eng-51",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の英文の空欄に入る最も適切な語を選びなさい。\n「モスク（イスラム教の礼拝堂）はイスラム教徒が祈るための場所です。」\nA (   ) is a place for Muslims to pray.",
+    "options": [
+      "castle",
+      "museum",
+      "mosque",
+      "stadium"
+    ],
+    "answerIndex": 2,
+    "explanation": "mosque は「モスク（イスラム教の礼拝堂）」を表す名詞です。"
+  },
+  {
+    "id": "eng-52",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「そこで無料の傘を借りることができます。」\nYou can (   ) a free umbrella there.",
+    "options": [
+      "lend",
+      "teach",
+      "send",
+      "borrow"
+    ],
+    "answerIndex": 3,
+    "explanation": "「（無料で自分が）借りる」は borrow を使います。lend は「（人に）貸す」なので区別しましょう。"
+  },
+  {
+    "id": "eng-53",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「その市場ではたくさんの郷土料理（地元の料理）を楽しむことができます。」\nYou can enjoy many local (   ) at the market.",
+    "options": [
+      "dishes",
+      "clothes",
+      "bridges",
+      "tickets"
+    ],
+    "answerIndex": 0,
+    "explanation": "dish には「皿」のほかに「料理」という意味があり、local dishes で「地元の料理（郷土料理）」を表します。"
+  },
+  {
+    "id": "eng-54",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「私はスポーツが好きで、特にバスケットボールが好きです。」\nI like sports, (   ) basketball.",
+    "options": [
+      "actually",
+      "especially",
+      "finally",
+      "carefully"
+    ],
+    "answerIndex": 1,
+    "explanation": "especially は「特に、とりわけ」という意味の副詞です。"
+  },
+  {
+    "id": "eng-55",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「モスクの中では、女性は頭や肌を覆うための何かを身につけなければなりません。」\nIn a mosque, women must wear something (   ) their head and skin.",
+    "options": [
+      "covering of",
+      "covered with",
+      "to cover",
+      "for cover"
+    ],
+    "answerIndex": 2,
+    "explanation": "something to cover ~ で「〜を覆うための何か（スカーフやローブなど）」という不定詞の形容詞的用法になります。"
+  },
+  {
+    "id": "eng-56",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な前置詞を選びなさい。\n「私は昨日、図書館からこの本を借りました。」\nI borrowed this book (   ) the library yesterday.",
+    "options": [
+      "to",
+      "for",
+      "of",
+      "from"
+    ],
+    "answerIndex": 3,
+    "explanation": "borrow A from B で「BからAを借りる」という表現になります。"
+  },
+  {
+    "id": "eng-57",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の対話の空欄に入る最も適切な語句を選びなさい。\nA: Excuse me. Is there a bus stop near here?\nB: Yes. Go straight for two blocks, and you'll see it (   ) your left.",
+    "options": [
+      "on",
+      "in",
+      "at",
+      "by"
+    ],
+    "answerIndex": 0,
+    "explanation": "on your left / on your right で「あなたの左側に／右側に」という道案内の重要表現です。"
+  },
+  {
+    "id": "eng-58",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の下線部の意味として最も適切なものを選びなさい。\nMy brother always <u>washes the dishes</u> after dinner.",
+    "options": [
+      "料理を作る",
+      "皿を洗う",
+      "テーブルを拭く",
+      "買い物に行く"
+    ],
+    "answerIndex": 1,
+    "explanation": "wash the dishes（または do the dishes）は「皿を洗う（食器洗いをする）」という意味の連語です。"
+  },
+  {
+    "id": "eng-59",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語を選びなさい。\n「その城の周りには美しい庭園があります。」\nThere is a beautiful garden (   ) the castle.",
+    "options": [
+      "between",
+      "among",
+      "around",
+      "through"
+    ],
+    "answerIndex": 2,
+    "explanation": "around は「〜の周りに」を表す前置詞です。"
+  },
+  {
+    "id": "eng-60",
+    "subject": "英語",
+    "category": "Unit 4 重要単語・熟語・本文表現",
+    "question": "次の日本文に合うように、空欄に入る最も適切な語句を選びなさい。\n「私たちはみんなが楽しく過ごすための計画を立てました。」\nWe made a plan for everyone (   ) a good time.",
+    "options": [
+      "have",
+      "has",
+      "having",
+      "to have"
+    ],
+    "answerIndex": 3,
+    "explanation": "a plan (for ~) to have a good time で「楽しく過ごすための計画」という不定詞の形容詞的用法です。"
+  },
+  {
+    "id": "math-01",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "次のア〜エのうち、yがxの1次関数であるものはどれか。\nア：1辺がx cmの正方形の面積をy cm²とする。\nイ：面積が24 cm²の長方形の縦の長さをx cm、横の長さをy cmとする。\nウ：1本120円のペンをx本買い、100円のノートを1冊買ったときの代金の合計をy円とする。\nエ：1辺がx cmの立方体の体積をy cm³とする。",
+    "options": [
+      "ウ：y = 120x + 100",
+      "ア：y = x²",
+      "イ：y = 24 / x",
+      "エ：y = x³"
+    ],
+    "answerIndex": 0,
+    "explanation": "yがxの1次式（y = ax + b、a≠0）で表されるものを1次関数といいます。ウは y = 120x + 100 となり1次関数です。"
+  },
+  {
+    "id": "math-02",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -3x + 5 において、xの値が1から4まで増加するときのyの増加量はいくらか。",
+    "options": [
+      "9",
+      "-9",
+      "-3",
+      "-7"
+    ],
+    "answerIndex": 1,
+    "explanation": "xの増加量は 4 - 1 = 3 です。変化の割合は -3 なので、yの増加量は (-3) × 3 = -9 となります。"
+  },
+  {
+    "id": "math-03",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = 4x - 7 において、xの増加量が -2 のときのyの増加量はいくらか。",
+    "options": [
+      "8",
+      "-15",
+      "-8",
+      "1"
+    ],
+    "answerIndex": 2,
+    "explanation": "（yの増加量）＝（変化の割合）×（xの増加量）より、4 × (-2) = -8 です。"
+  },
+  {
+    "id": "math-04",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = ax + 3 で、xの値が2から6まで増加するとき、yの値は12減少する。このとき定数aの値はいくらか。",
+    "options": [
+      "3",
+      "-2",
+      "-4",
+      "-3"
+    ],
+    "answerIndex": 3,
+    "explanation": "xの増加量は 6 - 2 = 4、yの増加量は -12 です。変化の割合 a = (-12) ÷ 4 = -3 となります。"
+  },
+  {
+    "id": "math-05",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "反比例 y = 12 / x において、xの値が2から6まで増加するときの変化の割合と、変化の割合が等しい1次関数は次のうちどれか。",
+    "options": [
+      "y = -x + 5",
+      "y = -2x + 3",
+      "y = 2x - 1",
+      "y = -4x + 2"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = 12/x で x=2 のとき y=6、x=6 のとき y=2。変化の割合は (2 - 6) / (6 - 2) = -4 / 4 = -1 なので、傾きが -1 の y = -x + 5 が正解です。"
+  },
+  {
+    "id": "math-06",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -2x + 6 のグラフについて述べた文として、誤っているものはどれか。",
+    "options": [
+      "切片は 6 である。",
+      "右上がりの直線である。",
+      "点 (3, 0) を通る。",
+      "y = -2x のグラフをy軸の正の方向に6だけ平行移動した直線である。"
+    ],
+    "answerIndex": 1,
+    "explanation": "傾きが -2（負の数）なので、グラフは右下がりの直線になります。"
+  },
+  {
+    "id": "math-07",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = (3/4)x - 2 のグラフ上にある点の座標として正しいものはどれか。",
+    "options": [
+      "(4, 2)",
+      "(-4, -1)",
+      "(8, 4)",
+      "(-8, 4)"
+    ],
+    "answerIndex": 2,
+    "explanation": "x = 8 を代入すると y = (3/4) × 8 - 2 = 6 - 2 = 4 となるため、点 (8, 4) を通ります。"
+  },
+  {
+    "id": "math-08",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = 2x - 8 のグラフとx軸との交点の座標はどれか。",
+    "options": [
+      "(0, -8)",
+      "(-4, 0)",
+      "(8, 0)",
+      "(4, 0)"
+    ],
+    "answerIndex": 3,
+    "explanation": "x軸との交点は y = 0 となる点です。0 = 2x - 8 を解くと x = 4 なので、座標は (4, 0) です。"
+  },
+  {
+    "id": "math-09",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = 3x - 2 において、xの変域が -1 ≦ x ≦ 4 のときのyの変域はどれか。",
+    "options": [
+      "-5 ≦ y ≦ 10",
+      "-1 ≦ y ≦ 10",
+      "-5 ≦ y ≦ 14",
+      "1 ≦ y ≦ 10"
+    ],
+    "answerIndex": 0,
+    "explanation": "傾き 3 > 0 なので、x = -1 のとき最小値 y = 3×(-1) - 2 = -5、x = 4 のとき最大値 y = 3×4 - 2 = 10 となります。"
+  },
+  {
+    "id": "math-10",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -2x + 5 において、xの変域が -2 ≦ x ≦ 3 のときのyの変域はどれか。",
+    "options": [
+      "1 ≦ y ≦ 9",
+      "-1 ≦ y ≦ 9",
+      "-11 ≦ y ≦ 1",
+      "-9 ≦ y ≦ 1"
+    ],
+    "answerIndex": 1,
+    "explanation": "傾き -2 < 0 なのでyの大小が逆転します。x = -2 のとき y = -2×(-2) + 5 = 9、x = 3 のとき y = -2×3 + 5 = -1 より、-1 ≦ y ≦ 9 です。"
+  },
+  {
+    "id": "math-11",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -(1/2)x + 4 において、xの変域が -4 ≦ x ＜ 6 のときのyの変域はどれか。",
+    "options": [
+      "1 ≦ y ≦ 6",
+      "2 ＜ y ≦ 6",
+      "1 ＜ y ≦ 6",
+      "1 ≦ y ＜ 6"
+    ],
+    "answerIndex": 2,
+    "explanation": "傾きが負なので、x = -4 のとき y = 6（等号を含む）、x = 6 のとき y = 1（等号を含まない）となり、1 ＜ y ≦ 6 です。"
+  },
+  {
+    "id": "math-12",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = ax + b（a ＞ 0）において、xの変域が -1 ≦ x ≦ 3 のとき、yの変域が -5 ≦ y ≦ 7 である。このときa, bの値の組はどれか。",
+    "options": [
+      "a = 2, b = -3",
+      "a = 3, b = 2",
+      "a = 4, b = -1",
+      "a = 3, b = -2"
+    ],
+    "answerIndex": 3,
+    "explanation": "a ＞ 0 なので、点 (-1, -5) と (3, 7) を通ります。a = (7 - (-5)) / (3 - (-1)) = 12 / 4 = 3、-5 = -3 + b より b = -2 です。"
+  },
+  {
+    "id": "math-13",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = ax + b（a ＜ 0）において、xの変域が -2 ≦ x ≦ 2 のとき、yの変域が -3 ≦ y ≦ 5 である。このときa, bの値の組はどれか。",
+    "options": [
+      "a = -2, b = 1",
+      "a = -2, b = -1",
+      "a = -1, b = 3",
+      "a = -3, b = 1"
+    ],
+    "answerIndex": 0,
+    "explanation": "a ＜ 0 なので、x = -2 のとき y = 5、x = 2 のとき y = -3 となります。a = (-3 - 5) / (2 - (-2)) = -8 / 4 = -2、b = 1 です。"
+  },
+  {
+    "id": "math-14",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -3x + b において、xの変域が 1 ≦ x ≦ 4 のとき、yの最大値が 5 である。定数bの値はいくらか。",
+    "options": [
+      "17",
+      "8",
+      "2",
+      "-7"
+    ],
+    "answerIndex": 1,
+    "explanation": "傾きが -3 ＜ 0 なので、xが最小の x = 1 のときにyは最大値 5 をとります。5 = -3×1 + b より b = 8 です。"
+  },
+  {
+    "id": "math-15",
+    "subject": "数学",
+    "category": "1次関数：基本・変化の割合・変域",
+    "question": "1次関数 y = -2x - 4 のグラフが通らない象限はどれか。ただし、座標軸上の点はどの象限にも属さないものとする。",
+    "options": [
+      "第2象限",
+      "第3象限",
+      "第1象限",
+      "第4象限"
+    ],
+    "answerIndex": 2,
+    "explanation": "傾きが負（右下がり）で切片が -4（負）なので、第2象限・第3象限・第4象限を通り、第1象限（x＞0, y＞0）は通りません。"
+  },
+  {
+    "id": "math-16",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "グラフの傾きが 3 で、点 (2, -1) を通る直線の式はどれか。",
+    "options": [
+      "y = 3x + 5",
+      "y = 3x - 5",
+      "y = 3x + 7",
+      "y = 3x - 7"
+    ],
+    "answerIndex": 3,
+    "explanation": "y = 3x + b に x = 2, y = -1 を代入すると、-1 = 6 + b より b = -7。よって y = 3x - 7 です。"
+  },
+  {
+    "id": "math-17",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "グラフの切片が 4 で、点 (-2, 10) を通る直線の式はどれか。",
+    "options": [
+      "y = -3x + 4",
+      "y = 3x + 4",
+      "y = -7x + 4",
+      "y = -2x + 4"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = ax + 4 に x = -2, y = 10 を代入すると、10 = -2a + 4 より 2a = -6、a = -3。よって y = -3x + 4 です。"
+  },
+  {
+    "id": "math-18",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "直線 y = -2x + 5 に平行で、点 (-3, 2) を通る直線の式はどれか。",
+    "options": [
+      "y = -2x + 8",
+      "y = -2x - 4",
+      "y = -2x + 4",
+      "y = 5x + 17"
+    ],
+    "answerIndex": 1,
+    "explanation": "平行な直線は傾きが等しいので a = -2 です。y = -2x + b に (-3, 2) を代入すると 2 = 6 + b より b = -4 となります。"
+  },
+  {
+    "id": "math-19",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2点 (-1, 6), (3, -2) を通る直線の式はどれか。",
+    "options": [
+      "y = -2x + 8",
+      "y = 2x + 4",
+      "y = -2x + 4",
+      "y = -x + 5"
+    ],
+    "answerIndex": 2,
+    "explanation": "傾きは (-2 - 6) / (3 - (-1)) = -8 / 4 = -2。y = -2x + b に (3, -2) を代入すると -2 = -6 + b より b = 4。よって y = -2x + 4 です。"
+  },
+  {
+    "id": "math-20",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2点 (-2, -5), (4, 4) を通る直線の式はどれか。",
+    "options": [
+      "y = (3/2)x - 1",
+      "y = (2/3)x - 2",
+      "y = (3/2)x + 2",
+      "y = (3/2)x - 2"
+    ],
+    "answerIndex": 3,
+    "explanation": "傾きは (4 - (-5)) / (4 - (-2)) = 9 / 6 = 3/2。y = (3/2)x + b に (4, 4) を代入すると 4 = 6 + b より b = -2 です。"
+  },
+  {
+    "id": "math-21",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "直線 y = 3x - 6 とy軸上で交わり、点 (4, 2) を通る直線の式はどれか。",
+    "options": [
+      "y = 2x - 6",
+      "y = -2x - 6",
+      "y = 3x - 10",
+      "y = (1/2)x - 6"
+    ],
+    "answerIndex": 0,
+    "explanation": "「y軸上で交わる」とは切片が等しいということです。切片 b = -6 より y = ax - 6 に (4, 2) を代入して 2 = 4a - 6、a = 2 です。"
+  },
+  {
+    "id": "math-22",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "直線 y = 2x + 8 とx軸上で交わり、点 (0, 4) を通る直線の式はどれか。",
+    "options": [
+      "y = -x + 4",
+      "y = x + 4",
+      "y = -2x + 4",
+      "y = (1/2)x + 4"
+    ],
+    "answerIndex": 1,
+    "explanation": "y = 2x + 8 とx軸との交点は y = 0 より (-4, 0)。2点 (-4, 0) と (0, 4) を通るので、傾きは 4 / 4 = 1、切片は 4 より y = x + 4 です。"
+  },
+  {
+    "id": "math-23",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "3点 (-1, -5), (2, 4), (5, k) が一直線上にあるとき、kの値はいくらか。",
+    "options": [
+      "11",
+      "15",
+      "13",
+      "12"
+    ],
+    "answerIndex": 2,
+    "explanation": "2点 (-1, -5), (2, 4) を通る直線は、傾き (4 - (-5)) / (2 - (-1)) = 3 より y = 3x - 2。これに x = 5 を代入すると k = 3×5 - 2 = 13 です。"
+  },
+  {
+    "id": "math-24",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2直線 y = 2x - 1 と y = -x + 8 の交点の座標はどれか。",
+    "options": [
+      "(2, 3)",
+      "(4, 4)",
+      "(3, 6)",
+      "(3, 5)"
+    ],
+    "answerIndex": 3,
+    "explanation": "2x - 1 = -x + 8 を解くと 3x = 9 より x = 3。y = 2×3 - 1 = 5 なので、交点の座標は (3, 5) です。"
+  },
+  {
+    "id": "math-25",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2直線 2x + 3y = 12 と x - y = 1 の交点の座標はどれか。",
+    "options": [
+      "(3, 2)",
+      "(2, 1)",
+      "(6, 0)",
+      "(0, 4)"
+    ],
+    "answerIndex": 0,
+    "explanation": "x = y + 1 を 2x + 3y = 12 に代入すると 2(y + 1) + 3y = 12 より 5y = 10、y = 2、x = 3。よって交点は (3, 2) です。"
+  },
+  {
+    "id": "math-26",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "3直線 y = 3x - 4、y = -x + 4、y = ax - 2 が1点で交わるとき、定数aの値はいくらか。",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 1,
+    "explanation": "最初の2直線の交点は 3x - 4 = -x + 4 より x = 2, y = 2。点 (2, 2) を y = ax - 2 に代入すると 2 = 2a - 2 より a = 2 です。"
+  },
+  {
+    "id": "math-27",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "直線 y = -2x + 8 とx軸、y軸で囲まれた三角形の面積はいくらか。ただし、座標軸の1目盛りを1 cmとする。",
+    "options": [
+      "32 cm²",
+      "8 cm²",
+      "16 cm²",
+      "24 cm²"
+    ],
+    "answerIndex": 2,
+    "explanation": "x軸との交点は (4, 0)、y軸との交点は (0, 8) です。底辺 4 cm、高さ 8 cm の直角三角形なので、面積は 4 × 8 ÷ 2 = 16 cm² です。"
+  },
+  {
+    "id": "math-28",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2直線 y = x + 2、y = -2x + 8 とx軸とで囲まれた三角形の面積はいくらか。ただし、座標軸の1目盛りを1 cmとする。",
+    "options": [
+      "16 cm²",
+      "24 cm²",
+      "8 cm²",
+      "12 cm²"
+    ],
+    "answerIndex": 3,
+    "explanation": "x軸との交点は (-2, 0) と (4, 0) で底辺は 4 - (-2) = 6 cm。2直線の交点は (2, 4) で高さは 4 cm。面積は 6 × 4 ÷ 2 = 12 cm² です。"
+  },
+  {
+    "id": "math-29",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "2直線 y = 2x + 4、y = -x + 7 とy軸とで囲まれた三角形の面積はいくらか。ただし、座標軸の1目盛りを1 cmとする。",
+    "options": [
+      "3/2 cm²",
+      "3 cm²",
+      "9/2 cm²",
+      "6 cm²"
+    ],
+    "answerIndex": 0,
+    "explanation": "y軸との交点は (0, 4) と (0, 7) で底辺は 7 - 4 = 3 cm。2直線の交点は (1, 6) で高さ（x座標）は 1 cm。面積は 3 × 1 ÷ 2 = 3/2 cm² です。"
+  },
+  {
+    "id": "math-30",
+    "subject": "数学",
+    "category": "1次関数：直線の式・交点・グラフの応用",
+    "question": "3点 A(0, 6), B(-2, 0), C(4, 0) を頂点とする△ABCの面積を、頂点Aを通る直線が二等分するとき、この直線の式はどれか。",
+    "options": [
+      "y = -3x + 6",
+      "y = -6x + 6",
+      "y = -2x + 6",
+      "y = 6x + 6"
+    ],
+    "answerIndex": 1,
+    "explanation": "頂点Aを通り△ABCの面積を二等分する直線は、底辺BCの中点を通ります。B(-2, 0), C(4, 0) の中点は (1, 0)。A(0, 6) と (1, 0) を通る直線は y = -6x + 6 です。"
+  },
+  {
+    "id": "math-31",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "ある水槽に最初から15 Lの水が入っており、毎分4 Lの割合で水を入れる。水を入れ始めてからx分後の水槽の水の量をy Lとするとき、水槽が75 Lで満水になるのは水を入れ始めてから何分後か。",
+    "options": [
+      "12分後",
+      "18分後",
+      "15分後",
+      "20分後"
+    ],
+    "answerIndex": 2,
+    "explanation": "y = 4x + 15 に y = 75 を代入すると、75 = 4x + 15 より 4x = 60、x = 15（分後）となります。"
+  },
+  {
+    "id": "math-32",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "長さ20 cmのろうそくに火をつけると、毎分0.5 cmずつ一定の割合で短くなる。火をつけてからx分後のろうそくの長さをy cmとするとき、xの変域として正しいものはどれか。",
+    "options": [
+      "0 ≦ x ≦ 10",
+      "0 ≦ x ≦ 20",
+      "0 ≦ x ≦ 30",
+      "0 ≦ x ≦ 40"
+    ],
+    "answerIndex": 3,
+    "explanation": "y = -0.5x + 20 において、ろうそくが燃え尽きる（y = 0）のは -0.5x + 20 = 0 より x = 40 分後なので、0 ≦ x ≦ 40 です。"
+  },
+  {
+    "id": "math-33",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "20℃の水を一定の火力で熱したところ、水温は毎分6℃ずつ一定の割合で上昇した。熱し始めてからx分後の水温をy℃とするとき、水温が86℃になるのは熱し始めてから何分後か。",
+    "options": [
+      "11分後",
+      "10分後",
+      "12分後",
+      "14分後"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = 6x + 20 に y = 86 を代入すると、86 = 6x + 20 より 6x = 66、x = 11（分後）です。"
+  },
+  {
+    "id": "math-34",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "おもりの重さに比例してのびるばねがある。30 gのおもりをつるすとばね全体の長さは18 cmになり、50 gのおもりをつるすと22 cmになる。おもりを何もつるさないときのばねの長さ（自然長）は何cmか。",
+    "options": [
+      "10 cm",
+      "12 cm",
+      "14 cm",
+      "15 cm"
+    ],
+    "answerIndex": 1,
+    "explanation": "おもりx gのときの長さをy cmとすると、2点 (30, 18), (50, 22) を通るので傾きは (22-18)/(50-30) = 0.2。18 = 0.2×30 + b より b = 12 cm です。"
+  },
+  {
+    "id": "math-35",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "AB = 6 cm, BC = 8 cm の長方形ABCDがある。点Pは頂点Aを出発し、毎秒1 cmの速さで辺AB、BC、CD上を頂点Dまで動く。出発してからx秒後の△APDの面積をy cm²とするとき、0 ≦ x ≦ 6 におけるyをxの式で表したものはどれか。",
+    "options": [
+      "y = 3x",
+      "y = 8x",
+      "y = 4x",
+      "y = 6x"
+    ],
+    "answerIndex": 2,
+    "explanation": "0 ≦ x ≦ 6 のとき点Pは辺AB上にあり、AP = x cm です。△APDの底辺を AD = 8 cm、高さを AP = x cm とすると、面積 y = 8 × x ÷ 2 = 4x となります。"
+  },
+  {
+    "id": "math-36",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "AB = 6 cm, BC = 8 cm の長方形ABCDで、点Pが頂点Aを出発して毎秒1 cmの速さで辺AB、BC、CD上を頂点Dまで動くとき、出発してからx秒後の△APDの面積y cm²が一定（24 cm²）になるxの変域はどれか。",
+    "options": [
+      "0 ≦ x ≦ 6",
+      "6 ≦ x ≦ 8",
+      "8 ≦ x ≦ 14",
+      "6 ≦ x ≦ 14"
+    ],
+    "answerIndex": 3,
+    "explanation": "点Pが辺BC上にあるとき高さが常に6 cmで一定になります。A→Bが6秒、B→Cが8秒かかるので、6 ≦ x ≦ 14（6 + 8 = 14）の間です。"
+  },
+  {
+    "id": "math-37",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "AB = 6 cm, BC = 8 cm の長方形ABCDで、点Pが頂点Aを出発して毎秒1 cmの速さで辺AB、BC、CD上を頂点Dまで動く。点Pが辺CD上にあるとき（14 ≦ x ≦ 20）、△APDの面積y cm²をxの式で表したものはどれか。",
+    "options": [
+      "y = -4x + 80",
+      "y = -4x + 56",
+      "y = -3x + 60",
+      "y = 80 - 8x"
+    ],
+    "answerIndex": 0,
+    "explanation": "点Pが辺CD上にあるとき、DPの長さは全体の道のり 6+8+6=20 cm から進んだ距離 x cm を引いた (20 - x) cm です。よって y = 8 × (20 - x) ÷ 2 = -4x + 80 となります。"
+  },
+  {
+    "id": "math-38",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "1辺が8 cmの正方形ABCDで、点PはAを出発して毎秒2 cmの速さで辺AB、BC、CD上をDまで動く。△APDの面積が16 cm²になるのは、出発してから何秒後と何秒後か。",
+    "options": [
+      "2秒後と8秒後",
+      "2秒後と10秒後",
+      "4秒後と8秒後",
+      "4秒後と10秒後"
+    ],
+    "answerIndex": 1,
+    "explanation": "AB上では AP = 2x より y = 8 × 2x ÷ 2 = 8x。8x = 16 より x = 2秒後。Dに到着するのは 24÷2 = 12秒後なので、CD上では 12 - 2 = 10秒後です。"
+  },
+  {
+    "id": "math-39",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "弟が家を出発して分速60 mで歩いて駅へ向かった。その8分後に兄が家を出発し、同じ道を分速180 mで自転車で追いかけた。兄が出発してから何分後に弟に追いつくか。",
+    "options": [
+      "3分後",
+      "6分後",
+      "4分後",
+      "5分後"
+    ],
+    "answerIndex": 2,
+    "explanation": "兄が出発してx分後の家からの距離をy mとすると、弟は y = 60(x + 8)、兄は y = 180x。180x = 60x + 480 を解くと 120x = 480 より x = 4分後です。"
+  },
+  {
+    "id": "math-40",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "A地点とB地点は1800 m離れている。PさんはA地点からB地点へ分速70 mで歩き、同時にQさんはB地点からA地点へ分速80 mで歩いた。2人がすれ違うのは出発してから何分後か。",
+    "options": [
+      "10分後",
+      "15分後",
+      "18分後",
+      "12分後"
+    ],
+    "answerIndex": 3,
+    "explanation": "x分後のA地点からの距離をy mとすると、Pさんは y = 70x、Qさんは y = 1800 - 80x。70x = 1800 - 80x より 150x = 1800、x = 12分後です。"
+  },
+  {
+    "id": "math-41",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "あるレンタルスペースの料金は、Aプランが「基本料金1200円＋1時間あたり300円」、Bプランが「基本料金なし＋1時間あたり500円」である。AプランのほうがBプランより安くなるのは、何時間より多く利用するときか。",
+    "options": [
+      "6時間",
+      "4時間",
+      "5時間",
+      "8時間"
+    ],
+    "answerIndex": 0,
+    "explanation": "x時間利用するときの料金は A：y = 300x + 1200、B：y = 500x。300x + 1200 = 500x を解くと x = 6 なので、6時間より多く利用するときAプランのほうが安くなります。"
+  },
+  {
+    "id": "math-42",
+    "subject": "数学",
+    "category": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "question": "家から1200 m離れた図書館へ行くのに、最初は分速60 mで歩き、途中の公園から分速100 mで走ったところ、家を出発してから16分後に図書館に着いた。家から公園までの道のりは何mか。",
+    "options": [
+      "480 m",
+      "600 m",
+      "720 m",
+      "800 m"
+    ],
+    "answerIndex": 1,
+    "explanation": "歩いた時間をx分とすると 60x + 100(16 - x) = 1200。-40x = -400 より x = 10分。よって家から公園までの道のりは 60 × 10 = 600 m です。"
+  },
+  {
+    "id": "math-43",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "八角形の内角の和は何度か。",
+    "options": [
+      "900°",
+      "1260°",
+      "1080°",
+      "1440°"
+    ],
+    "answerIndex": 2,
+    "explanation": "n角形の内角の和は 180° × (n - 2) で求められます。n = 8 を代入すると 180° × (8 - 2) = 1080° です。"
+  },
+  {
+    "id": "math-44",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "内角の和が 1620° である多角形は何角形か。",
+    "options": [
+      "九角形",
+      "十角形",
+      "十二角形",
+      "十一角形"
+    ],
+    "answerIndex": 3,
+    "explanation": "180° × (n - 2) = 1620° を解くと、n - 2 = 9 より n = 11。よって十一角形です。"
+  },
+  {
+    "id": "math-45",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "正十二角形の1つの内角の大きさは何度か。",
+    "options": [
+      "150°",
+      "144°",
+      "135°",
+      "160°"
+    ],
+    "answerIndex": 0,
+    "explanation": "多角形の外角の和は常に 360° なので、正十二角形の1つの外角は 360° ÷ 12 = 30°。よって1つの内角は 180° - 30° = 150° です。"
+  },
+  {
+    "id": "math-46",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "1つの内角の大きさが 140° である正多角形は、正何角形か。",
+    "options": [
+      "正八角形",
+      "正九角形",
+      "正十角形",
+      "正十二角形"
+    ],
+    "answerIndex": 1,
+    "explanation": "1つの内角が 140° なので、1つの外角は 180° - 140° = 40° です。外角の和は 360° なので、360° ÷ 40° = 9 より正九角形です。"
+  },
+  {
+    "id": "math-47",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "ある多角形の1つの頂点から引ける対角線の数が 7本 であるとき、この多角形の内角の和は何度か。",
+    "options": [
+      "1260°",
+      "1080°",
+      "1440°",
+      "1620°"
+    ],
+    "answerIndex": 2,
+    "explanation": "n角形の1つの頂点から引ける対角線の数は (n - 3) 本なので、n - 3 = 7 より n = 10（十角形）。内角の和は 180° × (10 - 2) = 1440° です。"
+  },
+  {
+    "id": "math-48",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "五角形ABCDEにおいて、∠A = 110°, ∠B = 100°, ∠C = 120°, ∠D = 95° のとき、∠Eの大きさは何度か。",
+    "options": [
+      "105°",
+      "125°",
+      "95°",
+      "115°"
+    ],
+    "answerIndex": 3,
+    "explanation": "五角形の内角の和は 180° × (5 - 2) = 540° です。540° - (110° + 100° + 120° + 95°) = 540° - 425° = 115° となります。"
+  },
+  {
+    "id": "math-49",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "△ABCにおいて、∠A = 52°、頂点Cにおける外角が 118° であるとき、∠Bの大きさは何度か。",
+    "options": [
+      "66°",
+      "62°",
+      "56°",
+      "70°"
+    ],
+    "answerIndex": 0,
+    "explanation": "三角形の1つの外角は、その隣にない2つの内角の和に等しいので、∠A + ∠B = 118° より ∠B = 118° - 52° = 66° です。"
+  },
+  {
+    "id": "math-50",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "平行な2直線 l, m の間に点Pがあり、直線 l 上の点Aと点P、直線 m 上の点Bと点Pを結ぶと折れ線APBができる。直線 l と線分APのなす鋭角が 35°、直線 m と線分BPのなす鋭角が 48° のとき、∠APB（くの字の内側の角）の大きさは何度か。",
+    "options": [
+      "73°",
+      "83°",
+      "97°",
+      "87°"
+    ],
+    "answerIndex": 1,
+    "explanation": "点Pを通り直線 l, m に平行な補助線を引くと、平行線の錯角がそれぞれ等しいことから ∠APB = 35° + 48° = 83° となります。"
+  },
+  {
+    "id": "math-51",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "ブーメラン型（凹四角形ABCD）において、くぼんだ頂点Dの外側の角（∠BDCのくぼみ側）が ∠A + ∠B + ∠C に等しいことを利用する。∠A = 32°, ∠B = 45°, ∠C = 28° のとき、くぼんだ部分の角xの大きさは何度か。",
+    "options": [
+      "95°",
+      "115°",
+      "105°",
+      "100°"
+    ],
+    "answerIndex": 2,
+    "explanation": "ブーメラン型の性質（三角形の外角の定理を2回使う）より、x = ∠A + ∠B + ∠C = 32° + 45° + 28° = 105° です。"
+  },
+  {
+    "id": "math-52",
+    "subject": "数学",
+    "category": "図形の性質：多角形の内角・外角、平行線と角",
+    "question": "2直線 l, m に1つの直線 n が交わるとき、l // m（平行）であるための条件として正しいものはどれか。",
+    "options": [
+      "対頂角が等しいとき",
+      "隣り合う角の和が 90° のとき",
+      "同位角の和が 180° のとき",
+      "同位角または錯角が等しいとき"
+    ],
+    "answerIndex": 3,
+    "explanation": "2直線に1つの直線が交わるとき、「同位角が等しい」または「錯角が等しい」ならば、その2直線は平行になります。"
+  },
+  {
+    "id": "math-53",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "△ABCの3つの内角のうち、∠A = 35°, ∠B = 45° であるとき、この△ABCはどの三角形に分類されるか。",
+    "options": [
+      "鈍角三角形",
+      "鋭角三角形",
+      "直角三角形",
+      "正三角形"
+    ],
+    "answerIndex": 0,
+    "explanation": "残りの角は ∠C = 180° - (35° + 45°) = 100° です。90°より大きい角（鈍角）を1つもつので、鈍角三角形です。"
+  },
+  {
+    "id": "math-54",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "△ABC ≡ △DEF であるとき、AB = 5 cm, BC = 7 cm, CA = 6 cm, ∠A = 80°, ∠B = 45° ならば、辺EFの長さと∠Fの大きさの組み合わせとして正しいものはどれか。",
+    "options": [
+      "EF = 6 cm, ∠F = 55°",
+      "EF = 7 cm, ∠F = 55°",
+      "EF = 7 cm, ∠F = 45°",
+      "EF = 5 cm, ∠F = 80°"
+    ],
+    "answerIndex": 1,
+    "explanation": "対応する辺より EF = BC = 7 cm。また ∠C = 180° - (80° + 45°) = 55° であり、対応する角より ∠F = ∠C = 55° です。"
+  },
+  {
+    "id": "math-55",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "次のア〜エのうち、三角形の合同条件として誤っているものはどれか。",
+    "options": [
+      "3組の辺がそれぞれ等しい。",
+      "2組の辺とその間の角がそれぞれ等しい。",
+      "3組の角がそれぞれ等しい。",
+      "1組の辺とその両端の角がそれぞれ等しい。"
+    ],
+    "answerIndex": 2,
+    "explanation": "「3組の角がそれぞれ等しい」だけでは、形は同じでも大きさの異なる三角形（拡大・縮小した図形）が存在するため合同とは限りません。"
+  },
+  {
+    "id": "math-56",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "△ABCと△DEFにおいて、AB = DE、BC = EF がわかっている。「2組の辺とその間の角がそれぞれ等しい」という合同条件を使って △ABC ≡ △DEF を示すために、あと1つ必要な条件はどれか。",
+    "options": [
+      "∠A = ∠D",
+      "∠C = ∠F",
+      "AC = DF",
+      "∠B = ∠E"
+    ],
+    "answerIndex": 3,
+    "explanation": "2辺 AB と BC の「間の角」は ∠B、2辺 DE と EF の「間の角」は ∠E なので、∠B = ∠E が必要です。"
+  },
+  {
+    "id": "math-57",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "△ABCと△DEFにおいて、BC = EF、∠B = ∠E がわかっている。「1組の辺とその両端の角がそれぞれ等しい」という合同条件を使うために、あと1つ必要な条件はどれか。",
+    "options": [
+      "∠C = ∠F",
+      "∠A = ∠D",
+      "AB = DE",
+      "AC = DF"
+    ],
+    "answerIndex": 0,
+    "explanation": "辺BCの両端の角は ∠B と ∠C、辺EFの両端の角は ∠E と ∠F です。すでに ∠B = ∠E があるので、もう一端の ∠C = ∠F が必要です。"
+  },
+  {
+    "id": "math-58",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "四角形ABCDにおいて、AB = AD、BC = DC のとき、△ABC ≡ △ADC を証明したい。仮定の2つの条件に加えて用いる3つ目の条件と、成り立つ合同条件の組み合わせとして正しいものはどれか。",
+    "options": [
+      "∠B = ∠D（2組の辺とその間の角がそれぞれ等しい）",
+      "AC = AC（3組の辺がそれぞれ等しい）",
+      "∠BAC = ∠DAC（2組の辺とその間の角がそれぞれ等しい）",
+      "AC = AC（1組の辺とその両端の角がそれぞれ等しい）"
+    ],
+    "answerIndex": 1,
+    "explanation": "辺ACは共通な辺なので AC = AC が成り立ちます。仮定の AB = AD, BC = DC とあわせて「3組の辺がそれぞれ等しい」より合同が示せます。"
+  },
+  {
+    "id": "math-59",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "線分ABと線分CDが点Oで交わっており、AO = BO、CO = DO である。このとき △ACO ≡ △BDO を示すのに用いる合同条件はどれか。",
+    "options": [
+      "3組の辺がそれぞれ等しい",
+      "1組の辺とその両端の角がそれぞれ等しい",
+      "2組の辺とその間の角がそれぞれ等しい",
+      "斜辺と1つの鋭角がそれぞれ等しい"
+    ],
+    "answerIndex": 2,
+    "explanation": "仮定の AO = BO, CO = DO に加え、対頂角は等しいので ∠AOC = ∠BOD です。よって「2組の辺とその間の角がそれぞれ等しい」を用います。"
+  },
+  {
+    "id": "math-60",
+    "subject": "数学",
+    "category": "図形の性質：三角形の合同条件と証明",
+    "question": "平行な2直線上に線分ABと線分CDがあり、AB // DC、AB = DC である。線分ADと線分BCの交点をOとするとき、△ABO ≡ △DCO を証明するのに使う合同条件はどれか。",
+    "options": [
+      "3組の辺がそれぞれ等しい",
+      "2組の辺とその間の角がそれぞれ等しい",
+      "2組の角がそれぞれ等しい",
+      "1組の辺とその両端の角がそれぞれ等しい"
+    ],
+    "answerIndex": 3,
+    "explanation": "仮定より AB = DC。また AB // DC より平行線の錯角は等しいので ∠OAB = ∠ODC、∠OBA = ∠OCD。よって「1組の辺とその両端の角がそれぞれ等しい」より合同です。"
+  },
+  {
+    "id": "hist-01",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "17世紀末から18世紀初頭にかけて、5代将軍徳川綱吉の頃に上方（京都・大坂）の町人を中心として栄えた文化を何というか。",
+    "options": [
+      "元禄文化",
+      "化政文化",
+      "桃山文化",
+      "東山文化"
+    ],
+    "answerIndex": 0,
+    "explanation": "17世紀末〜18世紀初めに上方（京都・大坂）の豊かな町人を中心に栄えた文化を元禄文化といいます。"
+  },
+  {
+    "id": "hist-02",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄文化の代表的な作家で、町人の生活や経済の姿を生き生きと描いた浮世草子『好色一代男』『日本永代蔵』『世間胸算用』を著した人物は誰か。",
+    "options": [
+      "近松門左衛門",
+      "井原西鶴",
+      "滝沢馬琴",
+      "十返舎一九"
+    ],
+    "answerIndex": 1,
+    "explanation": "大坂の町人出身の井原西鶴は、『好色一代男』や『日本永代蔵』『世間胸算用』などの浮世草子を著しました。"
+  },
+  {
+    "id": "hist-03",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄時代に俳諧を芸術性の高いものに高め、東北・北陸地方を旅して紀行文『おくのほそ道』を著した人物は誰か。",
+    "options": [
+      "与謝蕪村",
+      "小林一茶",
+      "松尾芭蕉",
+      "本居宣長"
+    ],
+    "answerIndex": 2,
+    "explanation": "松尾芭蕉は自然や人生の深みを詠む俳諧を確立し、門人とともに旅した紀行文『おくのほそ道』を残しました。"
+  },
+  {
+    "id": "hist-04",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄時代に人形浄瑠璃や歌舞伎の脚本として『曽根崎心中』や『国姓爺合戦』を書き、高い人気を集めた劇作家は誰か。",
+    "options": [
+      "式亭三馬",
+      "井原西鶴",
+      "喜多川歌麿",
+      "近松門左衛門"
+    ],
+    "answerIndex": 3,
+    "explanation": "近松門左衛門は義理と人情の板挟みに悩む人々を描いた『曽根崎心中』などの脚本を書き、人形浄瑠璃の発展に貢献しました。"
+  },
+  {
+    "id": "hist-05",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄文化を代表する画家で、金箔の背景に鮮やかな色彩を用いた装飾画『燕子花図屏風』や『紅白梅図屏風』を描いた人物は誰か。",
+    "options": [
+      "尾形光琳",
+      "菱川師宣",
+      "葛飾北斎",
+      "歌川広重"
+    ],
+    "answerIndex": 0,
+    "explanation": "京都出身の尾形光琳は、俵屋宗達の画風を受け継いで洗練された装飾画『燕子花図屏風』『風神雷神図屏風』などを描きました。"
+  },
+  {
+    "id": "hist-06",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄時代に『見返り美人図』を描き、木版画を取り入れて浮世絵の基礎を築いた画家は誰か。",
+    "options": [
+      "鈴木春信",
+      "菱川師宣",
+      "東洲斎写楽",
+      "狩野永徳"
+    ],
+    "answerIndex": 1,
+    "explanation": "菱川師宣は肉筆画『見返り美人図』で知られるほか、木版画によって浮世絵を庶民に広めました。"
+  },
+  {
+    "id": "hist-07",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "19世紀初め、11代将軍徳川家斉の頃に江戸の町人を中心として栄え、皮肉やユーモアを交えた作品が多く生まれた文化を何というか。",
+    "options": [
+      "北山文化",
+      "元禄文化",
+      "化政文化",
+      "寛政文化"
+    ],
+    "answerIndex": 2,
+    "explanation": "19世紀初頭（文化・文政年間）に江戸を中心として栄えた町人文化を化政文化といいます。"
+  },
+  {
+    "id": "hist-08",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "化政文化の頃、弥次郎兵衛と喜多八の旅の失敗談をユーモラスに描いた滑稽本『東海道中膝栗毛』を著した人物は誰か。",
+    "options": [
+      "滝沢馬琴",
+      "式亭三馬",
+      "井原西鶴",
+      "十返舎一九"
+    ],
+    "answerIndex": 3,
+    "explanation": "十返舎一九は、伊勢参りなどの旅ブームを背景に、滑稽本『東海道中膝栗毛』を著して大流行させました。"
+  },
+  {
+    "id": "hist-09",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "化政文化の頃、銭湯に集まる庶民の会話を滑稽に描いた『浮世風呂』と、長編小説（読本）『南総里見八犬伝』の作者の組み合わせとして正しいものはどれか。",
+    "options": [
+      "『浮世風呂』：式亭三馬 ／ 『南総里見八犬伝』：滝沢馬琴",
+      "『浮世風呂』：滝沢馬琴 ／ 『南総里見八犬伝』：式亭三馬",
+      "『浮世風呂』：十返舎一九 ／ 『南総里見八犬伝』：近松門左衛門",
+      "『浮世風呂』：井原西鶴 ／ 『南総里見八犬伝』：十返舎一九"
+    ],
+    "answerIndex": 0,
+    "explanation": "『浮世風呂』は式亭三馬の滑稽本、『南総里見八犬伝』は滝沢（曲亭）馬琴の読本で、どちらも化政文化の代表作です。"
+  },
+  {
+    "id": "hist-10",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "18世紀後半から化政文化の頃にかけて活躍した俳人で、農村の生活や弱い生き物への温かいまなざしを詠み、『おらが春』を著した人物は誰か。",
+    "options": [
+      "松尾芭蕉",
+      "小林一茶",
+      "与謝蕪村",
+      "高浜虚子"
+    ],
+    "answerIndex": 1,
+    "explanation": "信濃（長野県）出身の小林一茶は、生活感あふれる素朴な句を詠み、句文集『おらが春』を残しました。"
+  },
+  {
+    "id": "hist-11",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "多色刷りの木版画である「錦絵」が鈴木春信によって始められた後、化政文化の頃に女性の表情を繊細に描いた「美人画」で有名になった浮世絵師は誰か。",
+    "options": [
+      "東洲斎写楽",
+      "葛飾北斎",
+      "喜多川歌麿",
+      "菱川師宣"
+    ],
+    "answerIndex": 2,
+    "explanation": "喜多川歌麿は上半身を大きく描く「大首絵」の手法を用いて、女性の美しさを表現した美人画で人気を博しました。"
+  },
+  {
+    "id": "hist-12",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "化政文化の浮世絵師のうち、歌舞伎役者の個性を誇張して描いた「役者絵」で知られる人物は誰か。",
+    "options": [
+      "歌川広重",
+      "尾形光琳",
+      "鈴木春信",
+      "東洲斎写楽"
+    ],
+    "answerIndex": 3,
+    "explanation": "東洲斎写楽はわずか約10か月の活動期間に、歌舞伎役者の表情やしぐさを大胆に捉えた役者絵を多数発表しました。"
+  },
+  {
+    "id": "hist-13",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "化政文化の頃に風景画を発展させた浮世絵師のうち、『富嶽三十六景』を描いた人物と『東海道五十三次』を描いた人物の正しい組み合わせはどれか。",
+    "options": [
+      "『富嶽三十六景』：葛飾北斎 ／ 『東海道五十三次』：歌川広重",
+      "『富嶽三十六景』：歌川広重 ／ 『東海道五十三次』：葛飾北斎",
+      "『富嶽三十六景』：喜多川歌麿 ／ 『東海道五十三次』：東洲斎写楽",
+      "『富嶽三十六景』：菱川師宣 ／ 『東海道五十三次』：鈴木春信"
+    ],
+    "answerIndex": 0,
+    "explanation": "ダイナミックな構図の『富嶽三十六景』は葛飾北斎、旅情あふれる『東海道五十三次』は歌川広重の代表作です。"
+  },
+  {
+    "id": "hist-14",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "化政文化の頃に江戸の庶民の間で流行した、日常生活の人情や世相・政治への風刺を五・七・五の17音で表現した文芸は何か。",
+    "options": [
+      "連歌",
+      "川柳",
+      "今様",
+      "短歌"
+    ],
+    "answerIndex": 1,
+    "explanation": "季語や切れ字の決まりにとらわれず、日常の滑稽さや政治への皮肉を五・七・五で詠む「川柳」や、五・七・五・七・七の「狂歌」が流行しました。"
+  },
+  {
+    "id": "hist-15",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "元禄文化と化政文化の比較として、正しい記述はどれか。",
+    "options": [
+      "元禄文化は19世紀初めに江戸で栄え、化政文化は17世紀末に上方で栄えた。",
+      "『東海道中膝栗毛』や『富嶽三十六景』は元禄文化の代表的な作品である。",
+      "元禄文化は京都・大坂（上方）を中心に栄え、化政文化は江戸を中心に栄えた。",
+      "井原西鶴・松尾芭蕉・近松門左衛門はいずれも化政文化を代表する人物である。"
+    ],
+    "answerIndex": 2,
+    "explanation": "元禄文化は17世紀末〜18世紀初めに上方（京都・大坂）中心、化政文化は19世紀初めに江戸中心に栄えました。"
+  },
+  {
+    "id": "hist-16",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "仏教や儒学が伝わる前の日本古来の精神や文化を研究する「国学」を大成し、約30年かけて『古事記伝』を完成させた人物は誰か。",
+    "options": [
+      "林羅山",
+      "新井白石",
+      "杉田玄白",
+      "本居宣長"
+    ],
+    "answerIndex": 3,
+    "explanation": "伊勢松坂（三重県）の医者であった本居宣長は、賀茂真淵の教えを受け継ぎ、『古事記』を研究して『古事記伝』を著し国学を大成しました。"
+  },
+  {
+    "id": "hist-17",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "オランダ語で書かれた解剖学書『ターヘル・アナトミア』を苦心の末に翻訳し、1774年に『解体新書』として出版した蘭学者たちの組み合わせはどれか。",
+    "options": [
+      "杉田玄白・前野良沢",
+      "伊能忠敬・間宮林蔵",
+      "本居宣長・平田篤胤",
+      "青木昆陽・大塩平八郎"
+    ],
+    "answerIndex": 0,
+    "explanation": "前野良沢と杉田玄白らは、実際の人体解剖（腑分け）でオランダ医学書の正確さに驚き、翻訳して『解体新書』を刊行しました。"
+  },
+  {
+    "id": "hist-18",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "江戸時代後期に西洋の測量術を学び、50歳を過ぎてから日本全国の沿岸を歩いて測量し、極めて正確な日本地図『大日本沿海輿地全図』を作製した人物は誰か。",
+    "options": [
+      "林子平",
+      "伊能忠敬",
+      "高野長英",
+      "平賀源内"
+    ],
+    "answerIndex": 1,
+    "explanation": "伊能忠敬は幕府の事業として全国の海岸線を測量し、没後に弟子たちによって『大日本沿海輿地全図』が完成しました。"
+  },
+  {
+    "id": "hist-19",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "1823年にオランダ商館の医師として長崎に来日し、郊外に「鳴滝塾」を開いて高野長英ら多くの日本人に西洋医学や科学を教えたドイツ人医師は誰か。",
+    "options": [
+      "ザビエル",
+      "ペリー",
+      "シーボルト",
+      "ラクスマン"
+    ],
+    "answerIndex": 2,
+    "explanation": "シーボルトは長崎の鳴滝塾で日本の蘭学者に最新の西洋医学を伝え、日本の研究も行いました。"
+  },
+  {
+    "id": "hist-20",
+    "subject": "歴史",
+    "category": "元禄文化と化政文化・学問の発達",
+    "question": "江戸時代後半に都市だけでなく農村にも広がり、武士や僧侶・医者などが師匠となって庶民の子どもに「読み・書き・そろばん」を教えた教育機関を何というか。",
+    "options": [
+      "藩校",
+      "湯島聖堂",
+      "懐徳堂",
+      "寺子屋"
+    ],
+    "answerIndex": 3,
+    "explanation": "庶民の子どもが実生活に必要な「読み・書き・そろばん」を学んだ施設を寺子屋といい、武士の子弟は各藩の「藩校」で学びました。"
+  },
+  {
+    "id": "hist-21",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "18世紀前半、紀伊藩（和歌山県）から8代将軍に就任し、幕府の財政再建や支配体制の引き締めを目指して「享保の改革」を行った人物は誰か。",
+    "options": [
+      "徳川吉宗",
+      "徳川綱吉",
+      "徳川家治",
+      "徳川家斉"
+    ],
+    "answerIndex": 0,
+    "explanation": "8代将軍徳川吉宗は、初代徳川家康の政治を理想とし、自らが先頭に立って享保の改革を進めました。"
+  },
+  {
+    "id": "hist-22",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革で徳川吉宗が出した、大名に高1万石につき100石の米を幕府へ納めさせる代わりに、参勤交代で江戸にとどまる期間を1年から半年に短縮した制度を何というか。",
+    "options": [
+      "足高の制",
+      "上米の制",
+      "囲米の制",
+      "棄捐令"
+    ],
+    "answerIndex": 1,
+    "explanation": "上米の制は、幕府の臨時収入を確保するために大名から米を献上させ、代わりに江戸在府期間を半年に緩めた制度です。"
+  },
+  {
+    "id": "hist-23",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革において、家柄が低くても能力のある旗本らを重要な役職に登用できるよう、在職中に限って不足分の禄高（給与）を補った制度を何というか。",
+    "options": [
+      "上米の制",
+      "相対済し令",
+      "足高の制",
+      "旧里帰農令"
+    ],
+    "answerIndex": 2,
+    "explanation": "足高の制により、大岡忠相のように家格が低くても有能な人材を江戸町奉行などの要職に登用することが可能になりました。"
+  },
+  {
+    "id": "hist-24",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "徳川吉宗が庶民の意見や不満を直接聞くために江戸の評定所前に設置した投書箱を何というか。",
+    "options": [
+      "高札",
+      "人足寄場",
+      "五人組帳",
+      "目安箱"
+    ],
+    "answerIndex": 3,
+    "explanation": "徳川吉宗は目安箱を設置して庶民の意見を募り、そこから小石川養生所や町火消の設置が実現しました。"
+  },
+  {
+    "id": "hist-25",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "目安箱への町医者・小川笙船の投書がきっかけとなって江戸に設けられた、貧しい人々を無料で診察・治療する医療施設はどれか。",
+    "options": [
+      "小石川養生所",
+      "石川島の人足寄場",
+      "鳴滝塾",
+      "湯島聖堂"
+    ],
+    "answerIndex": 0,
+    "explanation": "目安箱への投書を採用して、貧しい病人のための施薬院である「小石川養生所」が設立されました。"
+  },
+  {
+    "id": "hist-26",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革で、江戸町奉行の大岡忠相らが中心となって町人による消防組織として編成したものは何か。",
+    "options": [
+      "定火消",
+      "町火消（いろは組）",
+      "奇兵隊",
+      "新選組"
+    ],
+    "answerIndex": 1,
+    "explanation": "江戸の度重なる大火に対処するため、大岡忠相は町人による消防組織「町火消（いろは47組など）」を整備しました。"
+  },
+  {
+    "id": "hist-27",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革で、従来の判例などを整理して1742年に制定された、公正で迅速な裁判を行うための基準となる法令集は何か。",
+    "options": [
+      "武家諸法度",
+      "御成敗式目",
+      "公事方御定書",
+      "禁中並公家諸法度"
+    ],
+    "answerIndex": 2,
+    "explanation": "徳川吉宗は裁判と刑罰の基準を明確にするため、大岡忠相らに命じて『公事方御定書』を編纂させました。"
+  },
+  {
+    "id": "hist-28",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革において、飢饉対策として青木昆陽が関東地方の痩せた土地でも育つ作物として栽培を広めたものは何か。",
+    "options": [
+      "とうもろこし",
+      "じゃがいも",
+      "茶",
+      "甘藷（さつまいも）"
+    ],
+    "answerIndex": 3,
+    "explanation": "青木昆陽は享保の飢饉を機に、救荒作物として甘藷（さつまいも）の試験栽培に成功し、普及させました。"
+  },
+  {
+    "id": "hist-29",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "8代将軍徳川吉宗が「米将軍」と呼ばれた理由として、最も適切なものはどれか。",
+    "options": [
+      "新田開発や年貢増徴、米価の安定（引き上げ・引き下げ）に力を注いだため。",
+      "全国の大名から領地を没収してすべて幕府直轄の水田に変えたため。",
+      "外国から大量の米を輸入して江戸の町人に無料で配り続けたため。",
+      "米の代わりに貨幣で年貢を納めることを全国一律に義務づけたため。"
+    ],
+    "answerIndex": 0,
+    "explanation": "吉宗は新田開発の奨励や定免法の採用で米の増収を図るとともに、幕府や武士の収入に関わる米価の調節に苦心したため「米将軍」と呼ばれました。"
+  },
+  {
+    "id": "hist-30",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "18世紀後半、10代将軍徳川家治の信任を得て側用人から老中にまで昇進し、商業を重視した経済政策を行った人物は誰か。",
+    "options": [
+      "新井白石",
+      "田沼意次",
+      "松平定信",
+      "水野忠邦"
+    ],
+    "answerIndex": 1,
+    "explanation": "田沼意次は10代将軍徳川家治のもとで側用人兼老中となり、重商主義的な経済政策を進めました。"
+  },
+  {
+    "id": "hist-31",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "田沼意次が幕府の財政収入を増やすため、商人の同業組合を積極的に公認して納めさせた営業税を何というか。",
+    "options": [
+      "年貢・公事",
+      "段銭・棟別銭",
+      "運上・冥加",
+      "地租・印紙税"
+    ],
+    "answerIndex": 2,
+    "explanation": "田沼意次は商人の同業組合である「株仲間」を広く公認し、その見返りとして運上・冥加という営業税を徴収しました。"
+  },
+  {
+    "id": "hist-32",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "田沼意次が長崎貿易で金・銀の流出を防ぎ、逆に清から金・銀を輸入するために輸出を奨励した海産物（いりこ・ほしあわび・ふかのひれ）をまとめて何と呼ぶか。",
+    "options": [
+      "四木三草",
+      "生糸・絹織物",
+      "西陣織",
+      "俵物"
+    ],
+    "answerIndex": 3,
+    "explanation": "いりこ・ほしあわび・ふかのひれは俵に詰めて輸出されたことから「俵物」と呼ばれ、銅とともに長崎貿易の主要な輸出品となりました。"
+  },
+  {
+    "id": "hist-33",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "田沼意次が商人の資金を利用して新田開発を進めようとした下総国（千葉県）の湖沼や、ロシアとの交易・鉱山開発を目指して調査させた地域の組み合わせとして正しいものはどれか。",
+    "options": [
+      "印旛沼・手賀沼の干拓 ／ 蝦夷地の開発調査",
+      "琵琶湖の干拓 ／ 琉球の開発調査",
+      "霞ヶ浦の干拓 ／ 小笠原諸島の開発調査",
+      "児島湾の干拓 ／ 樺太の領土編入"
+    ],
+    "answerIndex": 0,
+    "explanation": "田沼意次は印旛沼・手賀沼の干拓工事に着手し、また最上徳内らを派遣して蝦夷地（北海道）の開発と対ロシア貿易を調査させました。"
+  },
+  {
+    "id": "hist-34",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "田沼意次の政治の末期である1782年頃から発生し、浅間山の噴火や東北地方の冷害によって多くの餓死者を出した大飢饉を何というか。",
+    "options": [
+      "享保の飢饉",
+      "天明の飢饉",
+      "天保の飢饉",
+      "寛永の飢饉"
+    ],
+    "answerIndex": 1,
+    "explanation": "1783年の浅間山大噴火や冷害が重なって全国的な「天明の飢饉」が発生し、百姓一揆や都市での打ちこわしが激増して田沼意次は失脚しました。"
+  },
+  {
+    "id": "hist-35",
+    "subject": "歴史",
+    "category": "享保の改革と田沼意次の政治",
+    "question": "享保の改革と田沼意次の政治の特徴を比較した記述として、正しいものはどれか。",
+    "options": [
+      "徳川吉宗は株仲間を全面的に禁止し、田沼意次は上米の制を創始した。",
+      "徳川吉宗は商業課税のみに頼り、田沼意次は年貢増徴のみを行った。",
+      "徳川吉宗は農業や年貢増徴を重視し、田沼意次は株仲間公認など商業の利益を幕府財政に取り込もうとした。",
+      "徳川吉宗も田沼意次も長崎での貿易を完全に廃止した。"
+    ],
+    "answerIndex": 2,
+    "explanation": "吉宗は新田開発や年貢増徴など農本主義的な政策を軸としたのに対し、田沼意次は株仲間の積極公認や専売制など重商主義的な政策をとりました。"
+  },
+  {
+    "id": "hist-36",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "田沼意次の失脚後、1787年に老中首座となり、祖父である徳川吉宗の政治を理想として「寛政の改革」を行った白河藩主は誰か。",
+    "options": [
+      "水野忠邦",
+      "大岡忠相",
+      "鍋島直正",
+      "松平定信"
+    ],
+    "answerIndex": 3,
+    "explanation": "徳川吉宗の孫にあたる白河藩主・松平定信は、飢饉で混乱した社会を立て直すため老中となって寛政の改革を行いました。"
+  },
+  {
+    "id": "hist-37",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革で松平定信が旗本・御家人の生活苦を救うため、蔵宿（札差）という商人からの古い借金を帳消しにさせた法令を何というか。",
+    "options": [
+      "棄捐令",
+      "徳政令",
+      "上知令",
+      "相対済し令"
+    ],
+    "answerIndex": 0,
+    "explanation": "松平定信は棄捐令を出して、旗本・御家人が札差から借りていた6年以前の借金を帳消しにし、それ以降の利子も引き下げさせました。"
+  },
+  {
+    "id": "hist-38",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革で、天明の飢饉の教訓から各大名や農村に命じて穀物を備蓄させた制度を何というか。",
+    "options": [
+      "上米の制",
+      "囲米の制（社倉・義倉）",
+      "足高の制",
+      "太閤検地"
+    ],
+    "answerIndex": 1,
+    "explanation": "松平定信は飢饉に備えるため、大名に高1万石につき50石の籾を蓄えさせる「囲米」を命じ、各地に社倉・義倉を設けさせました。"
+  },
+  {
+    "id": "hist-39",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革において、天明の飢饉などで荒廃した農村を再建するため、江戸に出稼ぎに来ていた農民に費用を与えて故郷の村へ帰るよう促した法令はどれか。",
+    "options": [
+      "人返しの法",
+      "身分統制令",
+      "旧里帰農令",
+      "田畑永代売買の禁令"
+    ],
+    "answerIndex": 2,
+    "explanation": "寛政の改革では帰村を奨励する「旧里帰農令」が出されました（のちの天保の改革で出された強制的なものは「人返しの法」です）。"
+  },
+  {
+    "id": "hist-40",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革で、治安の維持と自立支援のため江戸の石川島に設置された、無宿人（戸籍を離れた人々）に大工などの職や技術を身につけさせる施設を何というか。",
+    "options": [
+      "小石川養生所",
+      "鳴滝塾",
+      "評定所",
+      "人足寄場"
+    ],
+    "answerIndex": 3,
+    "explanation": "長谷川平蔵の建議により江戸の石川島に「人足寄場」が設けられ、無宿人に職業訓練を行って社会復帰を促しました。"
+  },
+  {
+    "id": "hist-41",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革で、幕府の学問所である湯島聖堂において朱子学以外の学問を教えることを禁じた政策を何というか。",
+    "options": [
+      "寛政異学の禁",
+      "蛮社の獄",
+      "安政の大獄",
+      "キリスト教禁教令"
+    ],
+    "answerIndex": 0,
+    "explanation": "松平定信は思想を引き締めるため「寛政異学の禁」を出し、湯島聖堂では朱子学を正学として他の学派の講義を禁じました。"
+  },
+  {
+    "id": "hist-42",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革の頃、ロシアの南下に危機感を抱いて『海国兵談』を著し、海防（海岸の防衛）の必要性を訴えたため幕府に処罰された人物は誰か。",
+    "options": [
+      "高野長英",
+      "林子平",
+      "渡辺崋山",
+      "本居宣長"
+    ],
+    "answerIndex": 1,
+    "explanation": "仙台藩士の林子平は『海国兵談』で「江戸の日本橋より唐・オランダまで境なしの水路なり」と海防の重要性を説きましたが、幕政批判とみなされ処罰されました。"
+  },
+  {
+    "id": "hist-43",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革が行われていた1792年、漂流民の大黒屋光太夫を送り届けながら根室に来航し、日本との通商を求めたロシアの使節は誰か。",
+    "options": [
+      "ペリー",
+      "プチャーチン",
+      "ラクスマン",
+      "ハリス"
+    ],
+    "answerIndex": 2,
+    "explanation": "1792年にロシア使節ラクスマンが根室に来航しました。松平定信は長崎への入港許可証（信牌）を与えて引き取らせました。"
+  },
+  {
+    "id": "hist-44",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "1825年、イギリス船などが日本近海に頻繁に現れるようになったことに対し、幕府が全国の海岸に命じた「オランダ船・中国船以外の外国船は見つけ次第砲撃して追い払え」という法令は何か。",
+    "options": [
+      "薪水給与令",
+      "鎖国令",
+      "海舶互市新例",
+      "異国船打払令"
+    ],
+    "answerIndex": 3,
+    "explanation": "イギリス船によるフェートン号事件や捕鯨船の接近を受け、幕府は1825年に「異国船打払令（無二念打払令）」を出しました。"
+  },
+  {
+    "id": "hist-45",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "1837年、天保の飢饉と米の買い占めによる米価高騰のなか、困窮する民衆を救うために大坂で門人らとともに蜂起した大坂町奉行所の元与力は誰か。",
+    "options": [
+      "大塩平八郎",
+      "生田万",
+      "大岡忠相",
+      "佐倉惣五郎"
+    ],
+    "answerIndex": 0,
+    "explanation": "大坂町奉行所の元与力であった陽明学者の大塩平八郎は、1837年に「救民」の旗を掲げて反乱を起こし（大塩平八郎の乱）、幕府や大名に大きな衝撃を与えました。"
+  },
+  {
+    "id": "hist-46",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "1837年に日本人漂流民を乗せたアメリカの商船を幕府が砲撃して追い返した事件と、それを批判して1839年に処罰された渡辺崋山・高野長英らの弾圧事件の組み合わせとして正しいものはどれか。",
+    "options": [
+      "フェートン号事件 ／ 安政の大獄",
+      "モリソン号事件 ／ 蛮社の獄",
+      "ノルマントン号事件 ／ 寛政異学の禁",
+      "生麦事件 ／ 桜田門外の変"
+    ],
+    "answerIndex": 1,
+    "explanation": "1837年のアメリカ商船砲撃を「モリソン号事件」といい、この幕府の対応を批判した蘭学者の渡辺崋山や高野長英らが処罰された事件を「蛮社の獄」（1839年）といいます。"
+  },
+  {
+    "id": "hist-47",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "1841年、内外の危機に直面した幕府を立て直すため、厳しい倹約や経済統制を伴う「天保の改革」を開始した老中は誰か。",
+    "options": [
+      "田沼意次",
+      "松平定信",
+      "水野忠邦",
+      "阿部正弘"
+    ],
+    "answerIndex": 2,
+    "explanation": "浜松藩主であった老中・水野忠邦は、11代将軍家斉の死後、1841年から天保の改革を断行しました。"
+  },
+  {
+    "id": "hist-48",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "天保の改革で水野忠邦が、物価上昇の原因は商人の独占にあると考えて行った政策はどれか。",
+    "options": [
+      "株仲間の積極的な公認",
+      "楽市・楽座令の発布",
+      "南鐐二朱銀の発行",
+      "株仲間の解散"
+    ],
+    "answerIndex": 3,
+    "explanation": "水野忠邦は物価を引き下げるために株仲間の解散を命じましたが、かえって商品の流通が混乱する結果となりました。"
+  },
+  {
+    "id": "hist-49",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "天保の改革で出された、農村の労働力を確保するために江戸に流入していた農民を強制的に故郷の農村へ送り返す法令を何というか。",
+    "options": [
+      "人返しの法",
+      "旧里帰農令",
+      "上知令",
+      "棄捐令"
+    ],
+    "answerIndex": 0,
+    "explanation": "天保の改革では、江戸に出稼ぎに来ていた農民を強制的に帰村させる「人返しの法」が出されました。"
+  },
+  {
+    "id": "hist-50",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "天保の改革で水野忠邦が幕府の財政強化と江戸・大坂周辺の防衛強化を狙って、江戸・大坂周辺の土地を幕府の直轄領に編入しようとしたが、大名や旗本の猛反発を受けて失敗・失脚する原因となった法令は何か。",
+    "options": [
+      "上米の制",
+      "上知令",
+      "武家諸法度",
+      "版籍奉還"
+    ],
+    "answerIndex": 1,
+    "explanation": "江戸・大坂周辺の豊かな領地を幕府領に取り上げようとした「上知令（あげちれい）」は大名・旗本の強い反対に遭い、水野忠邦は失脚しました。"
+  },
+  {
+    "id": "hist-51",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "隣国の清がアヘン戦争でイギリスに敗れたという知らせに衝撃を受けた幕府（水野忠邦）が、1842年に異国船打払令を改めて、遭難した外国船には燃料や水・食料を与えて帰らせることにした法令は何か。",
+    "options": [
+      "日米和親条約",
+      "鎖国令",
+      "薪水給与令",
+      "五箇条の御誓文"
+    ],
+    "answerIndex": 2,
+    "explanation": "アヘン戦争での清の敗北を知った幕府は、外国との無用な武力衝突を避けるため、1842年に「薪水給与令」を出して異国船打払令を緩和しました。"
+  },
+  {
+    "id": "hist-52",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "19世紀前半の藩政改革で、薩摩藩（鹿児島県）の調所広郷が財政を立て直すために行った政策として正しいものはどれか。",
+    "options": [
+      "下関に越荷方を設置して海運業で利益をあげた。",
+      "日本で最初の実用的な反射炉を築いて大砲を製造した。",
+      "江戸・大坂周辺の土地を藩の直轄領にした。",
+      "奄美諸島の黒糖（黒砂糖）の専売制を強化し、琉球を通じた密貿易や借金の250年無利子分割返済を行った。"
+    ],
+    "answerIndex": 3,
+    "explanation": "薩摩藩では調所広郷が中心となり、奄美諸島の黒糖の厳しい専売制や琉球を通じた清との密貿易、借金の250年分割返済などで財政を再建しました。"
+  },
+  {
+    "id": "hist-53",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "長州藩（山口県）の藩政改革で、村田清風らが中心となって紙やろうの専売制を見直すとともに、下関を通る廻船に資金を貸し付けたり荷物を預かったりして利益をあげた役所を何というか。",
+    "options": [
+      "越荷方",
+      "目安箱",
+      "人足寄場",
+      "長崎会所"
+    ],
+    "answerIndex": 0,
+    "explanation": "長州藩では村田清風らが改革を進め、交通の要衝である下関に「越荷方」を設置して金融・倉庫業で大きな利益をあげました。"
+  },
+  {
+    "id": "hist-54",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "肥前（佐賀）藩の藩主・鍋島直正が藩政改革で力を入れた取り組みとして、正しいものはどれか。",
+    "options": [
+      "奄美諸島の黒糖の専売制を強化した。",
+      "陶磁器や石炭の専売で財政を立て直し、いち早く洋式工業を取り入れて反射炉を築き大砲を製造した。",
+      "札差からの借金を棄捐令で帳消しにした。",
+      "鳴滝塾を開いてオランダ医学を教えた。"
+    ],
+    "answerIndex": 1,
+    "explanation": "佐賀藩の鍋島直正は長崎警備の経験から西洋の軍事技術を重視し、有田焼などの専売利益をもとに反射炉を築いて鉄製大砲の製造に成功しました。"
+  },
+  {
+    "id": "hist-55",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "幕府の財政改革に限界が見えた一方で、天保期以降の藩政改革に成功して経済力と軍事力を蓄え、幕末の政治で主導権を握るようになった西日本の有力な藩（薩摩・長州・土佐・肥前など）を総称して何と呼ぶか。",
+    "options": [
+      "親藩",
+      "譜代大名",
+      "雄藩",
+      "御三家"
+    ],
+    "answerIndex": 2,
+    "explanation": "藩政改革に成功して実力を蓄え、幕末に強い発言力を持つようになった薩摩・長州・肥前・土佐などの有力な外様大名の藩を「雄藩」と呼びます。"
+  },
+  {
+    "id": "hist-56",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "江戸時代の幕政改革・政治について、古い年代から正しい順番に並んでいるものはどれか。",
+    "options": [
+      "享保の改革 → 寛政の改革 → 田沼意次の政治 → 天保の改革",
+      "田沼意次の政治 → 享保の改革 → 寛政の改革 → 天保の改革",
+      "寛政の改革 → 享保の改革 → 天保の改革 → 田沼意次の政治",
+      "享保の改革 → 田沼意次の政治 → 寛政の改革 → 天保の改革"
+    ],
+    "answerIndex": 3,
+    "explanation": "享保の改革（1716年〜）→田沼意次の政治（1767年頃〜）→寛政の改革（1787年〜）→天保の改革（1841年〜）の順に行われました。"
+  },
+  {
+    "id": "hist-57",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "江戸時代の「株仲間」に対する幕府の政策の移り変わりとして、正しいものはどれか。",
+    "options": [
+      "田沼意次は営業税（運上・冥加）を得るために株仲間を積極的に公認し、水野忠邦は物価引き下げのため株仲間を解散させた。",
+      "徳川吉宗は株仲間を解散させ、松平定信は株仲間を初めて公認した。",
+      "田沼意次は株仲間を全面的に禁止し、水野忠邦は株仲間を奨励した。",
+      "江戸時代を通じて幕府は一度も株仲間を認めることはなかった。"
+    ],
+    "answerIndex": 0,
+    "explanation": "田沼意次は株仲間を積極的に公認して運上・冥加を徴収しましたが、天保の改革で水野忠邦は物価高騰を抑えるため株仲間の解散を命じました。"
+  },
+  {
+    "id": "hist-58",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "江戸時代の三大改革（享保・寛政・天保）の人物と政策の組み合わせとして、誤っているものはどれか。",
+    "options": [
+      "徳川吉宗 ― 公事方御定書の制定・上米の制",
+      "松平定信 ― 上知令の発布・株仲間の解散",
+      "松平定信 ― 棄捐令・寛政異学の禁",
+      "水野忠邦 ― 人返しの法・上知令"
+    ],
+    "answerIndex": 1,
+    "explanation": "上知令の発布や株仲間の解散を行ったのは、天保の改革を進めた老中・水野忠邦です。"
+  },
+  {
+    "id": "hist-59",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "次の出来事ア〜ウを、起きた年代の古い順に正しく並べたものはどれか。【ア：大塩平八郎の乱　イ：ラクスマンの根室来航　ウ：異国船打払令の発布】",
+    "options": [
+      "ア → イ → ウ",
+      "ウ → イ → ア",
+      "イ → ウ → ア",
+      "イ → ア → ウ"
+    ],
+    "answerIndex": 2,
+    "explanation": "イ：ラクスマンの根室来航（1792年）→ ウ：異国船打払令（1825年）→ ア：大塩平八郎の乱（1837年）の順です。"
+  },
+  {
+    "id": "hist-60",
+    "subject": "歴史",
+    "category": "寛政の改革・天保の改革と藩政改革",
+    "question": "寛政の改革を行った松平定信のあまりに厳しい倹約や統制を皮肉って、当時の庶民が詠んだ狂歌「白河の 清きに魚も 住みかねて もとの濁りの（　　）恋しき」の（　　）に入る人物名はどれか。",
+    "options": [
+      "吉宗",
+      "水野",
+      "大塩",
+      "田沼"
+    ],
+    "answerIndex": 3,
+    "explanation": "白河藩主出身の松平定信の厳しすぎる政治に窮屈さを感じた庶民が、少し前の自由な気風があった「田沼（意次）」の時代を懐かしんで詠んだ狂歌です。"
+  },
+  {
+    "id": "geo-01",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "鹿児島県から宮崎県南部にかけて広がる、過去の火山活動による火山灰などが厚く積もってできた台地を何というか。",
+    "options": [
+      "シラス台地",
+      "武蔵野台地",
+      "牧之原台地",
+      "根釧台地"
+    ],
+    "answerIndex": 0,
+    "explanation": "鹿児島県や宮崎県南部には、白っぽい火山噴出物が堆積したシラス台地が広がっています。"
+  },
+  {
+    "id": "geo-02",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "シラス台地の土壌の特徴と、そこで盛んな農業の組み合わせとして最も適切なものはどれか。",
+    "options": [
+      "水もちがよいため、広大な水田で稲作が盛んに行われている",
+      "水はけがよすぎて稲作に向かないため、さつまいもや茶などの畑作・畜産が盛んである",
+      "夏の冷害が多いため、主に酪農だけが行われている",
+      "冬に雪が深く積もるため、りんごやぶどうの果樹栽培が中心である"
+    ],
+    "answerIndex": 1,
+    "explanation": "シラス台地は水はけがよすぎて水田に向かないため、さつまいも・茶・葉たばこなどの畑作や、豚・肉用牛・ブロイラーなどの畜産が盛んです。"
+  },
+  {
+    "id": "geo-03",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "鹿児島県の笠野原台地などで、シラス台地の水不足を解消し農業を発展させるために整備された設備は何か。",
+    "options": [
+      "風車を利用した排水ポンプ",
+      "海水を淡水化するプラント",
+      "かんがい用水路とスプリンクラー（散水設備）",
+      "地下水を凍らせる保冷施設"
+    ],
+    "answerIndex": 2,
+    "explanation": "笠野原台地などではダムから引いたかんがい用水とスプリンクラーが整備され、多様な野菜栽培や畜産が可能になりました。"
+  },
+  {
+    "id": "geo-04",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "熊本県北東部に位置する阿蘇山に見られる、火山の噴火によってできた世界最大級の巨大なくぼ地を何というか。",
+    "options": [
+      "フィヨルド",
+      "リアス海岸",
+      "サンゴ礁",
+      "カルデラ"
+    ],
+    "answerIndex": 3,
+    "explanation": "阿蘇山は周囲を外輪山に囲まれた世界最大級のカルデラをもち、その内部には市街地や鉄道、農地が広がっています。"
+  },
+  {
+    "id": "geo-05",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "1991年に大規模な火砕流が発生し大きな被害をもたらした、長崎県の島原半島にある火山はどれか。",
+    "options": [
+      "雲仙岳（普賢岳）",
+      "桜島",
+      "霧島山",
+      "開聞岳"
+    ],
+    "answerIndex": 0,
+    "explanation": "長崎県の島原半島にある雲仙岳（普賢岳）では1990年代初頭に噴火が続き、1991年の火砕流で大きな被害が出ました。"
+  },
+  {
+    "id": "geo-06",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "九州最大の河川である筑後川の下流に広がり、九州最大の稲作地帯となっている平野はどれか。",
+    "options": [
+      "宮崎平野",
+      "筑紫平野",
+      "熊本平野",
+      "肝属平野"
+    ],
+    "answerIndex": 1,
+    "explanation": "福岡県と佐賀県にまたがる筑紫平野は、筑後川流域に広がる九州最大の平野で、稲作が盛んです。"
+  },
+  {
+    "id": "geo-07",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "有明海沿岸の筑紫平野に張り巡らされている、農業用水や排水、かつての舟運などに利用されてきた水路網を何というか。",
+    "options": [
+      "カナート",
+      "ポルダー",
+      "クリーク",
+      "ワジ"
+    ],
+    "answerIndex": 2,
+    "explanation": "筑紫平野の低地には「クリーク」と呼ばれる網の目のような水路が発達し、かんがいや排水に利用されてきました。"
+  },
+  {
+    "id": "geo-08",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "筑紫平野で盛んに行われている、同じ耕地で1年のうちに米（夏）と麦やいぐさ（冬）の2種類の作物を栽培する農業を何というか。",
+    "options": [
+      "二期作",
+      "促成栽培",
+      "抑制栽培",
+      "二毛作"
+    ],
+    "answerIndex": 3,
+    "explanation": "同じ耕地で1年に2種類の異なる作物を栽培することを二毛作といい、筑紫平野では米の裏作として小麦や二条大麦、畳表の原料となるいぐさなどが栽培されます。"
+  },
+  {
+    "id": "geo-09",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "宮崎平野や高知平野などで盛んな、温暖な気候やビニールハウスを利用して、きゅうりやピーマンなどの出荷時期を通常より早める栽培方法を何というか。",
+    "options": [
+      "促成栽培",
+      "抑制栽培",
+      "近郊農業",
+      "高冷地農業"
+    ],
+    "answerIndex": 0,
+    "explanation": "温暖な気候やビニールハウスを利用して野菜の成長を早め、他の産地より早い時期に出荷する栽培方法を促成栽培といいます。"
+  },
+  {
+    "id": "geo-10",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "宮崎平野の気候が冬でも温暖で日照時間が長い理由と深く関係している、九州の南東沖を北上する暖流はどれか。",
+    "options": [
+      "対馬海流",
+      "日本海流（黒潮）",
+      "千島海流（親潮）",
+      "リマン海流"
+    ],
+    "answerIndex": 1,
+    "explanation": "太平洋側を北上する暖流の日本海流（黒潮）の影響により、宮崎平野や南四国などは冬でも温暖な気候となります。"
+  },
+  {
+    "id": "geo-11",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "有明海などの遠浅で干満の差が大きい海で特に盛んに行われている養殖業はどれか。",
+    "options": [
+      "ほたて貝の養殖",
+      "ぎんざけの養殖",
+      "のりの養殖",
+      "こんぶの養殖"
+    ],
+    "answerIndex": 2,
+    "explanation": "有明海は干満の差が非常に大きく遠浅であるため、支柱や網を使ったのりの養殖が全国的に有名です。"
+  },
+  {
+    "id": "geo-12",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "鹿児島県や宮崎県など南九州で全国上位の飼育数を誇る家畜の組み合わせとして、最も適切なものはどれか。",
+    "options": [
+      "乳用牛・馬",
+      "羊・トナカイ",
+      "ヤギ・ダチョウ",
+      "豚・肉用牛・ブロイラー（肉用若鶏）"
+    ],
+    "answerIndex": 3,
+    "explanation": "鹿児島県と宮崎県は豚・肉用牛・ブロイラーの飼育が全国トップクラスで、日本の重要な畜産基地となっています。"
+  },
+  {
+    "id": "geo-13",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "沖縄県を含む南西諸島の気候や自然環境の特徴として、最も適切なものはどれか。",
+    "options": [
+      "年間を通して高温な亜熱帯の気候で、海岸にはサンゴ礁やマングローブ林が見られる",
+      "冬は氷点下になり流氷が接岸する寒帯に近い気候である",
+      "内陸性の気候で年間降水量が300mm未満と非常に少ない",
+      "針葉樹林であるタイガが島全体を覆っている"
+    ],
+    "answerIndex": 0,
+    "explanation": "南西諸島は冬でも温暖な亜熱帯気候に属し、サンゴ礁が隆起した島々や河口部のマングローブ林など独自の自然が見られます。"
+  },
+  {
+    "id": "geo-14",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "沖縄県や鹿児島県の南西諸島で盛んに栽培されている、高温や乾燥に強い工芸作物はどれか。",
+    "options": [
+      "てんさい（ビート）",
+      "さとうきび",
+      "りんご",
+      "おうとう（さくらんぼ）"
+    ],
+    "answerIndex": 1,
+    "explanation": "沖縄県や奄美群島などの南西諸島では、亜熱帯の気候を生かしたさとうきびやパイナップル、マンゴーなどの栽培が盛んです。"
+  },
+  {
+    "id": "geo-15",
+    "subject": "地理",
+    "category": "九州地方の自然・農業",
+    "question": "沖縄県などで盛んな、夜間に電灯で畑を照らして開花時期を遅らせ、冬から春にかけて出荷する花（輪菊など）の栽培を何というか。",
+    "options": [
+      "促成栽培",
+      "水耕栽培",
+      "電照栽培（電照菊）",
+      "高原野菜栽培"
+    ],
+    "answerIndex": 2,
+    "explanation": "菊は日照時間が短くなると花芽をつける性質があるため、夜間に光をあてて開花を調節する電照栽培が沖縄県や愛知県などで盛んです。"
+  },
+  {
+    "id": "geo-16",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "1901年に北九州で操業を開始し、近代日本の重工業発展の中心となった工場はどれか。",
+    "options": [
+      "富岡製糸場",
+      "札幌麦酒醸造所",
+      "新居浜製錬所",
+      "官営八幡製鉄所"
+    ],
+    "answerIndex": 3,
+    "explanation": "1901年に福岡県で官営八幡製鉄所が操業を開始し、それを核として北九州工業地帯（地域）が形成されました。"
+  },
+  {
+    "id": "geo-17",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "官営八幡製鉄所が北九州に建設された主な理由として、最も適切なものはどれか。",
+    "options": [
+      "近くの筑豊炭田から石炭を、中国から鉄鉱石を運び入れるのに便利だったから",
+      "近くに日本最大の石油田と天然ガス田があったから",
+      "豊富な水力発電の電力と森林資源があったから",
+      "高速道路網と国際空港がすでに整備されていたから"
+    ],
+    "answerIndex": 0,
+    "explanation": "筑豊炭田の石炭が得やすく、かつ大陸（中国）から海路で鉄鉱石を輸入しやすい立地であったため、八幡に製鉄所が建設されました。"
+  },
+  {
+    "id": "geo-18",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "1960年代後半以降、九州各地の空港や高速道路の近くにIC（集積回路）工場が多く進出したことから、九州は何と呼ばれるようになったか。",
+    "options": [
+      "サンベルト",
+      "シリコンアイランド",
+      "シリコンバレー",
+      "テクノポリス"
+    ],
+    "answerIndex": 1,
+    "explanation": "IC（集積回路）の原料であるシリコンにちなみ、半導体工場が集積した九州は「シリコンアイランド」と呼ばれるようになりました。"
+  },
+  {
+    "id": "geo-19",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "IC（集積回路）などの先端技術産業の工場が、空港や高速道路のインターチェンジ付近に立地する理由として最も適切なものはどれか。",
+    "options": [
+      "原料となる鉄鉱石や石炭を大量に船で運ぶ必要があるから",
+      "製品が巨大で重く、鉄道でしか運べないから",
+      "製品が小型・軽量で価格が高く、航空機やトラックで素早く輸送するのに適しているから",
+      "工場の稼働に大量の海水が必要だから"
+    ],
+    "answerIndex": 2,
+    "explanation": "ICは小型・軽量で付加価値が高いため輸送費の負担が小さく、きれいな水と労働力が得られ、迅速に出荷できる空港や高速道路の近くに立地します。"
+  },
+  {
+    "id": "geo-20",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "近年、福岡県北部や大分県などを中心に工場の進出や生産の拡大が目立っている、九州の機械工業の中心となっている産業はどれか。",
+    "options": [
+      "繊維工業",
+      "石油化学工業",
+      "製紙・パルプ工業",
+      "自動車工業"
+    ],
+    "answerIndex": 3,
+    "explanation": "福岡県北部や大分県などに完成車メーカーや関連部品工場が集積し、九州は「カーアイランド」とも呼ばれる自動車生産拠点になっています。"
+  },
+  {
+    "id": "geo-21",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "熊本県水俣市で発生した四大公害病の一つである水俣病の原因物質と、現在の水俣市の取り組みとして適切なものはどれか。",
+    "options": [
+      "有機水銀が原因であり、現在はごみの徹底した分別など「環境モデル都市」として再生を進めている",
+      "カドミウムが原因であり、現在は大規模なコンビナート都市として開発を進めている",
+      "二酸化硫黄が原因であり、現在は石炭産業の復活を目指している",
+      "ダイオキシンが原因であり、現在はすべての工場を閉鎖して無人化している"
+    ],
+    "answerIndex": 0,
+    "explanation": "化学工場の排水に含まれたメチル水銀（有機水銀）が原因で水俣病が発生しました。現在の水俣市は20種類以上のごみ分別など環境再生に力を入れています。"
+  },
+  {
+    "id": "geo-22",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "かつて深刻な大気汚染や水質汚濁を経験した北九州市が、その克服技術を生かして現在力を入れているリサイクル産業などの取り組みを何というか。",
+    "options": [
+      "コンビナート事業",
+      "エコタウン事業（環境関連産業の集積と国際技術協力）",
+      "シリコンバレー事業",
+      "干拓事業"
+    ],
+    "answerIndex": 1,
+    "explanation": "北九州市は公害克服の技術と経験を生かし、家電や自動車などのリサイクル工場を集めた「エコタウン事業」やアジア諸国への環境技術協力を進めています。"
+  },
+  {
+    "id": "geo-23",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "九州地方最大の人口をもち、国の出先機関や企業の支店が集まる九州の政治・経済・文化の中心都市（政令指定都市）はどこか。",
+    "options": [
+      "北九州市",
+      "熊本市",
+      "福岡市",
+      "鹿児島市"
+    ],
+    "answerIndex": 2,
+    "explanation": "福岡市は人口160万人を超える九州最大の都市で、アジア諸国に近い地の利を生かした国際都市・商業都市として発展しています。"
+  },
+  {
+    "id": "geo-24",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "火山が多い九州地方（大分県の八丁原発電所など）で特に盛んに行われている、地下の蒸気や熱水を利用した再生可能エネルギーによる発電はどれか。",
+    "options": [
+      "潮汐発電",
+      "原子力発電",
+      "波力発電",
+      "地熱発電"
+    ],
+    "answerIndex": 3,
+    "explanation": "火山の恵みである地下深部の蒸気を利用してタービンを回す地熱発電は、大分県の八丁原発電所をはじめ九州や東北で盛んです。"
+  },
+  {
+    "id": "geo-25",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "全国一の源泉数・湧出量を誇る別府温泉や湯布院温泉があり、「おんせん県」としても観光PRを行っている九州の県はどこか。",
+    "options": [
+      "大分県",
+      "佐賀県",
+      "福岡県",
+      "沖縄県"
+    ],
+    "answerIndex": 0,
+    "explanation": "大分県は別府や由布院（湯布院）など多くの温泉地を抱え、源泉数・湧出量ともに日本一を誇ります。"
+  },
+  {
+    "id": "geo-26",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "熊本県の阿蘇山周辺や大分県の九重連山周辺に広がる草原を維持するため、毎年春に行われている伝統的な行事は何か。",
+    "options": [
+      "棚田の田植え祭り",
+      "野焼き（山焼き）",
+      "流氷まつり",
+      "雪おろし"
+    ],
+    "answerIndex": 1,
+    "explanation": "阿蘇の草原は自然に維持されているのではなく、1000年以上続く春の「野焼き」や放牧・採草によって森林化を防ぎ守られています。"
+  },
+  {
+    "id": "geo-27",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "鹿児島県の南方に位置し、樹齢数千年の縄文杉など豊かな原生林が残されていることから世界自然遺産に登録されている島はどれか。",
+    "options": [
+      "佐渡島",
+      "淡路島",
+      "屋久島",
+      "種子島"
+    ],
+    "answerIndex": 2,
+    "explanation": "屋久島は標高差による多様な植生と屋久杉の原生林が評価され、1993年に白神山地とともに日本で初めて世界自然遺産に登録されました。"
+  },
+  {
+    "id": "geo-28",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "沖縄県の産業構造の特徴として、最も適切なものはどれか。",
+    "options": [
+      "第一次産業（農林水産業）の割合が7割を超えている",
+      "重化学工業を中心とする第二次産業の割合が全国で最も高い",
+      "林業と鉱業が県民所得の大半を占めている",
+      "美しい自然や独自の歴史・文化を生かした観光業など、第三次産業の割合が非常に高い"
+    ],
+    "answerIndex": 3,
+    "explanation": "沖縄県はサンゴ礁の海や首里城などの琉球王国の文化を生かした観光業が盛んで、産業別就業人口では第三次産業が約8割を占めています。"
+  },
+  {
+    "id": "geo-29",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "沖縄県が抱える地域課題の一つとして、在日米軍専用施設の約7割が集中していることによる騒音や安全面などの問題を何というか。",
+    "options": [
+      "基地問題",
+      "干拓問題",
+      "地盤沈下問題",
+      "砂漠化問題"
+    ],
+    "answerIndex": 0,
+    "explanation": "日本の国土面積の約0.6%にすぎない沖縄県に在日米軍専用施設の約70%が集中しており、基地問題や跡地利用が大きな課題となっています。"
+  },
+  {
+    "id": "geo-30",
+    "subject": "地理",
+    "category": "九州地方の工業・環境・都市",
+    "question": "九州地方が「アジアの玄関口」と呼ばれる理由として、最も適切なものはどれか。",
+    "options": [
+      "ヨーロッパや北アメリカに日本で最も近い位置にあるから",
+      "韓国や中国、東南アジアに地理的に近く、博多港や福岡空港などを通じて貿易や観光客の往来が盛んだから",
+      "ロシアと陸続きで鉄道がつながっているから",
+      "日本で唯一、国際空港が存在する地方だから"
+    ],
+    "answerIndex": 1,
+    "explanation": "九州は朝鮮半島や中国大陸、東南アジアに近く、古くから大陸との交流の窓口であり、現在もアジア諸国との経済・観光の結びつきが強いです。"
+  },
+  {
+    "id": "geo-31",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "中国山地と四国山地の地形的な特徴の比較として、最も適切なものはどれか。",
+    "options": [
+      "中国山地は標高2000mを超える険しい山が連なり、四国山地はなだらかな高原状である",
+      "中国山地も四国山地も活火山が連続する火山脈である",
+      "中国山地は比較的なだらかで標高が低く、四国山地は石鎚山や剣山など険しく標高が高い山が連なる",
+      "どちらの山地も標高3000m以上の日本アルプスの一部である"
+    ],
+    "answerIndex": 2,
+    "explanation": "中国山地は浸食が進んだなだらかな山地であるのに対し、四国山地は西日本最高峰の石鎚山（1982m）や剣山など険しい山々が連なっています。"
+  },
+  {
+    "id": "geo-32",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "中国・四国地方を「山陰」「瀬戸内」「南四国」の3つの地域に分けたとき、山陰と瀬戸内の境界となる山地はどれか。",
+    "options": [
+      "四国山地",
+      "九州山地",
+      "鈴鹿山脈",
+      "中国山地"
+    ],
+    "answerIndex": 3,
+    "explanation": "中国山地の北側（日本海側）を山陰、中国山地と四国山地に挟まれた地域を瀬戸内、四国山地の南側（太平洋側）を南四国と呼びます。"
+  },
+  {
+    "id": "geo-33",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "瀬戸内地域の気候の特徴と、その理由として最も適切なものはどれか。",
+    "options": [
+      "北の中国山地と南の四国山地に挟まれ、夏と冬の季節風がともに遮られるため、年間を通して降水量が少なく温暖である",
+      "北西の季節風が直接吹きつけるため、冬に豪雪地帯となる",
+      "南東の季節風が直接ぶつかるため、日本のなかで最も年間降水量が多い",
+      "標高が高いため、夏でも冷涼で梅雨がない"
+    ],
+    "answerIndex": 0,
+    "explanation": "瀬戸内は夏の南東の季節風を四国山地に、冬の北西の季節風を中国山地に遮られるため、年中温暖で降水量が少ない（年1000〜1200mm程度）のが特徴です。"
+  },
+  {
+    "id": "geo-34",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "山陰地域（松江や鳥取など）で冬に雨や雪の日が多くなる理由として、最も適切なものはどれか。",
+    "options": [
+      "夏に太平洋から吹く南東の季節風が四国山地にぶつかるから",
+      "冬に大陸から日本海を渡って吹く北西の季節風が、中国山地にぶつかって雲をつくるから",
+      "暖流の黒潮が山陰の沿岸を流れているから",
+      "台風の通り道になりやすいから"
+    ],
+    "answerIndex": 1,
+    "explanation": "冬にユーラシア大陸から吹く北西の季節風が日本海で水蒸気を含み、中国山地にぶつかって上昇するため、山陰では冬に雨や雪が多くなります。"
+  },
+  {
+    "id": "geo-35",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "南四国（高知など）の気候の特徴として、最も適切なものはどれか。",
+    "options": [
+      "年間を通して雨がほとんど降らず、乾燥帯に近い気候である",
+      "冬の降水量が夏よりも圧倒的に多い",
+      "黒潮と夏の南東の季節風の影響を受け、温暖で夏を中心に年間降水量が非常に多い",
+      "1年を通して気温が低く、夏でも20℃を超えない"
+    ],
+    "answerIndex": 2,
+    "explanation": "南四国は太平洋を流れる黒潮（日本海流）の影響で温暖であり、夏には南東の季節風が四国山地にぶつかるため多雨となります。"
+  },
+  {
+    "id": "geo-36",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "降水量が少なく大きな河川も少ない香川県の讃岐平野などで、古くから水不足に備えて数多くつくられてきた施設は何か。",
+    "options": [
+      "地下ダム",
+      "風車",
+      "防潮堤",
+      "ため池"
+    ],
+    "answerIndex": 3,
+    "explanation": "瀬戸内にある讃岐平野は雨が少なく川も短いため、満濃池をはじめとする多くの「ため池」がつくられ、現在は吉野川から引く香川用水も整備されています。"
+  },
+  {
+    "id": "geo-37",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "四国三郎とも呼ばれ、四国山地を横切るように東へ流れて徳島平野を潤し、香川用水の水源にもなっている四国最大の河川はどれか。",
+    "options": [
+      "吉野川",
+      "四万十川",
+      "太田川",
+      "江の川"
+    ],
+    "answerIndex": 0,
+    "explanation": "吉野川は四国最長の河川で、その中流にある早明浦ダムなどから香川用水・徳島用水などを通じて四国各地に水を供給しています。"
+  },
+  {
+    "id": "geo-38",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "鳥取県の鳥取砂丘周辺で、スプリンクラーによる散水などを利用して盛んに栽培されている特産物の組み合わせはどれか。",
+    "options": [
+      "りんご・さくらんぼ",
+      "らっきょう・長芋（ながいも）",
+      "さとうきび・マンゴー",
+      "てんさい・じゃがいも"
+    ],
+    "answerIndex": 1,
+    "explanation": "鳥取砂丘周辺の砂地では、かんがい施設（スプリンクラー）の整備により、水はけのよさを生かしたらっきょうや長芋、白ねぎなどの畑作が行われています。"
+  },
+  {
+    "id": "geo-39",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "鳥取県の代表的な特産果樹であり、秋に収穫される果物はどれか。",
+    "options": [
+      "温州みかん",
+      "パイナップル",
+      "日本なし（二十世紀梨など）",
+      "おうとう（さくらんぼ）"
+    ],
+    "answerIndex": 2,
+    "explanation": "鳥取県では「二十世紀梨」や「新甘泉」などの日本なしの栽培が盛んで、県の代表的な特産品となっています。"
+  },
+  {
+    "id": "geo-40",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "瀬戸内海の島々や沿岸の傾斜地（段々畑）で、愛媛県のみかん・いよかん、広島県のレモンなど柑橘類の栽培が盛んな理由として最も適切なものはどれか。",
+    "options": [
+      "冬に雪が深く積もり、害虫が死滅するから",
+      "夏に低温で霧が多く発生するから",
+      "年間降水量が3000mmを超えて水分が豊富だから",
+      "温暖で日照時間が長く、傾斜地で水はけや日当たりがよいから"
+    ],
+    "answerIndex": 3,
+    "explanation": "柑橘類は温暖で日当たりがよく、水はけのよい傾斜地を好むため、降水量が少なく温暖な瀬戸内沿岸や島々で盛んに栽培されています。"
+  },
+  {
+    "id": "geo-41",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "岡山県で盛んに栽培されている代表的な果物の組み合わせとして、最も適切なものはどれか。",
+    "options": [
+      "もも（白桃）・ぶどう（マスカットやピオーネ）",
+      "りんご・ラフランス",
+      "マンゴー・シークヮーサー",
+      "キウイ・バナナ"
+    ],
+    "answerIndex": 0,
+    "explanation": "温暖で日照時間の長い岡山県では、白桃やマスカット・ピオーネなどのぶどう栽培が全国的に有名です。"
+  },
+  {
+    "id": "geo-42",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "高知平野（南四国）で温暖な気候を生かして促成栽培が盛んに行われている野菜の組み合わせはどれか。",
+    "options": [
+      "はくさい・キャベツ・レタス",
+      "なす・ししとう・にら・しょうが",
+      "たまねぎ・じゃがいも・とうもろこし",
+      "れんこん・ごぼう・さといも"
+    ],
+    "answerIndex": 1,
+    "explanation": "高知県では冬の温暖な気候とビニールハウスを利用した促成栽培が盛んで、なす・ししとう・にら・ミョウガ・しょうがなどが全国上位の生産量を誇ります。"
+  },
+  {
+    "id": "geo-43",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "波が穏やかな瀬戸内海のうち、広島湾で特に盛んに行われ、生産量が全国1位となっている養殖業はどれか。",
+    "options": [
+      "ほたて貝",
+      "うなぎ",
+      "かき（牡蠣）",
+      "かつお"
+    ],
+    "answerIndex": 2,
+    "explanation": "広島湾は波が静かで、太田川から栄養分を多く含んだ水が流れ込むため、かきの養殖が非常に盛んで全国1位の生産量を誇ります。"
+  },
+  {
+    "id": "geo-44",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "愛媛県の宇和海沿岸に見られる、複雑に入り組んだ入り江が連続する海岸地形を何というか。また、そこで盛んな養殖魚は何か。",
+    "options": [
+      "砂浜海岸 ― さんま",
+      "サンゴ礁海岸 ― まぐろ",
+      "フィヨルド ― さけ",
+      "リアス海岸 ― たい（真鯛）やぶり（ハマチ）・真珠"
+    ],
+    "answerIndex": 3,
+    "explanation": "愛媛県西部の宇和海沿岸は典型的なリアス海岸で、波が穏やかな入り江を利用してたい（生産量全国1位）やぶり、真珠の養殖が盛んです。"
+  },
+  {
+    "id": "geo-45",
+    "subject": "地理",
+    "category": "中国・四国地方の自然・農業",
+    "question": "高知県西部の太平洋に面した地域を流れ、「日本最後の清流」とも呼ばれる、本流に大規模なダムが建設されていない川はどれか。",
+    "options": [
+      "四万十川",
+      "吉野川",
+      "斐伊川",
+      "高梁川"
+    ],
+    "answerIndex": 0,
+    "explanation": "高知県西部を流れる四万十川は、沈下橋（増水時に水中に沈む欄干のない橋）や伝統的な川漁が残る清流として知られています。"
+  },
+  {
+    "id": "geo-46",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "本州と四国を結ぶ3つの本州四国連絡橋のうち、岡山県（児島）と香川県（坂出）を結び、道路と鉄道の両方が通る併用橋となっているものはどれか。",
+    "options": [
+      "明石海峡大橋・大鳴門橋（神戸・鳴門ルート）",
+      "瀬戸大橋（児島・坂出ルート）",
+      "瀬戸内しまなみ海道（尾道・今治ルート）",
+      "関門橋"
+    ],
+    "answerIndex": 1,
+    "explanation": "1988年に全通した瀬戸大橋（児島・坂出ルート）は、3ルートのなかで唯一、自動車道路とJRの鉄道が通る道路・鉄道併用橋です。"
+  },
+  {
+    "id": "geo-47",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "本州四国連絡橋のうち、広島県（尾道）と愛媛県（今治）を島伝いに結び、自動車だけでなく自転車や歩行者も通行できるルートはどれか。",
+    "options": [
+      "神戸・鳴門ルート",
+      "児島・坂出ルート",
+      "尾道・今治ルート（瀬戸内しまなみ海道）",
+      "東京湾アクアライン"
+    ],
+    "answerIndex": 2,
+    "explanation": "広島県尾道市と愛媛県今治市を結ぶ「瀬戸内しまなみ海道」には自転車・歩行者専用道路が併設されており、サイクリングの聖地としても人気です。"
+  },
+  {
+    "id": "geo-48",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "本州四国連絡橋のうち、兵庫県（神戸・淡路島）と徳島県（鳴門）を結び、世界有数のつり橋である明石海峡大橋を含むルートはどれか。",
+    "options": [
+      "尾道・今治ルート",
+      "児島・坂出ルート",
+      "日豊本線ルート",
+      "神戸・鳴門ルート"
+    ],
+    "answerIndex": 3,
+    "explanation": "兵庫県神戸市から淡路島を経て徳島県鳴門市を結ぶのが神戸・鳴門ルートで、関西圏（京阪神）と四国を直結しています。"
+  },
+  {
+    "id": "geo-49",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "本州四国連絡橋や高速道路網の開通によって交通が便利になった反面、四国などの地方都市から大阪・神戸・岡山・広島などの大都市へ買い物客や企業が流出してしまう現象を何というか。",
+    "options": [
+      "ストロー現象",
+      "ドーナツ化現象",
+      "ヒートアイランド現象",
+      "スプロール現象"
+    ],
+    "answerIndex": 0,
+    "explanation": "交通網の整備により、まるでストローで吸い上げるように中小都市の商業活動や人口が大都市へ流出する現象をストロー現象といいます。"
+  },
+  {
+    "id": "geo-50",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "本州四国連絡橋の開通が瀬戸内海の交通に与えた影響として、最も適切なものはどれか。",
+    "options": [
+      "トラック輸送が完全に廃止され、すべて鉄道輸送に変わった",
+      "トラックや高速バスによる陸路の移動が増えた一方、従来多かったフェリーや高速船の航路が廃止・縮小された",
+      "四国と本州の間の人の移動が橋の開通前より減少した",
+      "瀬戸内海を通るすべての船舶の航行が禁止された"
+    ],
+    "answerIndex": 1,
+    "explanation": "連絡橋の開通で四国の農産物を大都市へトラックで新鮮なまま出荷できるようになった反面、フェリー航路の縮小や廃止が相次ぎました。"
+  },
+  {
+    "id": "geo-51",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "1960年代の高度経済成長期以降、瀬戸内海沿岸の遠浅の海を埋め立てて形成された工業地域を何というか。",
+    "options": [
+      "北九州工業地域",
+      "東海工業地域",
+      "瀬戸内工業地域",
+      "京葉工業地域"
+    ],
+    "answerIndex": 2,
+    "explanation": "岡山県・広島県・山口県・香川県・愛媛県などの瀬戸内海沿岸には、重化学工業を中心とした瀬戸内工業地域が広がっています。"
+  },
+  {
+    "id": "geo-52",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "岡山県倉敷市の水島地区や山口県周南市などの臨海部に建設された、石油精製工場や石油化学工場、発電所などがパイプラインで結ばれて集積した工場群を何というか。",
+    "options": [
+      "工業団地",
+      "エコタウン",
+      "シリコンバレー",
+      "石油化学コンビナート"
+    ],
+    "answerIndex": 3,
+    "explanation": "大型タンカーが接岸できる臨海部に、輸入した原油を精製し化学製品をつくる工場群が結合した「石油化学コンビナート」が形成されました。"
+  },
+  {
+    "id": "geo-53",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "瀬戸内工業地域の都市と、そこで盛んな代表的な工業の組み合わせとして最も適切なものはどれか。",
+    "options": [
+      "広島市 ― 自動車工業、今治市・呉市 ― 造船業、福山市・倉敷市 ― 鉄鋼業",
+      "広島市 ― 酪農製品、今治市 ― 航空機工業、倉敷市 ― 時計工業",
+      "松江市 ― 石油化学工業、鳥取市 ― 造船業、高知市 ― 鉄鋼業",
+      "山口市 ― 宇宙産業、高松市 ― 陶磁器、徳島市 ― カメラ工業"
+    ],
+    "answerIndex": 0,
+    "explanation": "瀬戸内工業地域では、広島の自動車、今治・呉の造船、倉敷（水島）・福山の鉄鋼、四国中央市の製紙・パルプなど特色ある工業が発達しています。"
+  },
+  {
+    "id": "geo-54",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "瀬戸内工業地域で、かつて降水量の少なさと日照時間の長さを生かして盛んであったが、後に化学工業や繊維工業へと転換していった伝統的な産業は何か。",
+    "options": [
+      "石炭採掘",
+      "製塩業（塩田での塩づくり）",
+      "捕鯨業",
+      "金鉱採掘"
+    ],
+    "answerIndex": 1,
+    "explanation": "瀬戸内海沿岸では晴天の多さと干満の差を利用した塩田での塩づくり（製塩業）が盛んでしたが、技術変化に伴い塩田跡地は工場用地などに転換されました。"
+  },
+  {
+    "id": "geo-55",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "中国・四国地方の山間部や瀬戸内海の離島などで深刻化している、若者が進学や就職で都市部へ流出し、人口が急減して地域の活力が低下する現象を何というか。",
+    "options": [
+      "過密化",
+      "都市化",
+      "過疎化",
+      "工業化"
+    ],
+    "answerIndex": 2,
+    "explanation": "若者を中心に人口が流出し、残された住民の高齢化が進んでバス路線の廃止や学校の統廃合などが起こる現象を過疎化といいます。"
+  },
+  {
+    "id": "geo-56",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "過疎化と高齢化がさらに進み、人口の50%以上を65歳以上の高齢者が占め、冠婚葬祭や道路・農地の管理など共同体の維持が困難になった集落を何というか。",
+    "options": [
+      "ニュータウン",
+      "衛星都市",
+      "門前町",
+      "限界集落"
+    ],
+    "answerIndex": 3,
+    "explanation": "65歳以上の高齢者が集落人口の半数を超え、社会的共同生活の維持が難しくなった集落を「限界集落」と呼び、中国山地や四国山地で多く見られます。"
+  },
+  {
+    "id": "geo-57",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "中国・四国地方の中心都市であり、中国地方最大の人口を擁する政令指定都市はどこか。",
+    "options": [
+      "広島市",
+      "岡山市",
+      "松山市",
+      "高松市"
+    ],
+    "answerIndex": 0,
+    "explanation": "太田川の三角州に発達した広島市は人口約120万人を擁する政令指定都市で、中国・四国地方最大の都市として地方中枢都市の役割を果たしています。"
+  },
+  {
+    "id": "geo-58",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "広島県にある2つの世界文化遺産の組み合わせとして、正しいものはどれか。",
+    "options": [
+      "姫路城・法隆寺",
+      "原爆ドーム・厳島神社",
+      "石見銀山・出雲大社",
+      "首里城・知床"
+    ],
+    "answerIndex": 1,
+    "explanation": "広島県には、核兵器の惨禍を伝え平和を訴える「原爆ドーム」と、海上に浮かぶ社殿で知られる宮島の「厳島神社」の2つの世界遺産があります。"
+  },
+  {
+    "id": "geo-59",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "島根県大田市にあり、戦国時代から江戸時代にかけて日本最大級の銀山として栄え、自然環境と調和した鉱山遺跡として世界遺産に登録されているのはどれか。",
+    "options": [
+      "佐渡金山",
+      "足尾銅山",
+      "石見銀山",
+      "別子銅山"
+    ],
+    "answerIndex": 2,
+    "explanation": "島根県の石見銀山は16〜17世紀に世界の銀生産の重要な一角を占め、森林資源を守りながら採掘・製錬が行われた遺跡として2007年に世界遺産に登録されました。"
+  },
+  {
+    "id": "geo-60",
+    "subject": "地理",
+    "category": "中国・四国地方の工業・交通・地域課題",
+    "question": "過疎化が進む中国・四国地方の山間部や離島で行われている地域活性化（町おこし・村おこし）の取り組みとして、最も適切なものはどれか。",
+    "options": [
+      "すべての棚田や森林を放置して無人島にする",
+      "高齢者の外出や観光客の立ち入りを全面的に禁止する",
+      "伝統的な町並みや古民家をすべて取り壊して大規模な炭鉱を開発する",
+      "棚田のオーナー制度、古民家再生や移住支援（Uターン・Iターン）、瀬戸内海の島々での国際芸術祭の開催"
+    ],
+    "answerIndex": 3,
+    "explanation": "過疎地域では、都市住民が農作業に参加する棚田オーナー制度、空き家・古民家を活用した移住支援、直島などの瀬戸内国際芸術祭による観光振興などが進められています。"
+  }
+]

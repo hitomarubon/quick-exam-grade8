@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/homeview.tsx","./src/components/quizview.tsx","./src/components/resultview.tsx","./src/hooks/usestudyprogress.ts","./src/types/quiz.ts"],"version":"5.6.3"}
