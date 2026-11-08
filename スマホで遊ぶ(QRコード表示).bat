@@ -1,12 +1,21 @@
 @echo off
 chcp 65001 > nul
-title QuickExam - スマホ・PC起動 (QRコード表示)
-cd /d "%~dp0"
+title QuickExam - 公開URL & QRコード表示
 
-if not exist "%~dp0dist\index.html" (
-    echo 初回ビルドを実行しています...
-    call npm.cmd run build
-)
+set "PUBLIC_URL=https://hitomarubon.github.io/quick-exam-grade8/"
+set "QR_URL=https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://hitomarubon.github.io/quick-exam-grade8/"
 
-node "%~dp0server.mjs"
+echo =========================================================
+echo   QuickExam (中2定期テスト対策 全240問) クラウド公開版
+echo =========================================================
+echo.
+echo 【外出先でも自宅でも24時間いつでも使えるURL】
+echo   %PUBLIC_URL%
+echo.
+echo PCブラウザでアプリとスマホ読み取り用QRコードを開いています...
+echo ※ PCの電源が切れていても、スマホからいつでも開けます！
+echo =========================================================
+
+start "" "%PUBLIC_URL%"
+start "" "%QR_URL%"
 pause
