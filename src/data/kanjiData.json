@@ -1,0 +1,2697 @@
+{
+  "categories": [
+    {
+      "id": "page_1",
+      "title": "第1回（牲〜葬）",
+      "description": "牲・婿・請・斥・隻・惜・籍・摂・潜・繕・阻・措・粗・礎・双・桑・掃・葬",
+      "icon": "📘"
+    },
+    {
+      "id": "page_2",
+      "title": "第2回（遭〜壇）",
+      "description": "遭・憎・促・賊・怠・胎・袋・逮・滞・滝・択・卓・託・諾・奪・胆・鍛・壇",
+      "icon": "📗"
+    },
+    {
+      "id": "page_3",
+      "title": "第3回（稚〜塗）",
+      "description": "稚・畜・窒・抽・鋳・駐・彫・超・聴・陳・鎮・墜・帝・訂・締・哲・斗・塗",
+      "icon": "📙"
+    },
+    {
+      "id": "page_4",
+      "title": "第4回（凍〜蛮）",
+      "description": "凍・陶・痘・匿・篤・豚・尿・粘・婆・排・陪・縛・伐・帆・伴・畔・藩・蛮",
+      "icon": "📕"
+    },
+    {
+      "id": "page_5",
+      "title": "第5回（卑〜芳）",
+      "description": "卑・碑・泌・姫・漂・苗・赴・符・封・伏・覆・紛・墳・癖・募・慕・簿・芳",
+      "icon": "📓"
+    },
+    {
+      "id": "page_6",
+      "title": "第6回（邦〜埋）",
+      "description": "邦・奉・胞・倣・崩・飽・縫・乏・妨・房・某・膨・謀・墨・没・翻・魔・埋",
+      "icon": "📑"
+    },
+    {
+      "id": "page_7",
+      "title": "第7回（膜〜猟）",
+      "description": "膜・又・魅・滅・免・幽・誘・憂・揚・揺・擁・抑・裸・濫・吏・隆・了・猟",
+      "icon": "📖"
+    },
+    {
+      "id": "page_8",
+      "title": "第8回（陵〜湾）",
+      "description": "陵・糧・厘・励・零・霊・裂・廉・錬・炉・浪・廊・楼・漏・湾",
+      "icon": "📚"
+    }
+  ],
+  "items": [
+    {
+      "id": "p1_01",
+      "categoryId": "page_1",
+      "kanji": "牲",
+      "question": "大きなギ［セイ］を払う。",
+      "targetWord": "犠牲",
+      "targetCharReading": "セイ",
+      "targetReading": "ギセイ",
+      "on": "セイ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "牛（うしへん）",
+      "hint": "いけにえ。人のために自分を投げ出すこと。うしへんに「生」。",
+      "examples": [
+        "犠牲",
+        "犠牲者"
+      ]
+    },
+    {
+      "id": "p1_02",
+      "categoryId": "page_1",
+      "kanji": "婿",
+      "question": "［むこ］ヨウシになる。",
+      "targetWord": "婿養子",
+      "targetCharReading": "むこ",
+      "targetReading": "むこヨウシ",
+      "on": "セイ",
+      "kun": "むこ",
+      "strokes": 12,
+      "radical": "女（おんなへん）",
+      "hint": "むすめの夫。おんなへんに「胥」。",
+      "examples": [
+        "婿養子",
+        "花婿",
+        "女婿"
+      ]
+    },
+    {
+      "id": "p1_03",
+      "categoryId": "page_1",
+      "kanji": "請",
+      "question": "代金を［セイ］キュウする。",
+      "targetWord": "請求",
+      "targetCharReading": "セイ",
+      "targetReading": "セイキュウ",
+      "on": "セイ・シン",
+      "kun": "こ-う、う-ける",
+      "strokes": 15,
+      "radical": "言（ごんべん）",
+      "hint": "ねがいもとめる、ひきうける。ごんべんに「青」。",
+      "examples": [
+        "請求",
+        "申請",
+        "請願",
+        "請け負う"
+      ]
+    },
+    {
+      "id": "p1_04",
+      "categoryId": "page_1",
+      "kanji": "斥",
+      "question": "他宗教をハイ［セキ］する。",
+      "targetWord": "排斥",
+      "targetCharReading": "セキ",
+      "targetReading": "ハイセキ",
+      "on": "セキ",
+      "kun": "—",
+      "strokes": 5,
+      "radical": "斤（きん）",
+      "hint": "しりぞける。「斤」に点。",
+      "examples": [
+        "排斥",
+        "斥候"
+      ]
+    },
+    {
+      "id": "p1_05",
+      "categoryId": "page_1",
+      "kanji": "隻",
+      "question": "スウ［セキ］の漁船。",
+      "targetWord": "数隻",
+      "targetCharReading": "セキ",
+      "targetReading": "スウセキ",
+      "on": "セキ",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "隹（ふるとり）",
+      "hint": "船などを数える語。「隹」の下に「又」。",
+      "examples": [
+        "数隻",
+        "一隻",
+        "隻眼"
+      ]
+    },
+    {
+      "id": "p1_06",
+      "categoryId": "page_1",
+      "kanji": "惜",
+      "question": "試合に［セキ］ハイする。",
+      "targetWord": "惜敗",
+      "targetCharReading": "セキ",
+      "targetReading": "セキハイ",
+      "on": "セキ",
+      "kun": "お-しい、お-しむ",
+      "strokes": 11,
+      "radical": "忄（りっしんべん）",
+      "hint": "残念がる、おしむ。りっしんべんに「昔」。",
+      "examples": [
+        "惜敗",
+        "惜別",
+        "惜しむ"
+      ]
+    },
+    {
+      "id": "p1_07",
+      "categoryId": "page_1",
+      "kanji": "籍",
+      "question": "大学に［セキ］を置く。",
+      "targetWord": "籍",
+      "targetCharReading": "セキ",
+      "targetReading": "セキ",
+      "on": "セキ",
+      "kun": "—",
+      "strokes": 20,
+      "radical": "竹（たけかんむり）",
+      "hint": "戸籍、書物。たけかんむりに「耤」。",
+      "examples": [
+        "籍を置く",
+        "戸籍",
+        "書籍"
+      ]
+    },
+    {
+      "id": "p1_08",
+      "categoryId": "page_1",
+      "kanji": "摂",
+      "question": "自然の［セツ］リ。",
+      "targetWord": "摂理",
+      "targetCharReading": "セツ",
+      "targetReading": "セツリ",
+      "on": "セツ",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "扌（てへん）",
+      "hint": "とりいれる、おさめる。てへんに「聂」。",
+      "examples": [
+        "摂理",
+        "摂取",
+        "摂政"
+      ]
+    },
+    {
+      "id": "p1_09",
+      "categoryId": "page_1",
+      "kanji": "潜",
+      "question": "［セン］ザイ意識による行動。",
+      "targetWord": "潜在",
+      "targetCharReading": "セン",
+      "targetReading": "センザイ",
+      "on": "セン",
+      "kun": "ひそ-む、もぐ-る",
+      "strokes": 15,
+      "radical": "氵（さんずい）",
+      "hint": "水にもぐる、かくれている。さんずいに「替」。",
+      "examples": [
+        "潜在意識",
+        "潜水",
+        "潜む",
+        "潜る"
+      ]
+    },
+    {
+      "id": "p1_10",
+      "categoryId": "page_1",
+      "kanji": "繕",
+      "question": "屋根をシュウ［ゼン］する。",
+      "targetWord": "修繕",
+      "targetCharReading": "ゼン",
+      "targetReading": "シュウゼン",
+      "on": "ゼン",
+      "kun": "つくろ-う",
+      "strokes": 18,
+      "radical": "糸（いとへん）",
+      "hint": "つくろう、なおす。いとへんに「善」。",
+      "examples": [
+        "修繕",
+        "繕う",
+        "営繕"
+      ]
+    },
+    {
+      "id": "p1_11",
+      "categoryId": "page_1",
+      "kanji": "阻",
+      "question": "進入を［ソ］シする。",
+      "targetWord": "阻止",
+      "targetCharReading": "ソ",
+      "targetReading": "ソシ",
+      "on": "ソ",
+      "kun": "はば-む",
+      "strokes": 8,
+      "radical": "阝（こざとへん）",
+      "hint": "はばむ、じゃまをする。こざとへんに「且」。",
+      "examples": [
+        "阻止",
+        "阻害",
+        "険阻"
+      ]
+    },
+    {
+      "id": "p1_12",
+      "categoryId": "page_1",
+      "kanji": "措",
+      "question": "断固とした［ソ］チを取る。",
+      "targetWord": "措置",
+      "targetCharReading": "ソ",
+      "targetReading": "ソチ",
+      "on": "ソ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "扌（てへん）",
+      "hint": "しかるべき場所に置く。てへんに「昔」。",
+      "examples": [
+        "措置",
+        "挙措"
+      ]
+    },
+    {
+      "id": "p1_13",
+      "categoryId": "page_1",
+      "kanji": "粗",
+      "question": "物を［ソ］マツにする。",
+      "targetWord": "粗末",
+      "targetCharReading": "ソ",
+      "targetReading": "ソマツ",
+      "on": "ソ",
+      "kun": "あら-い",
+      "strokes": 11,
+      "radical": "米（こめへん）",
+      "hint": "あらい、そまつ。こめへんに「且」。",
+      "examples": [
+        "粗末",
+        "粗雑",
+        "粗食",
+        "粗い"
+      ]
+    },
+    {
+      "id": "p1_14",
+      "categoryId": "page_1",
+      "kanji": "礎",
+      "question": "キ［ソ］工事を始める。",
+      "targetWord": "基礎",
+      "targetCharReading": "ソ",
+      "targetReading": "キソ",
+      "on": "ソ",
+      "kun": "いしずえ",
+      "strokes": 18,
+      "radical": "石（いしへん）",
+      "hint": "土台石、いしずえ。いしへんに「楚」。",
+      "examples": [
+        "基礎",
+        "礎石",
+        "礎"
+      ]
+    },
+    {
+      "id": "p1_15",
+      "categoryId": "page_1",
+      "kanji": "双",
+      "question": "［ソウ］ホウの意見を聞く。",
+      "targetWord": "双方",
+      "targetCharReading": "ソウ",
+      "targetReading": "ソウホウ",
+      "on": "ソウ",
+      "kun": "ふた",
+      "strokes": 4,
+      "radical": "又（また）",
+      "hint": "両方、一対。「又」を二つ並べる。",
+      "examples": [
+        "双方",
+        "双子",
+        "無双",
+        "双肩"
+      ]
+    },
+    {
+      "id": "p1_16",
+      "categoryId": "page_1",
+      "kanji": "桑",
+      "question": "［くわ］の木が成長する。",
+      "targetWord": "桑",
+      "targetCharReading": "くわ",
+      "targetReading": "くわ",
+      "on": "ソウ",
+      "kun": "くわ",
+      "strokes": 10,
+      "radical": "木（き）",
+      "hint": "植物のクワ。「叒」の下に「木」。",
+      "examples": [
+        "桑の木",
+        "桑園",
+        "桑田"
+      ]
+    },
+    {
+      "id": "p1_17",
+      "categoryId": "page_1",
+      "kanji": "掃",
+      "question": "疑惑をイッ［ソウ］する。",
+      "targetWord": "一掃",
+      "targetCharReading": "ソウ",
+      "targetReading": "イッソウ",
+      "on": "ソウ",
+      "kun": "は-く",
+      "strokes": 11,
+      "radical": "扌（てへん）",
+      "hint": "はらう、きれいにする。てへんに「帚」。",
+      "examples": [
+        "一掃",
+        "清掃",
+        "掃除",
+        "掃く"
+      ]
+    },
+    {
+      "id": "p1_18",
+      "categoryId": "page_1",
+      "kanji": "葬",
+      "question": "墓地にマイ［ソウ］する。",
+      "targetWord": "埋葬",
+      "targetCharReading": "ソウ",
+      "targetReading": "マイソウ",
+      "on": "ソウ",
+      "kun": "ほうむ-る",
+      "strokes": 12,
+      "radical": "艹（くさかんむり）",
+      "hint": "ほうむる、とむらいの儀式。くさかんむりに「死」と「廾」。",
+      "examples": [
+        "埋葬",
+        "葬儀",
+        "密葬",
+        "国葬"
+      ]
+    },
+    {
+      "id": "p2_01",
+      "categoryId": "page_2",
+      "kanji": "遭",
+      "question": "山で［ソウ］ナンする。",
+      "targetWord": "遭難",
+      "targetCharReading": "ソウ",
+      "targetReading": "ソウナン",
+      "on": "ソウ",
+      "kun": "あ-う",
+      "strokes": 14,
+      "radical": "辶（しんにょう）",
+      "hint": "出くわす。しんにょうに「曹」。",
+      "examples": [
+        "遭難",
+        "遭遇",
+        "遭う"
+      ]
+    },
+    {
+      "id": "p2_02",
+      "categoryId": "page_2",
+      "kanji": "憎",
+      "question": "アイ［ゾウ］の念が渦巻く。",
+      "targetWord": "愛憎",
+      "targetCharReading": "ゾウ",
+      "targetReading": "アイゾウ",
+      "on": "ゾウ",
+      "kun": "にく-む、にく-い",
+      "strokes": 14,
+      "radical": "忄（りっしんべん）",
+      "hint": "にくむ。りっしんべんに「曽」。",
+      "examples": [
+        "愛憎",
+        "憎悪",
+        "罪を憎む"
+      ]
+    },
+    {
+      "id": "p2_03",
+      "categoryId": "page_2",
+      "kanji": "促",
+      "question": "野菜の［ソク］セイ栽培。",
+      "targetWord": "促成",
+      "targetCharReading": "ソク",
+      "targetReading": "ソクセイ",
+      "on": "ソク",
+      "kun": "うなが-す",
+      "strokes": 9,
+      "radical": "亻（にんべん）",
+      "hint": "うながす、せきたてる。にんべんに「足」。",
+      "examples": [
+        "促成栽培",
+        "促進",
+        "反省を促す"
+      ]
+    },
+    {
+      "id": "p2_04",
+      "categoryId": "page_2",
+      "kanji": "賊",
+      "question": "カイ［ゾク］船が沈んでいる。",
+      "targetWord": "海賊",
+      "targetCharReading": "ゾク",
+      "targetReading": "カイゾク",
+      "on": "ゾク",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "貝（かいへん）",
+      "hint": "どろぼう、悪者。かいへんに「戎」。",
+      "examples": [
+        "海賊船",
+        "盗賊",
+        "山賊"
+      ]
+    },
+    {
+      "id": "p2_05",
+      "categoryId": "page_2",
+      "kanji": "怠",
+      "question": "［タイ］マンな勤務態度。",
+      "targetWord": "怠慢",
+      "targetCharReading": "タイ",
+      "targetReading": "タイマン",
+      "on": "タイ",
+      "kun": "おこた-る、なま-ける",
+      "strokes": 9,
+      "radical": "心（こころ）",
+      "hint": "なまける、おこたる。「台」の下に「心」。",
+      "examples": [
+        "怠慢",
+        "怠惰",
+        "義務を怠る",
+        "怠ける"
+      ]
+    },
+    {
+      "id": "p2_06",
+      "categoryId": "page_2",
+      "kanji": "胎",
+      "question": "ボ［タイ］の安全を図る。",
+      "targetWord": "母胎",
+      "targetCharReading": "タイ",
+      "targetReading": "ボタイ",
+      "on": "タイ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "月（にくづき）",
+      "hint": "母親の体内で子供のやどる所。にくづきに「台」。",
+      "examples": [
+        "母胎",
+        "胎児",
+        "胎盤"
+      ]
+    },
+    {
+      "id": "p2_07",
+      "categoryId": "page_2",
+      "kanji": "袋",
+      "question": "豆をひと［ふくろ］買う。",
+      "targetWord": "一袋",
+      "targetCharReading": "ふくろ",
+      "targetReading": "ひとふくろ",
+      "on": "タイ",
+      "kun": "ふくろ",
+      "strokes": 11,
+      "radical": "衣（ころも）",
+      "hint": "ふくろ。「代」の下に「衣」。",
+      "examples": [
+        "一袋",
+        "風袋",
+        "手袋"
+      ]
+    },
+    {
+      "id": "p2_08",
+      "categoryId": "page_2",
+      "kanji": "逮",
+      "question": "犯人を［タイ］ホする。",
+      "targetWord": "逮捕",
+      "targetCharReading": "タイ",
+      "targetReading": "タイホ",
+      "on": "タイ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "辶（しんにょう）",
+      "hint": "およぶ、追いかける。しんにょうに「隶」。",
+      "examples": [
+        "逮捕"
+      ]
+    },
+    {
+      "id": "p2_09",
+      "categoryId": "page_2",
+      "kanji": "滞",
+      "question": "ホテルに［タイ］ザイする。",
+      "targetWord": "滞在",
+      "targetCharReading": "タイ",
+      "targetReading": "タイザイ",
+      "on": "タイ",
+      "kun": "とどこお-る",
+      "strokes": 13,
+      "radical": "氵（さんずい）",
+      "hint": "はかどらない、とどまる。さんずいに「帯」。",
+      "examples": [
+        "滞在",
+        "渋滞",
+        "滞納",
+        "連絡が滞る"
+      ]
+    },
+    {
+      "id": "p2_10",
+      "categoryId": "page_2",
+      "kanji": "滝",
+      "question": "［たき］のような汗。",
+      "targetWord": "滝",
+      "targetCharReading": "たき",
+      "targetReading": "たき",
+      "on": "—",
+      "kun": "たき",
+      "strokes": 13,
+      "radical": "氵（さんずい）",
+      "hint": "がけから急に流れ落ちる水。さんずいに「竜」。",
+      "examples": [
+        "滝",
+        "滝壺"
+      ]
+    },
+    {
+      "id": "p2_11",
+      "categoryId": "page_2",
+      "kanji": "択",
+      "question": "セン［タク］の自由。",
+      "targetWord": "選択",
+      "targetCharReading": "タク",
+      "targetReading": "センタク",
+      "on": "タク",
+      "kun": "—",
+      "strokes": 7,
+      "radical": "扌（てへん）",
+      "hint": "えらぶ。てへんに「尺」。",
+      "examples": [
+        "選択",
+        "採択"
+      ]
+    },
+    {
+      "id": "p2_12",
+      "categoryId": "page_2",
+      "kanji": "卓",
+      "question": "ショク［タク］を囲む。",
+      "targetWord": "食卓",
+      "targetCharReading": "タク",
+      "targetReading": "ショクタク",
+      "on": "タク",
+      "kun": "—",
+      "strokes": 8,
+      "radical": "十（じゅう）",
+      "hint": "つくえ、ずばぬけてすぐれている。",
+      "examples": [
+        "食卓",
+        "卓越"
+      ]
+    },
+    {
+      "id": "p2_13",
+      "categoryId": "page_2",
+      "kanji": "託",
+      "question": "仕事をイ［タク］する。",
+      "targetWord": "委託",
+      "targetCharReading": "タク",
+      "targetReading": "イタク",
+      "on": "タク",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "言（ごんべん）",
+      "hint": "たのむ、まかせる。ごんべんに「侂」。",
+      "examples": [
+        "委託",
+        "仮託",
+        "託児所"
+      ]
+    },
+    {
+      "id": "p2_14",
+      "categoryId": "page_2",
+      "kanji": "諾",
+      "question": "両親のショウ［ダク］を得る。",
+      "targetWord": "承諾",
+      "targetCharReading": "ダク",
+      "targetReading": "ショウダク",
+      "on": "ダク",
+      "kun": "—",
+      "strokes": 15,
+      "radical": "言（ごんべん）",
+      "hint": "はいと返事をする、ひきうける。ごんべんに「若」。",
+      "examples": [
+        "承諾",
+        "応諾",
+        "快諾"
+      ]
+    },
+    {
+      "id": "p2_15",
+      "categoryId": "page_2",
+      "kanji": "奪",
+      "question": "政権を［ダッ］カイする。",
+      "targetWord": "奪回",
+      "targetCharReading": "ダッ",
+      "targetReading": "ダッカイ",
+      "on": "ダツ",
+      "kun": "うば-う",
+      "strokes": 14,
+      "radical": "大（だい）",
+      "hint": "力ずくでとる、うばう。「大」と「隹」の下に「寸」。",
+      "examples": [
+        "奪回",
+        "強奪",
+        "奪取",
+        "奪われる"
+      ]
+    },
+    {
+      "id": "p2_16",
+      "categoryId": "page_2",
+      "kanji": "胆",
+      "question": "失敗してラク［タン］する。",
+      "targetWord": "落胆",
+      "targetCharReading": "タン",
+      "targetReading": "ラクタン",
+      "on": "タン",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "月（にくづき）",
+      "hint": "きもったま、こころ。にくづきに「旦」。",
+      "examples": [
+        "落胆",
+        "大胆",
+        "肝胆"
+      ]
+    },
+    {
+      "id": "p2_17",
+      "categoryId": "page_2",
+      "kanji": "鍛",
+      "question": "心身を［タン］レンする。",
+      "targetWord": "鍛錬",
+      "targetCharReading": "タン",
+      "targetReading": "タンレン",
+      "on": "タン",
+      "kun": "きた-える",
+      "strokes": 17,
+      "radical": "金（かねへん）",
+      "hint": "金属を打って強くする、きたえる。かねへんに「段」。",
+      "examples": [
+        "鍛錬",
+        "体を鍛える"
+      ]
+    },
+    {
+      "id": "p2_18",
+      "categoryId": "page_2",
+      "kanji": "壇",
+      "question": "庭にカ［ダン］を造る。",
+      "targetWord": "花壇",
+      "targetCharReading": "ダン",
+      "targetReading": "カダン",
+      "on": "ダン・タン",
+      "kun": "—",
+      "strokes": 16,
+      "radical": "土（つちへん）",
+      "hint": "高くつくった所。つちへんに「亶」。",
+      "examples": [
+        "花壇",
+        "教壇",
+        "文壇"
+      ]
+    },
+    {
+      "id": "p3_01",
+      "categoryId": "page_3",
+      "kanji": "稚",
+      "question": "ヨウ［チ］エンの先生。",
+      "targetWord": "幼稚園",
+      "targetCharReading": "チ",
+      "targetReading": "ヨウチエン",
+      "on": "チ",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "禾（のぎへん）",
+      "hint": "おさない。のぎへんに「隹」。",
+      "examples": [
+        "幼稚園",
+        "幼稚",
+        "稚拙"
+      ]
+    },
+    {
+      "id": "p3_02",
+      "categoryId": "page_3",
+      "kanji": "畜",
+      "question": "カ［チク］を飼う。",
+      "targetWord": "家畜",
+      "targetCharReading": "チク",
+      "targetReading": "カチク",
+      "on": "チク",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "田（た）",
+      "hint": "動物を飼う。「玄」の下に「田」。",
+      "examples": [
+        "家畜",
+        "牧畜"
+      ]
+    },
+    {
+      "id": "p3_03",
+      "categoryId": "page_3",
+      "kanji": "窒",
+      "question": "満員で［チッ］ソクしそうだ。",
+      "targetWord": "窒息",
+      "targetCharReading": "チッ",
+      "targetReading": "チッソク",
+      "on": "チツ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "穴（あなかんむり）",
+      "hint": "ふさがる。あなかんむりに「至」。",
+      "examples": [
+        "窒息",
+        "窒素"
+      ]
+    },
+    {
+      "id": "p3_04",
+      "categoryId": "page_3",
+      "kanji": "抽",
+      "question": "［チュウ］ショウテキな絵画。",
+      "targetWord": "抽象的",
+      "targetCharReading": "チュウ",
+      "targetReading": "チュウショウテキ",
+      "on": "チュウ",
+      "kun": "—",
+      "strokes": 8,
+      "radical": "扌（てへん）",
+      "hint": "ひきだす、ぬきだす。てへんに「由」。",
+      "examples": [
+        "抽象的",
+        "抽出"
+      ]
+    },
+    {
+      "id": "p3_05",
+      "categoryId": "page_3",
+      "kanji": "鋳",
+      "question": "寺の鐘を［チュウ］ゾウする。",
+      "targetWord": "鋳造",
+      "targetCharReading": "チュウ",
+      "targetReading": "チュウゾウ",
+      "on": "チュウ",
+      "kun": "い-る",
+      "strokes": 15,
+      "radical": "金（かねへん）",
+      "hint": "金属を型に流して器物を作る。かねへんに「寿」。",
+      "examples": [
+        "鋳造",
+        "鋳物",
+        "鋳金"
+      ]
+    },
+    {
+      "id": "p3_06",
+      "categoryId": "page_3",
+      "kanji": "駐",
+      "question": "［チュウ］シャ禁止の地域。",
+      "targetWord": "駐車",
+      "targetCharReading": "チュウ",
+      "targetReading": "チュウシャ",
+      "on": "チュウ",
+      "kun": "—",
+      "strokes": 15,
+      "radical": "馬（うまへん）",
+      "hint": "とどまる、とどめる。うまへんに「主」。",
+      "examples": [
+        "駐車禁止",
+        "駐在"
+      ]
+    },
+    {
+      "id": "p3_07",
+      "categoryId": "page_3",
+      "kanji": "彫",
+      "question": "偉人の［チョウ］ゾウ。",
+      "targetWord": "彫像",
+      "targetCharReading": "チョウ",
+      "targetReading": "チョウゾウ",
+      "on": "チョウ",
+      "kun": "ほ-る",
+      "strokes": 11,
+      "radical": "彡（さんづくり）",
+      "hint": "ほる、きざむ。「周」の右に「彡」。",
+      "examples": [
+        "彫像",
+        "彫刻",
+        "仏像を彫る"
+      ]
+    },
+    {
+      "id": "p3_08",
+      "categoryId": "page_3",
+      "kanji": "超",
+      "question": "予算を［チョウ］カする。",
+      "targetWord": "超過",
+      "targetCharReading": "チョウ",
+      "targetReading": "チョウカ",
+      "on": "チョウ",
+      "kun": "こ-える、こ-す",
+      "strokes": 12,
+      "radical": "走（そうにょう）",
+      "hint": "限度をこえる。そうにょうに「召」。",
+      "examples": [
+        "超過",
+        "超満員",
+        "超自然",
+        "超える"
+      ]
+    },
+    {
+      "id": "p3_09",
+      "categoryId": "page_3",
+      "kanji": "聴",
+      "question": "テレビのシ［チョウ］シャ。",
+      "targetWord": "視聴者",
+      "targetCharReading": "チョウ",
+      "targetReading": "シチョウシャ",
+      "on": "チョウ",
+      "kun": "き-く",
+      "strokes": 17,
+      "radical": "耳（みみへん）",
+      "hint": "よくきく。みみへんに「十」「罒」「心」。",
+      "examples": [
+        "視聴者",
+        "傾聴",
+        "講演を聴く"
+      ]
+    },
+    {
+      "id": "p3_10",
+      "categoryId": "page_3",
+      "kanji": "陳",
+      "question": "深く［チン］シャする。",
+      "targetWord": "陳謝",
+      "targetCharReading": "チン",
+      "targetReading": "チンシャ",
+      "on": "チン",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "阝（こざとへん）",
+      "hint": "ならべて見せる、のべる。こざとへんに「東」。",
+      "examples": [
+        "陳謝",
+        "陳列",
+        "陳述"
+      ]
+    },
+    {
+      "id": "p3_11",
+      "categoryId": "page_3",
+      "kanji": "鎮",
+      "question": "反乱を［チン］アツする。",
+      "targetWord": "鎮圧",
+      "targetCharReading": "チン",
+      "targetReading": "チンアツ",
+      "on": "チン",
+      "kun": "しず-める、しず-まる",
+      "strokes": 18,
+      "radical": "金（かねへん）",
+      "hint": "乱れをおさえしずめる。かねへんに「真」。",
+      "examples": [
+        "鎮圧",
+        "文鎮",
+        "鎮める"
+      ]
+    },
+    {
+      "id": "p3_12",
+      "categoryId": "page_3",
+      "kanji": "墜",
+      "question": "飛行機が［ツイ］ラクする。",
+      "targetWord": "墜落",
+      "targetCharReading": "ツイ",
+      "targetReading": "ツイラク",
+      "on": "ツイ",
+      "kun": "—",
+      "strokes": 15,
+      "radical": "土（つち）",
+      "hint": "おちる、おとす。「隊」の下に「土」。",
+      "examples": [
+        "墜落"
+      ]
+    },
+    {
+      "id": "p3_13",
+      "categoryId": "page_3",
+      "kanji": "帝",
+      "question": "ローマ［テイ］コクの遺跡。",
+      "targetWord": "帝国",
+      "targetCharReading": "テイ",
+      "targetReading": "テイコク",
+      "on": "テイ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "巾（はば）",
+      "hint": "みかど、最高の支配者。",
+      "examples": [
+        "ローマ帝国",
+        "皇帝",
+        "大帝"
+      ]
+    },
+    {
+      "id": "p3_14",
+      "categoryId": "page_3",
+      "kanji": "訂",
+      "question": "カイ［テイ］版を発行する。",
+      "targetWord": "改訂",
+      "targetCharReading": "テイ",
+      "targetReading": "カイテイ",
+      "on": "テイ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "言（ごんべん）",
+      "hint": "間違いを正す。ごんべんに「丁」。",
+      "examples": [
+        "改訂版",
+        "訂正"
+      ]
+    },
+    {
+      "id": "p3_15",
+      "categoryId": "page_3",
+      "kanji": "締",
+      "question": "条約を［テイ］ケツする。",
+      "targetWord": "締結",
+      "targetCharReading": "テイ",
+      "targetReading": "テイケツ",
+      "on": "テイ",
+      "kun": "し-まる、し-める",
+      "strokes": 15,
+      "radical": "糸（いとへん）",
+      "hint": "むすぶ、しめる。いとへんに「帝」。",
+      "examples": [
+        "締結",
+        "引き締める"
+      ]
+    },
+    {
+      "id": "p3_16",
+      "categoryId": "page_3",
+      "kanji": "哲",
+      "question": "［テツ］ガクの研究。",
+      "targetWord": "哲学",
+      "targetCharReading": "テツ",
+      "targetReading": "テツガク",
+      "on": "テツ",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "口（くち）",
+      "hint": "道理に明るい、すぐれたかしこい人。「折」の下に「口」。",
+      "examples": [
+        "哲学",
+        "聖哲",
+        "先哲"
+      ]
+    },
+    {
+      "id": "p3_17",
+      "categoryId": "page_3",
+      "kanji": "斗",
+      "question": "夜空に輝くホク［ト］七星。",
+      "targetWord": "北斗七星",
+      "targetCharReading": "ト",
+      "targetReading": "ホクトシチセイ",
+      "on": "ト",
+      "kun": "—",
+      "strokes": 4,
+      "radical": "斗（とます）",
+      "hint": "星の名、容量の単位。",
+      "examples": [
+        "北斗七星"
+      ]
+    },
+    {
+      "id": "p3_18",
+      "categoryId": "page_3",
+      "kanji": "塗",
+      "question": "車を［ト］ソウする。",
+      "targetWord": "塗装",
+      "targetCharReading": "ト",
+      "targetReading": "トソウ",
+      "on": "ト",
+      "kun": "ぬ-る",
+      "strokes": 13,
+      "radical": "土（つち）",
+      "hint": "ぬる、まみれる。下に「土」。",
+      "examples": [
+        "塗装",
+        "塗料",
+        "塗る"
+      ]
+    },
+    {
+      "id": "p4_01",
+      "categoryId": "page_4",
+      "kanji": "凍",
+      "question": "レイ［トウ］食品を料理する。",
+      "targetWord": "冷凍",
+      "targetCharReading": "トウ",
+      "targetReading": "レイトウ",
+      "on": "トウ",
+      "kun": "こお-る、こご-える",
+      "strokes": 10,
+      "radical": "冫（にすい）",
+      "hint": "こおる、こごえる。にすいに「東」。",
+      "examples": [
+        "冷凍食品",
+        "凍結",
+        "凍死",
+        "凍る"
+      ]
+    },
+    {
+      "id": "p4_02",
+      "categoryId": "page_4",
+      "kanji": "陶",
+      "question": "音楽に［トウ］スイする。",
+      "targetWord": "陶酔",
+      "targetCharReading": "トウ",
+      "targetReading": "トウスイ",
+      "on": "トウ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "阝（こざとへん）",
+      "hint": "やきもの、うっとりする。こざとへんに「匋」。",
+      "examples": [
+        "陶酔",
+        "陶器",
+        "薫陶"
+      ]
+    },
+    {
+      "id": "p4_03",
+      "categoryId": "page_4",
+      "kanji": "痘",
+      "question": "テンネン［トウ］を撲滅する。",
+      "targetWord": "天然痘",
+      "targetCharReading": "トウ",
+      "targetReading": "テンネントウ",
+      "on": "トウ",
+      "kun": "—",
+      "strokes": 12,
+      "radical": "疒（やまいだれ）",
+      "hint": "水ぶくれのできる病気。やまいだれに「豆」。",
+      "examples": [
+        "天然痘",
+        "種痘"
+      ]
+    },
+    {
+      "id": "p4_04",
+      "categoryId": "page_4",
+      "kanji": "匿",
+      "question": "［トク］メイで投書する。",
+      "targetWord": "匿名",
+      "targetCharReading": "トク",
+      "targetReading": "トクメイ",
+      "on": "トク",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "匚（かくしがまえ）",
+      "hint": "かくす、かくまう。かくしがまえに「若」。",
+      "examples": [
+        "匿名",
+        "秘匿",
+        "隠匿"
+      ]
+    },
+    {
+      "id": "p4_05",
+      "categoryId": "page_4",
+      "kanji": "篤",
+      "question": "キ［トク］状態を脱する。",
+      "targetWord": "危篤",
+      "targetCharReading": "トク",
+      "targetReading": "キトク",
+      "on": "トク",
+      "kun": "—",
+      "strokes": 16,
+      "radical": "竹（たけかんむり）",
+      "hint": "てあつい、病気が重い。たけかんむりに「馬」。",
+      "examples": [
+        "危篤状態",
+        "篤志"
+      ]
+    },
+    {
+      "id": "p4_06",
+      "categoryId": "page_4",
+      "kanji": "豚",
+      "question": "ヨウ［トン］業を営む。",
+      "targetWord": "養豚",
+      "targetCharReading": "トン",
+      "targetReading": "ヨウトン",
+      "on": "トン",
+      "kun": "ぶた",
+      "strokes": 11,
+      "radical": "豕（ぶた）",
+      "hint": "ブタ。にくづきに「豕」。",
+      "examples": [
+        "養豚業",
+        "豚肉"
+      ]
+    },
+    {
+      "id": "p4_07",
+      "categoryId": "page_4",
+      "kanji": "尿",
+      "question": "ケン［ニョウ］の結果が出る。",
+      "targetWord": "検尿",
+      "targetCharReading": "ニョウ",
+      "targetReading": "ケンニョウ",
+      "on": "ニョウ",
+      "kun": "—",
+      "strokes": 7,
+      "radical": "尸（かばね）",
+      "hint": "小便。「尸」に「水」。",
+      "examples": [
+        "検尿",
+        "尿道"
+      ]
+    },
+    {
+      "id": "p4_08",
+      "categoryId": "page_4",
+      "kanji": "粘",
+      "question": "［ネン］ド細工。",
+      "targetWord": "粘土",
+      "targetCharReading": "ネン",
+      "targetReading": "ネンド",
+      "on": "ネン",
+      "kun": "ねば-る",
+      "strokes": 11,
+      "radical": "米（こめへん）",
+      "hint": "ねばる、ねばりつく。こめへんに「占」。",
+      "examples": [
+        "粘土細工",
+        "粘着",
+        "粘り強い"
+      ]
+    },
+    {
+      "id": "p4_09",
+      "categoryId": "page_4",
+      "kanji": "婆",
+      "question": "老翁とロウ［バ］。",
+      "targetWord": "老婆",
+      "targetCharReading": "バ",
+      "targetReading": "ロウバ",
+      "on": "バ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "女（おんな）",
+      "hint": "年をとった女性。「波」の下に「女」。",
+      "examples": [
+        "老婆"
+      ]
+    },
+    {
+      "id": "p4_10",
+      "categoryId": "page_4",
+      "kanji": "排",
+      "question": "邪魔な物を［ハイ］ジョする。",
+      "targetWord": "排除",
+      "targetCharReading": "ハイ",
+      "targetReading": "ハイジョ",
+      "on": "ハイ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "扌（てへん）",
+      "hint": "外へ出す、しりぞける。てへんに「非」。",
+      "examples": [
+        "排除",
+        "排斥"
+      ]
+    },
+    {
+      "id": "p4_11",
+      "categoryId": "page_4",
+      "kanji": "陪",
+      "question": "［バイ］シン制度。",
+      "targetWord": "陪審",
+      "targetCharReading": "バイ",
+      "targetReading": "バイシン",
+      "on": "バイ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "阝（こざとへん）",
+      "hint": "おともをする、つきしたがう。こざとへんに「咅」。",
+      "examples": [
+        "陪審制度",
+        "陪臣",
+        "陪食"
+      ]
+    },
+    {
+      "id": "p4_12",
+      "categoryId": "page_4",
+      "kanji": "縛",
+      "question": "自由をソク［バク］する。",
+      "targetWord": "束縛",
+      "targetCharReading": "バク",
+      "targetReading": "ソクバク",
+      "on": "バク",
+      "kun": "しば-る",
+      "strokes": 16,
+      "radical": "糸（いとへん）",
+      "hint": "しばる、自由を制限する。いとへんに「尃」。",
+      "examples": [
+        "束縛",
+        "縛る"
+      ]
+    },
+    {
+      "id": "p4_13",
+      "categoryId": "page_4",
+      "kanji": "伐",
+      "question": "森林の［バッ］サイ。",
+      "targetWord": "伐採",
+      "targetCharReading": "バッ",
+      "targetReading": "バッサイ",
+      "on": "バツ",
+      "kun": "—",
+      "strokes": 6,
+      "radical": "亻（にんべん）",
+      "hint": "きりたおす、敵をうつ。にんべんに「戈」。",
+      "examples": [
+        "伐採",
+        "征伐",
+        "殺伐"
+      ]
+    },
+    {
+      "id": "p4_14",
+      "categoryId": "page_4",
+      "kanji": "帆",
+      "question": "港をシュッ［パン］する。",
+      "targetWord": "出帆",
+      "targetCharReading": "パン",
+      "targetReading": "シュッパン",
+      "on": "ハン",
+      "kun": "ほ",
+      "strokes": 6,
+      "radical": "巾（はばへん）",
+      "hint": "船のほ。はばへんに「凡」。",
+      "examples": [
+        "出帆",
+        "帆柱",
+        "帆走",
+        "帆を上げる"
+      ]
+    },
+    {
+      "id": "p4_15",
+      "categoryId": "page_4",
+      "kanji": "伴",
+      "question": "夫人をドウ［ハン］する。",
+      "targetWord": "同伴",
+      "targetCharReading": "ハン",
+      "targetReading": "ドウハン",
+      "on": "ハン・バン",
+      "kun": "ともな-う",
+      "strokes": 7,
+      "radical": "亻（にんべん）",
+      "hint": "いっしょにいく、つれだつ。にんべんに「半」。",
+      "examples": [
+        "同伴",
+        "伴奏",
+        "伴う"
+      ]
+    },
+    {
+      "id": "p4_16",
+      "categoryId": "page_4",
+      "kanji": "畔",
+      "question": "コ［ハン］のキャンプ場。",
+      "targetWord": "湖畔",
+      "targetCharReading": "ハン",
+      "targetReading": "コハン",
+      "on": "ハン",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "田（たへん）",
+      "hint": "水のほとり。たへんに「半」。",
+      "examples": [
+        "湖畔",
+        "河畔"
+      ]
+    },
+    {
+      "id": "p4_17",
+      "categoryId": "page_4",
+      "kanji": "藩",
+      "question": "五代目の［ハン］シュとなる。",
+      "targetWord": "藩主",
+      "targetCharReading": "ハン",
+      "targetReading": "ハンシュ",
+      "on": "ハン",
+      "kun": "—",
+      "strokes": 18,
+      "radical": "艹（くさかんむり）",
+      "hint": "大名の領地。くさかんむりに「潘」。",
+      "examples": [
+        "藩主",
+        "藩侯"
+      ]
+    },
+    {
+      "id": "p4_18",
+      "categoryId": "page_4",
+      "kanji": "蛮",
+      "question": "ヤ［バン］な振る舞い。",
+      "targetWord": "野蛮",
+      "targetCharReading": "バン",
+      "targetReading": "ヤバン",
+      "on": "バン",
+      "kun": "—",
+      "strokes": 12,
+      "radical": "虫（むし）",
+      "hint": "荒々しい、道理をわきまえない。「亦」の下に「虫」。",
+      "examples": [
+        "野蛮",
+        "蛮行"
+      ]
+    },
+    {
+      "id": "p5_01",
+      "categoryId": "page_5",
+      "kanji": "卑",
+      "question": "［ヒ］レツな手段を取る。",
+      "targetWord": "卑劣",
+      "targetCharReading": "ヒ",
+      "targetReading": "ヒレツ",
+      "on": "ヒ",
+      "kun": "いや-しい、いや-しむ、いや-しめる",
+      "strokes": 9,
+      "radical": "十（じゅう）",
+      "hint": "地位が低い、下劣、へりくだる。",
+      "examples": [
+        "卑劣",
+        "卑屈",
+        "卑下"
+      ]
+    },
+    {
+      "id": "p5_02",
+      "categoryId": "page_5",
+      "kanji": "碑",
+      "question": "キネン［ヒ］の除幕式。",
+      "targetWord": "記念碑",
+      "targetCharReading": "ヒ",
+      "targetReading": "キネンヒ",
+      "on": "ヒ",
+      "kun": "—",
+      "strokes": 14,
+      "radical": "石（いしへん）",
+      "hint": "記念するために文をほった石。いしへんに「卑」。",
+      "examples": [
+        "記念碑",
+        "文学碑"
+      ]
+    },
+    {
+      "id": "p5_03",
+      "categoryId": "page_5",
+      "kanji": "泌",
+      "question": "体内のブン［ピツ］物。",
+      "targetWord": "分泌",
+      "targetCharReading": "ピツ",
+      "targetReading": "ブンピツ",
+      "on": "ヒツ・ヒ",
+      "kun": "—",
+      "strokes": 8,
+      "radical": "氵（さんずい）",
+      "hint": "にじむ、液体がしみ出る。さんずいに「必」。",
+      "examples": [
+        "分泌物",
+        "内分泌"
+      ]
+    },
+    {
+      "id": "p5_04",
+      "categoryId": "page_5",
+      "kanji": "姫",
+      "question": "お［ひめ］様の役を演ずる。",
+      "targetWord": "お姫様",
+      "targetCharReading": "ひめ",
+      "targetReading": "おひめさま",
+      "on": "—",
+      "kun": "ひめ",
+      "strokes": 10,
+      "radical": "女（おんなへん）",
+      "hint": "身分の高い人のむすめ。おんなへんに「臣」。",
+      "examples": [
+        "お姫様",
+        "姫鏡台"
+      ]
+    },
+    {
+      "id": "p5_05",
+      "categoryId": "page_5",
+      "kanji": "漂",
+      "question": "［ヒョウ］ハクザイにつける。",
+      "targetWord": "漂白剤",
+      "targetCharReading": "ヒョウ",
+      "targetReading": "ヒョウハクザイ",
+      "on": "ヒョウ",
+      "kun": "ただよ-う",
+      "strokes": 14,
+      "radical": "氵（さんずい）",
+      "hint": "ただよう、水にさらす。さんずいに「票」。",
+      "examples": [
+        "漂白剤",
+        "漂流",
+        "波間を漂う"
+      ]
+    },
+    {
+      "id": "p5_06",
+      "categoryId": "page_5",
+      "kanji": "苗",
+      "question": "杉の［なえ］ぎを植える。",
+      "targetWord": "苗木",
+      "targetCharReading": "なえ",
+      "targetReading": "なえぎ",
+      "on": "ビョウ",
+      "kun": "なえ、なわ",
+      "strokes": 8,
+      "radical": "艹（くさかんむり）",
+      "hint": "たねから芽を出したもの。くさかんむりに「田」。",
+      "examples": [
+        "苗木",
+        "苗代",
+        "早苗"
+      ]
+    },
+    {
+      "id": "p5_07",
+      "categoryId": "page_5",
+      "kanji": "赴",
+      "question": "海外へ［フ］ニンする。",
+      "targetWord": "赴任",
+      "targetCharReading": "フ",
+      "targetReading": "フニン",
+      "on": "フ",
+      "kun": "おもむ-く",
+      "strokes": 9,
+      "radical": "走（そうにょう）",
+      "hint": "おもむく、むかう。そうにょうに「卜」。",
+      "examples": [
+        "赴任",
+        "会場に赴く"
+      ]
+    },
+    {
+      "id": "p5_08",
+      "categoryId": "page_5",
+      "kanji": "符",
+      "question": "往復きっ［プ］を買う。",
+      "targetWord": "切符",
+      "targetCharReading": "プ",
+      "targetReading": "きっプ",
+      "on": "フ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "竹（たけかんむり）",
+      "hint": "しるし、わりふ。たけかんむりに「付」。",
+      "examples": [
+        "往復切符",
+        "音符",
+        "符合"
+      ]
+    },
+    {
+      "id": "p5_09",
+      "categoryId": "page_5",
+      "kanji": "封",
+      "question": "袋の口をミッ［プウ］する。",
+      "targetWord": "密封",
+      "targetCharReading": "プウ",
+      "targetReading": "ミップウ",
+      "on": "フウ・ホウ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "寸（すん）",
+      "hint": "ふさぐ、とじる。「圭」の右に「寸」。",
+      "examples": [
+        "密封",
+        "開封",
+        "封建制度"
+      ]
+    },
+    {
+      "id": "p5_10",
+      "categoryId": "page_5",
+      "kanji": "伏",
+      "question": "キ［フク］の多い土地。",
+      "targetWord": "起伏",
+      "targetCharReading": "フク",
+      "targetReading": "キフク",
+      "on": "フク",
+      "kun": "ふ-せる、ふ-す",
+      "strokes": 6,
+      "radical": "亻（にんべん）",
+      "hint": "ふせる、潜む。にんべんに「犬」。",
+      "examples": [
+        "起伏",
+        "潜伏",
+        "降伏",
+        "床に伏す"
+      ]
+    },
+    {
+      "id": "p5_11",
+      "categoryId": "page_5",
+      "kanji": "覆",
+      "question": "列車のテン［プク］事故。",
+      "targetWord": "転覆",
+      "targetCharReading": "プク",
+      "targetReading": "テンプク",
+      "on": "フク",
+      "kun": "おお-う、くつがえ-す、くつがえ-る",
+      "strokes": 18,
+      "radical": "襾（おおいかんむり）",
+      "hint": "おおう、ひっくりかえる。おおいかんむりに「復」。",
+      "examples": [
+        "転覆事故",
+        "被覆",
+        "目を覆う"
+      ]
+    },
+    {
+      "id": "p5_12",
+      "categoryId": "page_5",
+      "kanji": "紛",
+      "question": "時計が［フン］シツする。",
+      "targetWord": "紛失",
+      "targetCharReading": "フン",
+      "targetReading": "フンシツ",
+      "on": "フン",
+      "kun": "まぎ-れる、まぎ-らす、まぎ-らわしい",
+      "strokes": 10,
+      "radical": "糸（いとへん）",
+      "hint": "まぎれる、もつれる。いとへんに「分」。",
+      "examples": [
+        "紛失",
+        "紛争",
+        "紛らわしい"
+      ]
+    },
+    {
+      "id": "p5_13",
+      "categoryId": "page_5",
+      "kanji": "墳",
+      "question": "コ［フン］の発掘調査。",
+      "targetWord": "古墳",
+      "targetCharReading": "フン",
+      "targetReading": "コフン",
+      "on": "フン",
+      "kun": "—",
+      "strokes": 15,
+      "radical": "土（つちへん）",
+      "hint": "土を高くもりあげた墓。つちへんに「賁」。",
+      "examples": [
+        "古墳",
+        "墳墓"
+      ]
+    },
+    {
+      "id": "p5_14",
+      "categoryId": "page_5",
+      "kanji": "癖",
+      "question": "ケッ［ペキ］な性質。",
+      "targetWord": "潔癖",
+      "targetCharReading": "ペキ",
+      "targetReading": "ケッペキ",
+      "on": "ヘキ",
+      "kun": "くせ",
+      "strokes": 18,
+      "radical": "疒（やまいだれ）",
+      "hint": "かたよった習性・くせ。やまいだれに「辟」。",
+      "examples": [
+        "潔癖",
+        "悪癖",
+        "頭をかく癖"
+      ]
+    },
+    {
+      "id": "p5_15",
+      "categoryId": "page_5",
+      "kanji": "募",
+      "question": "共同［ボ］キン。",
+      "targetWord": "募金",
+      "targetCharReading": "ボ",
+      "targetReading": "ボキン",
+      "on": "ボ",
+      "kun": "つの-る",
+      "strokes": 12,
+      "radical": "力（ちから）",
+      "hint": "よびあつめる、広くもとめる。「莫」の下に「力」。",
+      "examples": [
+        "共同募金",
+        "募集",
+        "応募",
+        "有志を募る"
+      ]
+    },
+    {
+      "id": "p5_16",
+      "categoryId": "page_5",
+      "kanji": "慕",
+      "question": "［ボ］ジョウを抱く。",
+      "targetWord": "慕情",
+      "targetCharReading": "ボ",
+      "targetReading": "ボジョウ",
+      "on": "ボ",
+      "kun": "した-う",
+      "strokes": 14,
+      "radical": "㣺（したごころ）",
+      "hint": "思いを寄せる、心からあおぎしたう。「莫」の下に「㣺」。",
+      "examples": [
+        "慕情",
+        "思慕",
+        "敬慕",
+        "先生を慕う"
+      ]
+    },
+    {
+      "id": "p5_17",
+      "categoryId": "page_5",
+      "kanji": "簿",
+      "question": "カケイ［ボ］をつける。",
+      "targetWord": "家計簿",
+      "targetCharReading": "ボ",
+      "targetReading": "カケイボ",
+      "on": "ボ",
+      "kun": "—",
+      "strokes": 19,
+      "radical": "竹（たけかんむり）",
+      "hint": "ちょうめん。たけかんむりに「溥」。",
+      "examples": [
+        "家計簿",
+        "帳簿",
+        "名簿"
+      ]
+    },
+    {
+      "id": "p5_18",
+      "categoryId": "page_5",
+      "kanji": "芳",
+      "question": "梅の花が［ホウ］コウを放つ。",
+      "targetWord": "芳香",
+      "targetCharReading": "ホウ",
+      "targetReading": "ホウコウ",
+      "on": "ホウ",
+      "kun": "かんば-しい",
+      "strokes": 7,
+      "radical": "艹（くさかんむり）",
+      "hint": "よいかおり、立派だ。くさかんむりに「方」。",
+      "examples": [
+        "芳香",
+        "芳名",
+        "芳しい"
+      ]
+    },
+    {
+      "id": "p6_01",
+      "categoryId": "page_6",
+      "kanji": "邦",
+      "question": "古い［ホウ］ガを放映する。",
+      "targetWord": "邦画",
+      "targetCharReading": "ホウ",
+      "targetReading": "ホウガ",
+      "on": "ホウ",
+      "kun": "—",
+      "strokes": 7,
+      "radical": "阝（おおざと）",
+      "hint": "国家、わが国。「丰」に「阝（おおざと）」。",
+      "examples": [
+        "邦画",
+        "邦楽",
+        "連邦"
+      ]
+    },
+    {
+      "id": "p6_02",
+      "categoryId": "page_6",
+      "kanji": "奉",
+      "question": "社会［ホウ］シをする。",
+      "targetWord": "奉仕",
+      "targetCharReading": "ホウ",
+      "targetReading": "ホウシ",
+      "on": "ホウ・ブ",
+      "kun": "たてまつ-る",
+      "strokes": 8,
+      "radical": "大（だい）",
+      "hint": "たてまつる、目上の人に礼をつくす。",
+      "examples": [
+        "社会奉仕",
+        "奉納",
+        "町奉行",
+        "信奉"
+      ]
+    },
+    {
+      "id": "p6_03",
+      "categoryId": "page_6",
+      "kanji": "胞",
+      "question": "サイ［ボウ］の組織。",
+      "targetWord": "細胞",
+      "targetCharReading": "ボウ",
+      "targetReading": "サイボウ",
+      "on": "ホウ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "月（にくづき）",
+      "hint": "生物体をつくりあげている小さい組織。にくづきに「包」。",
+      "examples": [
+        "細胞",
+        "同胞"
+      ]
+    },
+    {
+      "id": "p6_04",
+      "categoryId": "page_6",
+      "kanji": "倣",
+      "question": "巨匠の作品をモ［ホウ］する。",
+      "targetWord": "模倣",
+      "targetCharReading": "ホウ",
+      "targetReading": "モホウ",
+      "on": "ホウ",
+      "kun": "なら-う",
+      "strokes": 10,
+      "radical": "亻（にんべん）",
+      "hint": "まねをする。にんべんに「放」。",
+      "examples": [
+        "模倣"
+      ]
+    },
+    {
+      "id": "p6_05",
+      "categoryId": "page_6",
+      "kanji": "崩",
+      "question": "内閣が［ホウ］カイする。",
+      "targetWord": "崩壊",
+      "targetCharReading": "ホウ",
+      "targetReading": "ホウカイ",
+      "on": "ホウ",
+      "kun": "くず-れる、くず-す",
+      "strokes": 11,
+      "radical": "山（やま）",
+      "hint": "くずれる。「山」の下に「朋」。",
+      "examples": [
+        "崩壊",
+        "山が崩れる"
+      ]
+    },
+    {
+      "id": "p6_06",
+      "categoryId": "page_6",
+      "kanji": "飽",
+      "question": "［ホウ］ワ状態の水溶液。",
+      "targetWord": "飽和",
+      "targetCharReading": "ホウ",
+      "targetReading": "ホウワ",
+      "on": "ホウ",
+      "kun": "あ-きる、あ-かす",
+      "strokes": 13,
+      "radical": "食（しょくへん）",
+      "hint": "満腹する、十分満ちる、あきる。しょくへんに「包」。",
+      "examples": [
+        "飽和状態",
+        "飽食",
+        "飽きる"
+      ]
+    },
+    {
+      "id": "p6_07",
+      "categoryId": "page_6",
+      "kanji": "縫",
+      "question": "家庭科でサイ［ホウ］を習う。",
+      "targetWord": "裁縫",
+      "targetCharReading": "ホウ",
+      "targetReading": "サイホウ",
+      "on": "ホウ",
+      "kun": "ぬ-う",
+      "strokes": 16,
+      "radical": "糸（いとへん）",
+      "hint": "糸と針で布を合わせる。いとへんに「逢」。",
+      "examples": [
+        "裁縫",
+        "縫う"
+      ]
+    },
+    {
+      "id": "p6_08",
+      "categoryId": "page_6",
+      "kanji": "乏",
+      "question": "食糧がケツ［ボウ］する。",
+      "targetWord": "欠乏",
+      "targetCharReading": "ボウ",
+      "targetReading": "ケツボウ",
+      "on": "ボウ",
+      "kun": "とぼ-しい",
+      "strokes": 4,
+      "radical": "ノ（の）",
+      "hint": "とぼしい、物がたりない。",
+      "examples": [
+        "欠乏",
+        "乏しい"
+      ]
+    },
+    {
+      "id": "p6_09",
+      "categoryId": "page_6",
+      "kanji": "妨",
+      "question": "安眠を［ボウ］ガイする。",
+      "targetWord": "妨害",
+      "targetCharReading": "ボウ",
+      "targetReading": "ボウガイ",
+      "on": "ボウ",
+      "kun": "さまた-げる",
+      "strokes": 7,
+      "radical": "女（おんなへん）",
+      "hint": "じゃまをする、さまたげる。おんなへんに「方」。",
+      "examples": [
+        "妨害",
+        "勉強の妨げ"
+      ]
+    },
+    {
+      "id": "p6_10",
+      "categoryId": "page_6",
+      "kanji": "房",
+      "question": "レイ［ボウ］完備の劇場。",
+      "targetWord": "冷房",
+      "targetCharReading": "ボウ",
+      "targetReading": "レイボウ",
+      "on": "ボウ",
+      "kun": "ふさ",
+      "strokes": 8,
+      "radical": "戸（とだれ）",
+      "hint": "へや、ふさ。とだれに「方」。",
+      "examples": [
+        "冷房完備",
+        "工房",
+        "ブドウの房"
+      ]
+    },
+    {
+      "id": "p6_11",
+      "categoryId": "page_6",
+      "kanji": "某",
+      "question": "［ボウ］コクの大臣の来日。",
+      "targetWord": "某国",
+      "targetCharReading": "ボウ",
+      "targetReading": "ボウコク",
+      "on": "ボウ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "木（き）",
+      "hint": "名前を出さずに言う語。「甘」の下に「木」。",
+      "examples": [
+        "某国",
+        "某氏",
+        "某日"
+      ]
+    },
+    {
+      "id": "p6_12",
+      "categoryId": "page_6",
+      "kanji": "膨",
+      "question": "［ボウ］ダイな費用がかかる。",
+      "targetWord": "膨大",
+      "targetCharReading": "ボウ",
+      "targetReading": "ボウダイ",
+      "on": "ボウ",
+      "kun": "ふく-らむ、ふく-れる",
+      "strokes": 16,
+      "radical": "月（にくづき）",
+      "hint": "ふくれて大きくなる。にくづきに「彭」。",
+      "examples": [
+        "膨大",
+        "膨張",
+        "膨らむ"
+      ]
+    },
+    {
+      "id": "p6_13",
+      "categoryId": "page_6",
+      "kanji": "謀",
+      "question": "イン［ボウ］が暴露される。",
+      "targetWord": "陰謀",
+      "targetCharReading": "ボウ",
+      "targetReading": "インボウ",
+      "on": "ボウ・ム",
+      "kun": "はか-る",
+      "strokes": 16,
+      "radical": "言（ごんべん）",
+      "hint": "計画を立てる、悪事をたくらむ。ごんべんに「某」。",
+      "examples": [
+        "陰謀",
+        "無謀"
+      ]
+    },
+    {
+      "id": "p6_14",
+      "categoryId": "page_6",
+      "kanji": "墨",
+      "question": "スイ［ボク］ガの展覧会。",
+      "targetWord": "水墨画",
+      "targetCharReading": "ボク",
+      "targetReading": "スイボクガ",
+      "on": "ボク",
+      "kun": "すみ",
+      "strokes": 14,
+      "radical": "土（つち）",
+      "hint": "すみ。「黒」の下に「土」。",
+      "examples": [
+        "水墨画",
+        "墨絵",
+        "墨汁"
+      ]
+    },
+    {
+      "id": "p6_15",
+      "categoryId": "page_6",
+      "kanji": "没",
+      "question": "船がチン［ボツ］する。",
+      "targetWord": "沈没",
+      "targetCharReading": "ボツ",
+      "targetReading": "チンボツ",
+      "on": "ボツ",
+      "kun": "—",
+      "strokes": 7,
+      "radical": "氵（さんずい）",
+      "hint": "しずむ、かくれる。さんずいに「殳」。",
+      "examples": [
+        "沈没",
+        "没頭",
+        "没交渉"
+      ]
+    },
+    {
+      "id": "p6_16",
+      "categoryId": "page_6",
+      "kanji": "翻",
+      "question": "英語を［ホン］ヤクする。",
+      "targetWord": "翻訳",
+      "targetCharReading": "ホン",
+      "targetReading": "ホンヤク",
+      "on": "ホン",
+      "kun": "ひるがえ-る、ひるがえ-す",
+      "strokes": 18,
+      "radical": "羽（はね）",
+      "hint": "ひっくりかえす、つくりかえる。「番」に「羽」。",
+      "examples": [
+        "翻訳",
+        "翻意"
+      ]
+    },
+    {
+      "id": "p6_17",
+      "categoryId": "page_6",
+      "kanji": "魔",
+      "question": "ビョウ［マ］と闘う。",
+      "targetWord": "病魔",
+      "targetCharReading": "マ",
+      "targetReading": "ビョウマ",
+      "on": "マ",
+      "kun": "—",
+      "strokes": 21,
+      "radical": "鬼（おに）",
+      "hint": "ふしぎな力で人を迷わせるもの。「麻」の下に「鬼」。",
+      "examples": [
+        "病魔",
+        "魔法"
+      ]
+    },
+    {
+      "id": "p6_18",
+      "categoryId": "page_6",
+      "kanji": "埋",
+      "question": "石油の［マイ］ゾウリョウ。",
+      "targetWord": "埋蔵量",
+      "targetCharReading": "マイ",
+      "targetReading": "マイゾウリョウ",
+      "on": "マイ",
+      "kun": "う-める、う-まる、う-もれる",
+      "strokes": 10,
+      "radical": "土（つちへん）",
+      "hint": "うめる、うずめる。つちへんに「里」。",
+      "examples": [
+        "埋蔵量",
+        "埋没",
+        "人で埋まる"
+      ]
+    },
+    {
+      "id": "p7_01",
+      "categoryId": "page_7",
+      "kanji": "膜",
+      "question": "鼻のネン［マク］。",
+      "targetWord": "粘膜",
+      "targetCharReading": "マク",
+      "targetReading": "ネンマク",
+      "on": "マク",
+      "kun": "—",
+      "strokes": 14,
+      "radical": "月（にくづき）",
+      "hint": "表面をおおったりするうすい皮。にくづきに「莫」。",
+      "examples": [
+        "鼻の粘膜",
+        "皮膜",
+        "鼓膜"
+      ]
+    },
+    {
+      "id": "p7_02",
+      "categoryId": "page_7",
+      "kanji": "又",
+      "question": "明日［また］は明後日に行う。",
+      "targetWord": "又は",
+      "targetCharReading": "また",
+      "targetReading": "または",
+      "on": "—",
+      "kun": "また",
+      "strokes": 2,
+      "radical": "又（また）",
+      "hint": "再び、そのうえ。",
+      "examples": [
+        "又は",
+        "又聞き"
+      ]
+    },
+    {
+      "id": "p7_03",
+      "categoryId": "page_7",
+      "kanji": "魅",
+      "question": "［ミ］リョクのある人物。",
+      "targetWord": "魅力",
+      "targetCharReading": "ミ",
+      "targetReading": "ミリョク",
+      "on": "ミ",
+      "kun": "—",
+      "strokes": 15,
+      "radical": "鬼（きにょう）",
+      "hint": "人の心をひきつける。きにょうに「未」。",
+      "examples": [
+        "魅力",
+        "魅了"
+      ]
+    },
+    {
+      "id": "p7_04",
+      "categoryId": "page_7",
+      "kanji": "滅",
+      "question": "ゼツ［メツ］寸前の動物。",
+      "targetWord": "絶滅",
+      "targetCharReading": "メツ",
+      "targetReading": "ゼツメツ",
+      "on": "メツ",
+      "kun": "ほろ-びる、ほろ-ぼす",
+      "strokes": 13,
+      "radical": "氵（さんずい）",
+      "hint": "ほろぶ、なくなる。さんずいに「火」と「戌」。",
+      "examples": [
+        "絶滅寸前",
+        "消滅",
+        "点滅",
+        "身を滅ぼす"
+      ]
+    },
+    {
+      "id": "p7_05",
+      "categoryId": "page_7",
+      "kanji": "免",
+      "question": "運転［メン］キョを取る。",
+      "targetWord": "免許",
+      "targetCharReading": "メン",
+      "targetReading": "メンキョ",
+      "on": "メン",
+      "kun": "まぬか-れる",
+      "strokes": 8,
+      "radical": "儿（ひとあし）",
+      "hint": "のがれる、ゆるす。「兎」の点がない字。",
+      "examples": [
+        "運転免許",
+        "免疫",
+        "免除",
+        "免職"
+      ]
+    },
+    {
+      "id": "p7_06",
+      "categoryId": "page_7",
+      "kanji": "幽",
+      "question": "城の奥に［ユウ］ヘイされる。",
+      "targetWord": "幽閉",
+      "targetCharReading": "ユウ",
+      "targetReading": "ユウヘイ",
+      "on": "ユウ",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "幺（よう）",
+      "hint": "奥深い、閉じこめる。「山」の中に「幺」が二つ。",
+      "examples": [
+        "幽閉",
+        "幽玄",
+        "幽霊"
+      ]
+    },
+    {
+      "id": "p7_07",
+      "categoryId": "page_7",
+      "kanji": "誘",
+      "question": "飛行機を［ユウ］ドウする。",
+      "targetWord": "誘導",
+      "targetCharReading": "ユウ",
+      "targetReading": "ユウドウ",
+      "on": "ユウ",
+      "kun": "さそ-う",
+      "strokes": 14,
+      "radical": "言（ごんべん）",
+      "hint": "さそいだす、みちびく。ごんべんに「秀」。",
+      "examples": [
+        "誘導",
+        "誘惑",
+        "映画に誘う"
+      ]
+    },
+    {
+      "id": "p7_08",
+      "categoryId": "page_7",
+      "kanji": "憂",
+      "question": "［ユウ］リョすべき事態。",
+      "targetWord": "憂慮",
+      "targetCharReading": "ユウ",
+      "targetReading": "ユウリョ",
+      "on": "ユウ",
+      "kun": "うれ-える、うれ-い、う-い",
+      "strokes": 15,
+      "radical": "心（こころ）",
+      "hint": "心配する、気がふさぐ。中に「心」が入る。",
+      "examples": [
+        "憂慮",
+        "憂える"
+      ]
+    },
+    {
+      "id": "p7_09",
+      "categoryId": "page_7",
+      "kanji": "揚",
+      "question": "校旗をケイ［ヨウ］する。",
+      "targetWord": "掲揚",
+      "targetCharReading": "ヨウ",
+      "targetReading": "ケイヨウ",
+      "on": "ヨウ",
+      "kun": "あ-げる、あ-がる",
+      "strokes": 12,
+      "radical": "扌（てへん）",
+      "hint": "高くあげる。てへんに「易」。",
+      "examples": [
+        "掲揚",
+        "意気揚々",
+        "揚げる"
+      ]
+    },
+    {
+      "id": "p7_10",
+      "categoryId": "page_7",
+      "kanji": "揺",
+      "question": "ドウ［ヨウ］を隠せない。",
+      "targetWord": "動揺",
+      "targetCharReading": "ヨウ",
+      "targetReading": "ドウヨウ",
+      "on": "ヨウ",
+      "kun": "ゆ-れる、ゆ-る、ゆ-らぐ",
+      "strokes": 12,
+      "radical": "扌（てへん）",
+      "hint": "ゆれる、ゆりうごかす。てへんに「𦥯」。",
+      "examples": [
+        "動揺",
+        "舟が揺れる"
+      ]
+    },
+    {
+      "id": "p7_11",
+      "categoryId": "page_7",
+      "kanji": "擁",
+      "question": "駆け寄ってホウ［ヨウ］する。",
+      "targetWord": "抱擁",
+      "targetCharReading": "ヨウ",
+      "targetReading": "ホウヨウ",
+      "on": "ヨウ",
+      "kun": "—",
+      "strokes": 16,
+      "radical": "扌（てへん）",
+      "hint": "だきかかえる、まもる。てへんに「雍」。",
+      "examples": [
+        "抱擁",
+        "擁立",
+        "擁護"
+      ]
+    },
+    {
+      "id": "p7_12",
+      "categoryId": "page_7",
+      "kanji": "抑",
+      "question": "権力による［ヨク］アツ。",
+      "targetWord": "抑圧",
+      "targetCharReading": "ヨク",
+      "targetReading": "ヨクアツ",
+      "on": "ヨク",
+      "kun": "おさ-える",
+      "strokes": 7,
+      "radical": "扌（てへん）",
+      "hint": "おさえつける。てへんに「卬」。",
+      "examples": [
+        "抑圧",
+        "抑留",
+        "抑揚",
+        "抑える"
+      ]
+    },
+    {
+      "id": "p7_13",
+      "categoryId": "page_7",
+      "kanji": "裸",
+      "question": "［ラ］タイの彫刻像。",
+      "targetWord": "裸体",
+      "targetCharReading": "ラ",
+      "targetReading": "ラタイ",
+      "on": "ラ",
+      "kun": "はだか",
+      "strokes": 13,
+      "radical": "衤（ころもへん）",
+      "hint": "はだか、おおいのないこと。ころもへんに「果」。",
+      "examples": [
+        "裸体",
+        "裸身",
+        "裸になる"
+      ]
+    },
+    {
+      "id": "p7_14",
+      "categoryId": "page_7",
+      "kanji": "濫",
+      "question": "森林の［ラン］バツを防ぐ。",
+      "targetWord": "濫伐",
+      "targetCharReading": "ラン",
+      "targetReading": "ランバツ",
+      "on": "ラン",
+      "kun": "—",
+      "strokes": 18,
+      "radical": "氵（さんずい）",
+      "hint": "水があふれる、むやみに。さんずいに「監」。",
+      "examples": [
+        "濫伐",
+        "濫用",
+        "氾濫"
+      ]
+    },
+    {
+      "id": "p7_15",
+      "categoryId": "page_7",
+      "kanji": "吏",
+      "question": "外務省に勤めるカン［リ］。",
+      "targetWord": "官吏",
+      "targetCharReading": "リ",
+      "targetReading": "カンリ",
+      "on": "リ",
+      "kun": "—",
+      "strokes": 6,
+      "radical": "口（くち）",
+      "hint": "役人。「一」の下に「史」。",
+      "examples": [
+        "官吏",
+        "吏員"
+      ]
+    },
+    {
+      "id": "p7_16",
+      "categoryId": "page_7",
+      "kanji": "隆",
+      "question": "土地が［リュウ］キする。",
+      "targetWord": "隆起",
+      "targetCharReading": "リュウ",
+      "targetReading": "リュウキ",
+      "on": "リュウ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "阝（こざとへん）",
+      "hint": "高くもりあがる、さかえる。こざとへんに「生」。",
+      "examples": [
+        "隆起",
+        "興隆"
+      ]
+    },
+    {
+      "id": "p7_17",
+      "categoryId": "page_7",
+      "kanji": "了",
+      "question": "準備がカン［リョウ］する。",
+      "targetWord": "完了",
+      "targetCharReading": "リョウ",
+      "targetReading": "カンリョウ",
+      "on": "リョウ",
+      "kun": "—",
+      "strokes": 2,
+      "radical": "亅（はねぼう）",
+      "hint": "おわる、さとる。2画の漢字。",
+      "examples": [
+        "完了",
+        "終了",
+        "了解",
+        "了然"
+      ]
+    },
+    {
+      "id": "p7_18",
+      "categoryId": "page_7",
+      "kanji": "猟",
+      "question": "［リョウ］ジュウで撃つ。",
+      "targetWord": "猟銃",
+      "targetCharReading": "リョウ",
+      "targetReading": "リョウジュウ",
+      "on": "リョウ",
+      "kun": "—",
+      "strokes": 11,
+      "radical": "犭（けものへん）",
+      "hint": "鳥やけものをかりとる。けものへんに「巤」。",
+      "examples": [
+        "猟銃",
+        "狩猟",
+        "猟奇"
+      ]
+    },
+    {
+      "id": "p8_01",
+      "categoryId": "page_8",
+      "kanji": "陵",
+      "question": "キュウ［リョウ］地帯が続く。",
+      "targetWord": "丘陵",
+      "targetCharReading": "リョウ",
+      "targetReading": "キュウリョウ",
+      "on": "リョウ",
+      "kun": "みささぎ",
+      "strokes": 11,
+      "radical": "阝（こざとへん）",
+      "hint": "大きなおか、天皇の墓。こざとへんに「夌」。",
+      "examples": [
+        "丘陵地帯",
+        "御陵"
+      ]
+    },
+    {
+      "id": "p8_02",
+      "categoryId": "page_8",
+      "kanji": "糧",
+      "question": "ショク［リョウ］事情が悪い。",
+      "targetWord": "食糧",
+      "targetCharReading": "リョウ",
+      "targetReading": "ショクリョウ",
+      "on": "リョウ・ロウ",
+      "kun": "かて",
+      "strokes": 18,
+      "radical": "米（こめへん）",
+      "hint": "たべもの、活動のみなもと。こめへんに「量」。",
+      "examples": [
+        "食糧事情",
+        "兵糧",
+        "心の糧"
+      ]
+    },
+    {
+      "id": "p8_03",
+      "categoryId": "page_8",
+      "kanji": "厘",
+      "question": "二割二分ゴ［リン］の利率。",
+      "targetWord": "五厘",
+      "targetCharReading": "リン",
+      "targetReading": "ゴリン",
+      "on": "リン",
+      "kun": "—",
+      "strokes": 9,
+      "radical": "厂（がんだれ）",
+      "hint": "一割の百分の一。がんだれに「里」。",
+      "examples": [
+        "二分五厘",
+        "九分九厘"
+      ]
+    },
+    {
+      "id": "p8_04",
+      "categoryId": "page_8",
+      "kanji": "励",
+      "question": "選手をゲキ［レイ］する。",
+      "targetWord": "激励",
+      "targetCharReading": "レイ",
+      "targetReading": "ゲキレイ",
+      "on": "レイ",
+      "kun": "はげ-む、はげ-ます",
+      "strokes": 7,
+      "radical": "力（ちから）",
+      "hint": "努力する、元気づける。「厉」の右に「力」。",
+      "examples": [
+        "激励",
+        "奨励",
+        "勉強に励む"
+      ]
+    },
+    {
+      "id": "p8_05",
+      "categoryId": "page_8",
+      "kanji": "零",
+      "question": "［レイ］サイ企業で働く。",
+      "targetWord": "零細",
+      "targetCharReading": "レイ",
+      "targetReading": "レイサイ",
+      "on": "レイ",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "雨（あめかんむり）",
+      "hint": "ゼロ、非常に小さい。あめかんむりに「令」。",
+      "examples": [
+        "零細企業",
+        "零点",
+        "零落"
+      ]
+    },
+    {
+      "id": "p8_06",
+      "categoryId": "page_8",
+      "kanji": "霊",
+      "question": "［レイ］コン不滅の考え。",
+      "targetWord": "霊魂",
+      "targetCharReading": "レイ",
+      "targetReading": "レイコン",
+      "on": "レイ・リョウ",
+      "kun": "たま",
+      "strokes": 15,
+      "radical": "雨（あめかんむり）",
+      "hint": "神秘的な働き、たましい。あめかんむりに「坴」。",
+      "examples": [
+        "霊魂不滅",
+        "霊感",
+        "亡霊"
+      ]
+    },
+    {
+      "id": "p8_07",
+      "categoryId": "page_8",
+      "kanji": "裂",
+      "question": "二派にブン［レツ］する。",
+      "targetWord": "分裂",
+      "targetCharReading": "レツ",
+      "targetReading": "ブンレツ",
+      "on": "レツ",
+      "kun": "さ-く、さ-ける",
+      "strokes": 12,
+      "radical": "衣（ころも）",
+      "hint": "力を加えて二つ以上にさく。「列」の下に「衣」。",
+      "examples": [
+        "分裂",
+        "破裂",
+        "切り裂く"
+      ]
+    },
+    {
+      "id": "p8_08",
+      "categoryId": "page_8",
+      "kanji": "廉",
+      "question": "セイ［レン］潔白な人。",
+      "targetWord": "清廉",
+      "targetCharReading": "レン",
+      "targetReading": "セイレン",
+      "on": "レン",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "广（まだれ）",
+      "hint": "いさぎよい、値段がやすい。まだれに「兼」。",
+      "examples": [
+        "清廉潔白",
+        "廉売"
+      ]
+    },
+    {
+      "id": "p8_09",
+      "categoryId": "page_8",
+      "kanji": "錬",
+      "question": "鉄をセイ［レン］する。",
+      "targetWord": "精錬",
+      "targetCharReading": "レン",
+      "targetReading": "セイレン",
+      "on": "レン",
+      "kun": "—",
+      "strokes": 16,
+      "radical": "金（かねへん）",
+      "hint": "金属を熱して打ったりさましたりする。かねへんに「東」。",
+      "examples": [
+        "精錬",
+        "錬金術",
+        "錬磨"
+      ]
+    },
+    {
+      "id": "p8_10",
+      "categoryId": "page_8",
+      "kanji": "炉",
+      "question": "ゲンシ［ロ］を建設する。",
+      "targetWord": "原子炉",
+      "targetCharReading": "ロ",
+      "targetReading": "ゲンシロ",
+      "on": "ロ",
+      "kun": "—",
+      "strokes": 8,
+      "radical": "火（ひへん）",
+      "hint": "火をたく所、いろり。ひへんに「戸」。",
+      "examples": [
+        "原子炉",
+        "炉端"
+      ]
+    },
+    {
+      "id": "p8_11",
+      "categoryId": "page_8",
+      "kanji": "浪",
+      "question": "諸国をホウ［ロウ］する。",
+      "targetWord": "放浪",
+      "targetCharReading": "ロウ",
+      "targetReading": "ホウロウ",
+      "on": "ロウ",
+      "kun": "—",
+      "strokes": 10,
+      "radical": "氵（さんずい）",
+      "hint": "さすらう、むだにする。さんずいに「良」。",
+      "examples": [
+        "放浪",
+        "波浪",
+        "流浪",
+        "浪費"
+      ]
+    },
+    {
+      "id": "p8_12",
+      "categoryId": "page_8",
+      "kanji": "廊",
+      "question": "［ロウ］カを静かに歩く。",
+      "targetWord": "廊下",
+      "targetCharReading": "ロウ",
+      "targetReading": "ロウカ",
+      "on": "ロウ",
+      "kun": "—",
+      "strokes": 12,
+      "radical": "广（まだれ）",
+      "hint": "ろうか。まだれに「郎」。",
+      "examples": [
+        "廊下",
+        "回廊"
+      ]
+    },
+    {
+      "id": "p8_13",
+      "categoryId": "page_8",
+      "kanji": "楼",
+      "question": "砂上の［ロウ］カク。",
+      "targetWord": "楼閣",
+      "targetCharReading": "ロウ",
+      "targetReading": "ロウカク",
+      "on": "ロウ",
+      "kun": "—",
+      "strokes": 13,
+      "radical": "木（きへん）",
+      "hint": "やぐら、高いたてもの。きへんに「娄」。",
+      "examples": [
+        "砂上の楼閣",
+        "望楼",
+        "楼門"
+      ]
+    },
+    {
+      "id": "p8_14",
+      "categoryId": "page_8",
+      "kanji": "漏",
+      "question": "［ロウ］デンによる火災。",
+      "targetWord": "漏電",
+      "targetCharReading": "ロウ",
+      "targetReading": "ロウデン",
+      "on": "ロウ",
+      "kun": "も-る、も-れる、も-らす",
+      "strokes": 14,
+      "radical": "氵（さんずい）",
+      "hint": "すきまからこぼれる、ひそかに知れる。さんずいに「尸」と「雨」。",
+      "examples": [
+        "漏電",
+        "漏れる"
+      ]
+    },
+    {
+      "id": "p8_15",
+      "categoryId": "page_8",
+      "kanji": "湾",
+      "question": "［ワン］ナイに船が停泊する。",
+      "targetWord": "湾内",
+      "targetCharReading": "ワン",
+      "targetReading": "ワンナイ",
+      "on": "ワン",
+      "kun": "—",
+      "strokes": 12,
+      "radical": "氵（さんずい）",
+      "hint": "いりえ、弓なり。さんずいに「弯」。",
+      "examples": [
+        "湾内",
+        "東京湾",
+        "湾曲"
+      ]
+    }
+  ]
+}

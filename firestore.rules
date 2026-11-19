@@ -1,0 +1,466 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // このセキュリティルールは以下の Firestore データ構造を前提としています:
+    //
+    // 認証方式:
+    //   Firebase Anonymous Auth（保護者・子ども双方の端末が request.auth != null で接続）。
+    //   8〜64文字の推測困難な familyId をパス共有キーとして利用します。
+    //   ※ /families/{familyId} 親ドキュメント自体は作成されないため、存在チェックは行いません。
+    //
+    // Collection: /families/{familyId}/settings/{docId}
+    // Document ID: 'main' のみ許可
+    // Fields:
+    //   - studentName: string (required, <= 40 chars) - 学習者の表示名（PIIは格納しないこと）
+    //   - timetable: map (required, keys in mon..sun, values list <= 10 of valid subjects) - 曜日別時間割
+    //   - currentUnitBySubject: map (required, keys in 6 subjects, values string <= 100 chars) - 教科別現在単元ID
+    //   - dailyTargets: map (required, keys in reviewCount/previewCount/kanjiCount/vocabCount, values int 0..200)
+    //   - parentPin: string (required, <= 16 chars) - 保護者画面ロックPIN
+    //   - updatedAt: string (optional, <= 40 chars) - 更新日時ISO文字列
+    //
+    // Collection: /families/{familyId}/units/{unitId}
+    // Document ID: {unitId}
+    // Fields:
+    //   - id: string (required, 1..100 chars, immutable on update)
+    //   - subject: string (required, in ['英語', '数学', '理科', '歴史', '地理', '国語'])
+    //   - textbook: string (required, <= 80 chars)
+    //   - order: int (required, 1..500)
+    //   - title: string (required, 1..160 chars)
+    //   - legacyCategories: list (optional, <= 10 strings, each <= 160 chars)
+    //   - isCustom: bool (optional)
+    //   - createdAt: string (optional, <= 40 chars)
+    //
+    // Collection: /families/{familyId}/questions/{questionId}
+    // Document ID: {questionId}
+    // Fields:
+    //   - id: string (required, 1..100 chars, immutable on update)
+    //   - subject: string (required, in ['英語', '数学', '理科', '歴史', '地理', '国語'])
+    //   - category: string (required, <= 200 chars)
+    //   - unitId: string (optional, <= 100 chars)
+    //   - question: string (required, <= 1000 chars)
+    //   - options: list (required, exact size 4, each string <= 500 chars)
+    //   - answerIndex: int (required, 0..3)
+    //   - explanation: string (required, <= 1000 chars)
+    //   - isCustom: bool (optional)
+    //
+    // Collection: /families/{familyId}/kanji/{kanjiId}
+    // Document ID: {kanjiId}
+    // Fields:
+    //   - id: string (required, 1..100 chars, immutable on update)
+    //   - categoryId: string (required, 1..64 chars)
+    //   - kanji: string (required, 1..4 chars)
+    //   - question: string (required, <= 300 chars)
+    //   - targetWord: string (required, <= 40 chars)
+    //   - targetCharReading: string (optional, <= 40 chars)
+    //   - targetReading: string (optional, <= 60 chars)
+    //   - on: string (optional, <= 80 chars)
+    //   - kun: string (optional, <= 120 chars)
+    //   - strokes: int (optional, 1..64)
+    //   - radical: string (optional, <= 60 chars)
+    //   - hint: string (optional, <= 300 chars)
+    //   - examples: list (optional, <= 10 strings, each <= 40 chars)
+    //   - isCustom: bool (optional)
+    //
+    // Collection: /families/{familyId}/vocab/{vocabId}
+    // Document ID: {vocabId}
+    // Fields:
+    //   - id: string (required, 1..100 chars, immutable on update)
+    //   - word: string (required, <= 80 chars)
+    //   - meaning: string (required, <= 200 chars)
+    //   - partOfSpeech: string (required, <= 40 chars)
+    //   - category: string (required, <= 20 chars)
+    //   - isCustom: bool (optional)
+    //
+    // Collection: /families/{familyId}/study_logs/{logId}
+    // Document ID: {logId} (delete 禁止)
+    // Fields:
+    //   - id: string (required, 1..100 chars, immutable on update)
+    //   - appId: string (required, in ['quickexam', 'kanji', 'vocab'])
+    //   - missionType: string (required, in ['review', 'preview', 'kanji', 'vocab', 'free'])
+    //   - subject: string (required, in ['英語', '数学', '理科', '歴史', '地理', '国語', '漢字', '英単語'])
+    //   - unitTitle: string (required, <= 200 chars)
+    //   - score: int (required, 0..500, <= total)
+    //   - total: int (required, 1..500)
+    //   - durationSec: int (required, 0..86400)
+    //   - dateKey: string (required, YYYY-MM-DD)
+    //   - completedAt: string (required, 1..40 chars)
+    //   - wrongIds: list (optional, <= 500 items & <= total, prefix strings <= 100 chars)
+    //
+    // Collection: /families/{familyId}/daily_status/{dateKey}
+    // Document ID: {dateKey} (YYYY-MM-DD, delete 禁止)
+    // Fields:
+    //   - dateKey: string (required, YYYY-MM-DD, == path {dateKey})
+    //   - reviewDone: bool (required)
+    //   - previewDone: bool (required)
+    //   - kanjiDone: bool (required)
+    //   - vocabDone: bool (required)
+    //   - totalAnswered: int (required, 0..100000)
+    //   - totalCorrect: int (required, 0..totalAnswered)
+    //   - totalDurationSec: int (required, 0..864000)
+    //   - updatedAt: string (optional, <= 40 chars)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    // Firebase 認証済み（匿名認証を含む）かどうかを判定
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // ユーザー自身のドキュメントかどうかを判定（標準所有権ヘルパー）
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // ドキュメント内 uid フィールドに基づく所有者判定
+    function isDocOwner() {
+      return isAuthenticated() && request.auth.uid == resource.data.uid;
+    }
+
+    // 作成時に uid フィールドが改ざんされていないことを検証
+    function uidUnchanged() {
+      return !('uid' in request.resource.data) ||
+        request.resource.data.uid == request.auth.uid;
+    }
+
+    // 更新時に uid フィールドが変更されていないことを検証
+    function uidNotModified() {
+      return !('uid' in request.resource.data) ||
+        request.resource.data.uid == resource.data.uid;
+    }
+
+    // 必須フィールドがすべて含まれていることを検証
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    // 許可されたフィールド以外が含まれていないことを検証（スキーマ汚染防止）
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // 文字列長の範囲を検証
+    function validStringLength(field, minLen, maxLen) {
+      return request.resource.data[field] is string &&
+        request.resource.data[field].size() >= minLen &&
+        request.resource.data[field].size() <= maxLen;
+    }
+
+    // オプション文字列フィールドが存在する場合に型と長さを検証
+    function isValidOptionalString(field, minLen, maxLen) {
+      return !(field in request.resource.data) ||
+        (request.resource.data[field] is string &&
+         request.resource.data[field].size() >= minLen &&
+         request.resource.data[field].size() <= maxLen);
+    }
+
+    // リスト型と要素数上限を検証
+    function isValidList(listData, maxSize) {
+      return listData is list && listData.size() <= maxSize;
+    }
+
+    // マップの許可キーを検証
+    function isValidMap(mapData, allowedKeys) {
+      return mapData is map && mapData.keys().hasOnly(allowedKeys);
+    }
+
+    // 更新時に不変フィールドが変更されていないことを検証
+    function areImmutableFieldsUnchanged(fields) {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny(fields);
+    }
+
+    // 先頭最大10要素まで要素型・文字列長を検証するリスト検証
+    function isValidStringListUpTo10(lst, maxItems, maxItemLen) {
+      return isValidList(lst, maxItems) &&
+        (lst.size() < 1 || (lst[0] is string && lst[0].size() <= maxItemLen)) &&
+        (lst.size() < 2 || (lst[1] is string && lst[1].size() <= maxItemLen)) &&
+        (lst.size() < 3 || (lst[2] is string && lst[2].size() <= maxItemLen)) &&
+        (lst.size() < 4 || (lst[3] is string && lst[3].size() <= maxItemLen)) &&
+        (lst.size() < 5 || (lst[4] is string && lst[4].size() <= maxItemLen)) &&
+        (lst.size() < 6 || (lst[5] is string && lst[5].size() <= maxItemLen)) &&
+        (lst.size() < 7 || (lst[6] is string && lst[6].size() <= maxItemLen)) &&
+        (lst.size() < 8 || (lst[7] is string && lst[7].size() <= maxItemLen)) &&
+        (lst.size() < 9 || (lst[8] is string && lst[8].size() <= maxItemLen)) &&
+        (lst.size() < 10 || (lst[9] is string && lst[9].size() <= maxItemLen));
+    }
+
+    // familyId の形式（8〜64文字の半角英数字・ハイフン・アンダースコア）を検証
+    function isValidFamilyId(familyId) {
+      return familyId is string && familyId.matches('^[a-zA-Z0-9_-]{8,64}$');
+    }
+
+    // 認証済みかつ有効な familyId パスであることを検証
+    function isFamilyMember(familyId) {
+      return isAuthenticated() && isValidFamilyId(familyId);
+    }
+
+    // 中2主要6教科の列挙値を検証
+    function isValidSubject(subject) {
+      return subject in ['英語', '数学', '理科', '歴史', '地理', '国語'];
+    }
+
+    // YYYY-MM-DD 形式の日付キーを検証
+    function isValidDateKey(dateKey) {
+      return dateKey is string && dateKey.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$');
+    }
+
+    // ===============================================================
+    // Domain Validators (create と update の双方で必ず呼び出す)
+    // ===============================================================
+
+    // 曜日別時間割内の教科リストを検証
+    function isValidSubjectList(subjects) {
+      return subjects is list &&
+        subjects.size() <= 10 &&
+        subjects.hasOnly(['英語', '数学', '理科', '歴史', '地理', '国語']);
+    }
+
+    // settings.timetable マップを検証
+    function isValidTimetable(timetable) {
+      return isValidMap(timetable, ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']) &&
+        (!('mon' in timetable) || isValidSubjectList(timetable['mon'])) &&
+        (!('tue' in timetable) || isValidSubjectList(timetable['tue'])) &&
+        (!('wed' in timetable) || isValidSubjectList(timetable['wed'])) &&
+        (!('thu' in timetable) || isValidSubjectList(timetable['thu'])) &&
+        (!('fri' in timetable) || isValidSubjectList(timetable['fri'])) &&
+        (!('sat' in timetable) || isValidSubjectList(timetable['sat'])) &&
+        (!('sun' in timetable) || isValidSubjectList(timetable['sun']));
+    }
+
+    // settings.currentUnitBySubject マップを検証
+    function isValidCurrentUnitMap(unitMap) {
+      return isValidMap(unitMap, ['英語', '数学', '理科', '歴史', '地理', '国語']) &&
+        (!('英語' in unitMap) || (unitMap['英語'] is string && unitMap['英語'].size() <= 100)) &&
+        (!('数学' in unitMap) || (unitMap['数学'] is string && unitMap['数学'].size() <= 100)) &&
+        (!('理科' in unitMap) || (unitMap['理科'] is string && unitMap['理科'].size() <= 100)) &&
+        (!('歴史' in unitMap) || (unitMap['歴史'] is string && unitMap['歴史'].size() <= 100)) &&
+        (!('地理' in unitMap) || (unitMap['地理'] is string && unitMap['地理'].size() <= 100)) &&
+        (!('国語' in unitMap) || (unitMap['国語'] is string && unitMap['国語'].size() <= 100));
+    }
+
+    // settings.dailyTargets マップを検証
+    function isValidDailyTargets(targets) {
+      return isValidMap(targets, ['reviewCount', 'previewCount', 'kanjiCount', 'vocabCount']) &&
+        (!('reviewCount' in targets) || (targets['reviewCount'] is int && targets['reviewCount'] >= 0 && targets['reviewCount'] <= 200)) &&
+        (!('previewCount' in targets) || (targets['previewCount'] is int && targets['previewCount'] >= 0 && targets['previewCount'] <= 200)) &&
+        (!('kanjiCount' in targets) || (targets['kanjiCount'] is int && targets['kanjiCount'] >= 0 && targets['kanjiCount'] <= 200)) &&
+        (!('vocabCount' in targets) || (targets['vocabCount'] is int && targets['vocabCount'] >= 0 && targets['vocabCount'] <= 200));
+    }
+
+    // /families/{familyId}/settings/main ドキュメントを検証
+    function isValidSettings(data) {
+      return hasRequiredFields(['studentName', 'timetable', 'currentUnitBySubject', 'dailyTargets', 'parentPin']) &&
+        hasOnlyAllowedFields(['studentName', 'timetable', 'currentUnitBySubject', 'dailyTargets', 'parentPin', 'updatedAt']) &&
+        data.studentName is string && data.studentName.size() <= 40 &&
+        data.parentPin is string && data.parentPin.size() <= 16 &&
+        isValidTimetable(data.timetable) &&
+        isValidCurrentUnitMap(data.currentUnitBySubject) &&
+        isValidDailyTargets(data.dailyTargets) &&
+        isValidOptionalString('updatedAt', 0, 40);
+    }
+
+    // /families/{familyId}/units/{unitId} ドキュメントを検証
+    function isValidUnit(data) {
+      return hasRequiredFields(['id', 'subject', 'textbook', 'order', 'title']) &&
+        hasOnlyAllowedFields(['id', 'subject', 'textbook', 'order', 'title', 'legacyCategories', 'isCustom', 'createdAt']) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 100 &&
+        isValidSubject(data.subject) &&
+        data.textbook is string && data.textbook.size() <= 80 &&
+        data.order is int && data.order >= 1 && data.order <= 500 &&
+        data.title is string && data.title.size() >= 1 && data.title.size() <= 160 &&
+        (!('legacyCategories' in data) || isValidStringListUpTo10(data.legacyCategories, 10, 160)) &&
+        (!('isCustom' in data) || data.isCustom is bool) &&
+        isValidOptionalString('createdAt', 0, 40);
+    }
+
+    // /families/{familyId}/questions/{questionId} ドキュメントを検証
+    function isValidQuestion(data) {
+      return hasRequiredFields(['id', 'subject', 'category', 'question', 'options', 'answerIndex', 'explanation']) &&
+        hasOnlyAllowedFields(['id', 'subject', 'category', 'unitId', 'question', 'options', 'answerIndex', 'explanation', 'isCustom']) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 100 &&
+        isValidSubject(data.subject) &&
+        data.category is string && data.category.size() <= 200 &&
+        isValidOptionalString('unitId', 0, 100) &&
+        data.question is string && data.question.size() <= 1000 &&
+        data.options is list &&
+        data.options.size() == 4 &&
+        data.options[0] is string && data.options[0].size() <= 500 &&
+        data.options[1] is string && data.options[1].size() <= 500 &&
+        data.options[2] is string && data.options[2].size() <= 500 &&
+        data.options[3] is string && data.options[3].size() <= 500 &&
+        data.answerIndex is int && data.answerIndex >= 0 && data.answerIndex <= 3 &&
+        data.explanation is string && data.explanation.size() <= 1000 &&
+        (!('isCustom' in data) || data.isCustom is bool);
+    }
+
+    // /families/{familyId}/kanji/{kanjiId} ドキュメントを検証
+    function isValidKanji(data) {
+      return hasRequiredFields(['id', 'categoryId', 'kanji', 'question', 'targetWord']) &&
+        hasOnlyAllowedFields([
+          'id', 'categoryId', 'kanji', 'question', 'targetWord',
+          'targetCharReading', 'targetReading', 'on', 'kun',
+          'strokes', 'radical', 'hint', 'examples', 'isCustom'
+        ]) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 100 &&
+        data.categoryId is string && data.categoryId.size() >= 1 && data.categoryId.size() <= 64 &&
+        data.kanji is string && data.kanji.size() >= 1 && data.kanji.size() <= 4 &&
+        data.question is string && data.question.size() <= 300 &&
+        data.targetWord is string && data.targetWord.size() <= 40 &&
+        isValidOptionalString('targetCharReading', 0, 40) &&
+        isValidOptionalString('targetReading', 0, 60) &&
+        isValidOptionalString('on', 0, 80) &&
+        isValidOptionalString('kun', 0, 120) &&
+        (!('strokes' in data) || (data.strokes is int && data.strokes >= 1 && data.strokes <= 64)) &&
+        isValidOptionalString('radical', 0, 60) &&
+        isValidOptionalString('hint', 0, 300) &&
+        (!('examples' in data) || isValidStringListUpTo10(data.examples, 10, 40)) &&
+        (!('isCustom' in data) || data.isCustom is bool);
+    }
+
+    // /families/{familyId}/vocab/{vocabId} ドキュメントを検証
+    function isValidVocab(data) {
+      return hasRequiredFields(['id', 'word', 'meaning', 'partOfSpeech', 'category']) &&
+        hasOnlyAllowedFields(['id', 'word', 'meaning', 'partOfSpeech', 'category', 'isCustom']) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 100 &&
+        data.word is string && data.word.size() <= 80 &&
+        data.meaning is string && data.meaning.size() <= 200 &&
+        data.partOfSpeech is string && data.partOfSpeech.size() <= 40 &&
+        data.category is string && data.category.size() <= 20 &&
+        (!('isCustom' in data) || data.isCustom is bool);
+    }
+
+    // /families/{familyId}/study_logs/{logId} ドキュメントを検証
+    function isValidStudyLog(data) {
+      return hasRequiredFields(['id', 'appId', 'missionType', 'subject', 'unitTitle', 'score', 'total', 'durationSec', 'dateKey', 'completedAt']) &&
+        hasOnlyAllowedFields(['id', 'appId', 'missionType', 'subject', 'unitTitle', 'score', 'total', 'durationSec', 'dateKey', 'completedAt', 'wrongIds']) &&
+        data.id is string && data.id.size() >= 1 && data.id.size() <= 100 &&
+        data.appId in ['quickexam', 'kanji', 'vocab'] &&
+        data.missionType in ['review', 'preview', 'kanji', 'vocab', 'free'] &&
+        data.subject in ['英語', '数学', '理科', '歴史', '地理', '国語', '漢字', '英単語'] &&
+        data.unitTitle is string && data.unitTitle.size() <= 200 &&
+        data.score is int && data.score >= 0 && data.score <= 500 &&
+        data.total is int && data.total >= 1 && data.total <= 500 &&
+        data.score <= data.total &&
+        data.durationSec is int && data.durationSec >= 0 && data.durationSec <= 86400 &&
+        isValidDateKey(data.dateKey) &&
+        data.completedAt is string && data.completedAt.size() >= 1 && data.completedAt.size() <= 40 &&
+        (!('wrongIds' in data) || (isValidStringListUpTo10(data.wrongIds, 500, 100) && data.wrongIds.size() <= data.total));
+    }
+
+    // /families/{familyId}/daily_status/{dateKey} ドキュメントを検証
+    function isValidDailyStatus(data, pathDateKey) {
+      return isValidDateKey(pathDateKey) &&
+        hasRequiredFields(['dateKey', 'reviewDone', 'previewDone', 'kanjiDone', 'vocabDone', 'totalAnswered', 'totalCorrect', 'totalDurationSec']) &&
+        hasOnlyAllowedFields(['dateKey', 'reviewDone', 'previewDone', 'kanjiDone', 'vocabDone', 'totalAnswered', 'totalCorrect', 'totalDurationSec', 'updatedAt']) &&
+        isValidDateKey(data.dateKey) &&
+        data.dateKey == pathDateKey &&
+        data.reviewDone is bool &&
+        data.previewDone is bool &&
+        data.kanjiDone is bool &&
+        data.vocabDone is bool &&
+        data.totalAnswered is int && data.totalAnswered >= 0 && data.totalAnswered <= 100000 &&
+        data.totalCorrect is int && data.totalCorrect >= 0 && data.totalCorrect <= data.totalAnswered &&
+        data.totalDurationSec is int && data.totalDurationSec >= 0 && data.totalDurationSec <= 864000 &&
+        isValidOptionalString('updatedAt', 0, 40);
+    }
+
+    // ===============================================================
+    // Default Deny Rule
+    // ===============================================================
+
+    // 明示的に許可されていないルートコレクションおよびサブコレクションをすべて拒否
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // ===============================================================
+    // Family-Scoped Collection Rules
+    // ===============================================================
+
+    match /families/{familyId} {
+
+      // 家族設定・時間割・現在単元・保護者PIN（docId == 'main' のみ許可、削除不可）
+      match /settings/{docId} {
+        allow read: if isFamilyMember(familyId) && docId == 'main';
+        allow create: if isFamilyMember(familyId) &&
+          docId == 'main' &&
+          isValidSettings(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          docId == 'main' &&
+          isValidSettings(request.resource.data);
+        allow delete: if false;
+      }
+
+      // カスタム単元マスター（読み取り・作成・更新・削除を許可）
+      match /units/{unitId} {
+        allow read, delete: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidUnit(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          isValidUnit(request.resource.data) &&
+          areImmutableFieldsUnchanged(['id']);
+      }
+
+      // カメラAI追加・カスタム4択問題（読み取り・作成・更新・削除を許可）
+      match /questions/{questionId} {
+        allow read, delete: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidQuestion(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          isValidQuestion(request.resource.data) &&
+          areImmutableFieldsUnchanged(['id']);
+      }
+
+      // カメラAI追加・カスタム漢字問題（読み取り・作成・更新・削除を許可）
+      match /kanji/{kanjiId} {
+        allow read, delete: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidKanji(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          isValidKanji(request.resource.data) &&
+          areImmutableFieldsUnchanged(['id']);
+      }
+
+      // カメラAI追加・カスタム英単語（読み取り・作成・更新・削除を許可）
+      match /vocab/{vocabId} {
+        allow read, delete: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidVocab(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          isValidVocab(request.resource.data) &&
+          areImmutableFieldsUnchanged(['id']);
+      }
+
+      // 学習履歴ログ（子どもが履歴を消去できないよう delete は禁止）
+      match /study_logs/{logId} {
+        allow read: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidStudyLog(request.resource.data);
+        allow update: if isFamilyMember(familyId) &&
+          isValidStudyLog(request.resource.data) &&
+          areImmutableFieldsUnchanged(['id']);
+        allow delete: if false;
+      }
+
+      // 日別のミッション達成状況（削除は禁止）
+      match /daily_status/{dateKey} {
+        allow read: if isFamilyMember(familyId);
+        allow create: if isFamilyMember(familyId) &&
+          isValidDailyStatus(request.resource.data, dateKey);
+        allow update: if isFamilyMember(familyId) &&
+          isValidDailyStatus(request.resource.data, dateKey) &&
+          areImmutableFieldsUnchanged(['dateKey']);
+        allow delete: if false;
+      }
+    }
+  }
+}

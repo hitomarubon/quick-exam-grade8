@@ -1,0 +1,340 @@
+[
+  {
+    "id": "eng-1",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 1,
+    "title": "Unit 1 過去進行形・未来表現（be going to / will）"
+  },
+  {
+    "id": "eng-2",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 2,
+    "title": "Unit 2 接続詞（when / if / that）"
+  },
+  {
+    "id": "eng-3",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 3,
+    "title": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞"
+  },
+  {
+    "id": "eng-4",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 4,
+    "title": "There is / There are 構文",
+    "legacyCategories": ["There is / There are 構文"]
+  },
+  {
+    "id": "eng-5",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 5,
+    "title": "第4文型（SVOO）と書き換え",
+    "legacyCategories": ["第4文型（SVOO）と書き換え"]
+  },
+  {
+    "id": "eng-6",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 6,
+    "title": "不定詞の形容詞的用法",
+    "legacyCategories": ["不定詞の形容詞的用法"]
+  },
+  {
+    "id": "eng-7",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 7,
+    "title": "Unit 4 重要単語・熟語・本文表現",
+    "legacyCategories": ["Unit 4 重要単語・熟語・本文表現"]
+  },
+  {
+    "id": "eng-8",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 8,
+    "title": "比較（比較級・最上級・as〜as）"
+  },
+  {
+    "id": "eng-9",
+    "subject": "英語",
+    "textbook": "文理 教科書ワーク",
+    "order": 9,
+    "title": "受け身（受動態）の基本と表現"
+  },
+  {
+    "id": "math-1",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 1,
+    "title": "式の計算（単項式・多項式・文字式の利用）"
+  },
+  {
+    "id": "math-2",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 2,
+    "title": "連立方程式（加減法・代入法・文章題）"
+  },
+  {
+    "id": "math-3",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 3,
+    "title": "1次関数：基本・変化の割合・変域",
+    "legacyCategories": ["1次関数：基本・変化の割合・変域"]
+  },
+  {
+    "id": "math-4",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 4,
+    "title": "1次関数：直線の式・交点・グラフの応用",
+    "legacyCategories": ["1次関数：直線の式・交点・グラフの応用"]
+  },
+  {
+    "id": "math-5",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 5,
+    "title": "1次関数の利用：動点・速さ・水槽・料金・温度",
+    "legacyCategories": ["1次関数の利用：動点・速さ・水槽・料金・温度"]
+  },
+  {
+    "id": "math-6",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 6,
+    "title": "図形の性質：多角形の内角・外角、平行線と角",
+    "legacyCategories": ["図形の性質：多角形の内角・外角、平行線と角"]
+  },
+  {
+    "id": "math-7",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 7,
+    "title": "図形の性質：三角形の合同条件と証明",
+    "legacyCategories": ["図形の性質：三角形の合同条件と証明"]
+  },
+  {
+    "id": "math-8",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 8,
+    "title": "二等辺三角形・直角三角形・平行四辺形"
+  },
+  {
+    "id": "math-9",
+    "subject": "数学",
+    "textbook": "文理 教科書ワーク",
+    "order": 9,
+    "title": "確率・データの比較（箱ひげ図）"
+  },
+  {
+    "id": "sci-1",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 1,
+    "title": "化学変化と原子・分子（物質の成り立ち・化学反応式）"
+  },
+  {
+    "id": "sci-2",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 2,
+    "title": "化学変化と物質の質量（酸化・還元・質量保存）"
+  },
+  {
+    "id": "sci-3",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 3,
+    "title": "生物の体のつくりと働き（細胞・消化と吸収）"
+  },
+  {
+    "id": "sci-4",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 4,
+    "title": "血液の循環と排出・刺激と反応"
+  },
+  {
+    "id": "sci-5",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 5,
+    "title": "電流とその利用（回路・オームの法則・電力）"
+  },
+  {
+    "id": "sci-6",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 6,
+    "title": "電流と磁界（磁界・電磁誘導・静電気）"
+  },
+  {
+    "id": "sci-7",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 7,
+    "title": "気象とその変化（気象観測・雲のでき方・湿度）"
+  },
+  {
+    "id": "sci-8",
+    "subject": "理科",
+    "textbook": "啓林館 教科書ワーク",
+    "order": 8,
+    "title": "前線と日本の天気（気圧・前線・四季の天気）"
+  },
+  {
+    "id": "hist-1",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 1,
+    "title": "戦国時代から全国統一（信長・秀吉）"
+  },
+  {
+    "id": "hist-2",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 2,
+    "title": "江戸幕府の成立と鎖国・身分制度"
+  },
+  {
+    "id": "hist-3",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 3,
+    "title": "元禄文化と化政文化・学問の発達",
+    "legacyCategories": ["元禄文化と化政文化・学問の発達"]
+  },
+  {
+    "id": "hist-4",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 4,
+    "title": "享保の改革と田沼意次の政治",
+    "legacyCategories": ["享保の改革と田沼意次の政治"]
+  },
+  {
+    "id": "hist-5",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 5,
+    "title": "寛政の改革・天保の改革と藩政改革",
+    "legacyCategories": ["寛政の改革・天保の改革と藩政改革"]
+  },
+  {
+    "id": "hist-6",
+    "subject": "歴史",
+    "textbook": "文理 教科書ワーク",
+    "order": 6,
+    "title": "開国と江戸幕府の滅亡・明治維新"
+  },
+  {
+    "id": "geo-1",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 1,
+    "title": "日本の姿と自然環境（地形・気候・資源）"
+  },
+  {
+    "id": "geo-2",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 2,
+    "title": "九州地方の自然・農業",
+    "legacyCategories": ["九州地方の自然・農業"]
+  },
+  {
+    "id": "geo-3",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 3,
+    "title": "九州地方の工業・環境・都市",
+    "legacyCategories": ["九州地方の工業・環境・都市"]
+  },
+  {
+    "id": "geo-4",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 4,
+    "title": "中国・四国地方の自然・農業",
+    "legacyCategories": ["中国・四国地方の自然・農業"]
+  },
+  {
+    "id": "geo-5",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 5,
+    "title": "中国・四国地方の工業・交通・地域課題",
+    "legacyCategories": ["中国・四国地方の工業・交通・地域課題"]
+  },
+  {
+    "id": "geo-6",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 6,
+    "title": "近畿地方・中部地方の自然と産業"
+  },
+  {
+    "id": "geo-7",
+    "subject": "地理",
+    "textbook": "文理 教科書ワーク",
+    "order": 7,
+    "title": "関東地方・東北地方・北海道地方"
+  },
+  {
+    "id": "jpn-1",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 1,
+    "title": "説明文の読解・文章構成"
+  },
+  {
+    "id": "jpn-2",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 2,
+    "title": "小説・物語の心情表現と描写"
+  },
+  {
+    "id": "jpn-3",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 3,
+    "title": "古文の基礎（枕草子・平家物語・歴史的仮名遣い）"
+  },
+  {
+    "id": "jpn-4",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 4,
+    "title": "漢文の基礎（漢詩の形式・返り点・訓読）"
+  },
+  {
+    "id": "jpn-5",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 5,
+    "title": "短歌・俳句の表現技法（修辞法・季語）"
+  },
+  {
+    "id": "jpn-6",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 6,
+    "title": "文法（用言の活用：動詞・形容詞・形容動詞）"
+  },
+  {
+    "id": "jpn-7",
+    "subject": "国語",
+    "textbook": "文理 教科書ワーク",
+    "order": 7,
+    "title": "文法（敬語・助動詞・副詞・接続詞）"
+  }
+]

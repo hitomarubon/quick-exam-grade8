@@ -43,7 +43,7 @@ export const ResultView: React.FC<ResultViewProps> = ({
             : 'bg-gradient-to-br from-amber-500 via-orange-600 to-rose-600'
         }`}
       >
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-xs">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm">
           <Trophy className="h-9 w-9 text-yellow-200" />
         </div>
 
@@ -91,7 +91,7 @@ export const ResultView: React.FC<ResultViewProps> = ({
             type="button"
             data-testid="retry-same-button"
             onClick={onRetrySameMode}
-            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-indigo-200 bg-white py-3.5 text-sm font-extrabold text-indigo-700 shadow-xs transition-all active:scale-[0.98] hover:bg-indigo-50"
+            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-indigo-200 bg-white py-3.5 text-sm font-extrabold text-indigo-700 shadow-sm transition-all active:scale-[0.98] hover:bg-indigo-50"
           >
             <RotateCcw className="h-4 w-4" />
             <span>もう一度挑戦</span>
@@ -101,7 +101,7 @@ export const ResultView: React.FC<ResultViewProps> = ({
             type="button"
             data-testid="result-home-button"
             onClick={onBackHome}
-            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-slate-200 bg-white py-3.5 text-sm font-extrabold text-slate-700 shadow-xs transition-all active:scale-[0.98] hover:bg-slate-100"
+            className="flex items-center justify-center gap-2 rounded-2xl border-2 border-slate-200 bg-white py-3.5 text-sm font-extrabold text-slate-700 shadow-sm transition-all active:scale-[0.98] hover:bg-slate-100"
           >
             <Home className="h-4 w-4" />
             <span>ホームへ戻る</span>
@@ -110,7 +110,7 @@ export const ResultView: React.FC<ResultViewProps> = ({
       </section>
 
       {/* Wrong Questions List */}
-      <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-xs">
+      <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             {wrongQuestions.length > 0 ? (

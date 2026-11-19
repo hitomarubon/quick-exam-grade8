@@ -1,7 +1,7 @@
 {
-  "name": "QuickExam - 中2定期テスト対策 4択問題集",
+  "name": "QuickExam - 中2 毎日予習・復習＆学習管理",
   "short_name": "QuickExam",
-  "description": "中学2年生の定期テスト対策（英語・数学・歴史・地理）をスキマ時間で反復演習できる4択問題集アプリ",
+  "description": "中学2年生の毎日の予習・復習（6教科・手書き漢字・英単語3秒フラッシュ）と学習管理を行える学習ハブアプリ",
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",

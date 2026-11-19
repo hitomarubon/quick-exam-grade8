@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   CheckCircle2,
   XCircle,
@@ -12,7 +12,7 @@ interface QuizViewProps {
   title: string;
   questions: Question[];
   onAnswerQuestion: (question: Question, selectedIndex: number, isCorrect: boolean) => void;
-  onFinishQuiz: (score: number, wrongQuestions: Question[]) => void;
+  onFinishQuiz: (score: number, wrongQuestions: Question[], durationSec: number) => void;
   onBackHome: () => void;
 }
 
@@ -29,6 +29,7 @@ export const QuizView: React.FC<QuizViewProps> = ({
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [wrongQuestions, setWrongQuestions] = useState<Question[]>([]);
+  const startTimeRef = useRef<number>(Date.now());
 
   const currentQuestion = questions[currentIndex];
   const isAnswered = selectedIndex !== null;
@@ -56,7 +57,8 @@ export const QuizView: React.FC<QuizViewProps> = ({
       setCurrentIndex((prev) => prev + 1);
       setSelectedIndex(null);
     } else {
-      onFinishQuiz(score, wrongQuestions);
+      const durationSec = Math.max(1, Math.round((Date.now() - startTimeRef.current) / 1000));
+      onFinishQuiz(score, wrongQuestions, durationSec);
     }
   };
 

@@ -1,10 +1,9 @@
 // Dynamic cache-first Service Worker for QuickExam (works completely offline after first load)
-const CACHE_NAME = 'quickexam-offline-v3';
+const CACHE_NAME = 'quickexam-offline-v4';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(async (cache) => {
-      // Cache root, index.html, manifest, and icons immediately
       const baseAssets = [
         './',
         './index.html',
@@ -14,7 +13,6 @@ self.addEventListener('install', (event) => {
       ];
       await cache.addAll(baseAssets);
 
-      // Parse index.html to pre-cache hashed JS and CSS bundles so offline works immediately!
       try {
         const res = await fetch('./index.html', { cache: 'no-cache' });
         const html = await res.text();
@@ -47,10 +45,13 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
+  // Never intercept cross-origin requests (Firestore, Firebase Auth, Gemini API, Handwriting API, etc.)
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cachedResponse) => {
       if (cachedResponse) {
-        // Update cache in background if online, but return cached immediately
         fetch(event.request)
           .then((netRes) => {
             if (netRes && netRes.status === 200) {
@@ -73,7 +74,6 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         })
         .catch(() => {
-          // If navigation request fails offline, serve cached index.html
           if (event.request.mode === 'navigate') {
             return caches.match('./index.html') || caches.match('./');
           }
