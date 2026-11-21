@@ -91,10 +91,6 @@ export function loadSavedFamilyId(): string {
   } catch {
     // ignore
   }
-  const envDefault = import.meta.env.VITE_DEFAULT_FAMILY_ID as string | undefined;
-  if (envDefault && isValidFamilyId(envDefault)) {
-    return envDefault.trim();
-  }
   return '';
 }
 
