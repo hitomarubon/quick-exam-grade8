@@ -1,13 +1,16 @@
 import React, { useMemo, useRef, useState } from 'react';
 import {
+  BookPlus,
   Camera,
   Check,
   Image as ImageIcon,
   KeyRound,
   Loader2,
+  PenTool,
   Plus,
   Sparkles,
   Trash2,
+  Zap,
 } from 'lucide-react';
 import {
   ALL_SUBJECTS,
@@ -20,13 +23,12 @@ import {
 import {
   ExtractedKanjiDraft,
   ExtractedQuestionDraft,
-  ExtractedUnitDraft,
   ExtractedVocabDraft,
   SelectedImageItem,
   extractKanjiFromImages,
   extractQuestionsFromImages,
-  extractUnitsFromImages,
   extractVocabFromImages,
+  generateQuestionsFromTopic,
   loadGeminiApiKey,
   resizeImageFile,
   saveGeminiApiKey,
@@ -41,7 +43,7 @@ interface CameraImportPanelProps {
   onAddVocab: (words: VocabWord[]) => Promise<void>;
 }
 
-type ImportMode = 'questions' | 'units' | 'kanji' | 'vocab';
+type ImportMode = 'questions' | 'kanji' | 'vocab';
 
 export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
   allUnits,
@@ -54,20 +56,36 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
   const [importMode, setImportMode] = useState<ImportMode>('questions');
   const [selectedSubject, setSelectedSubject] = useState<Subject>('理科');
   const [selectedUnitId, setSelectedUnitId] = useState<string>('sci-1');
-  const [textbookName, setTextbookName] = useState<string>('啓林館 教科書ワーク');
+  const [createNewUnitMode, setCreateNewUnitMode] = useState(false);
+  const [newUnitTitle, setNewUnitTitle] = useState('');
+  const [newUnitTextbook, setNewUnitTextbook] = useState('啓林館 教科書ワーク');
+  const [topicHint, setTopicHint] = useState('');
+  const [generateCount, setGenerateCount] = useState<5 | 10>(5);
 
   const [apiKey, setApiKey] = useState<string>(() => loadGeminiApiKey());
-  const [showApiKeyBox, setShowApiKeyBox] = useState<boolean>(() => !loadGeminiApiKey());
+  const [showApiKeyBox, setShowApiKeyBox] = useState<boolean>(false);
 
   const [images, setImages] = useState<SelectedImageItem[]>([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>('');
 
-  const [unitDrafts, setUnitDrafts] = useState<ExtractedUnitDraft[]>([]);
   const [questionDrafts, setQuestionDrafts] = useState<ExtractedQuestionDraft[]>([]);
   const [kanjiDrafts, setKanjiDrafts] = useState<ExtractedKanjiDraft[]>([]);
   const [vocabDrafts, setVocabDrafts] = useState<ExtractedVocabDraft[]>([]);
+
+  // Manual kanji input states
+  const [kanjiChar, setKanjiChar] = useState('');
+  const [kanjiWord, setKanjiWord] = useState('');
+  const [kanjiReading, setKanjiReading] = useState('');
+  const [kanjiQuestion, setKanjiQuestion] = useState('');
+  const [kanjiHint, setKanjiHint] = useState('');
+
+  // Manual vocab input states
+  const [vocabWordInput, setVocabWordInput] = useState('');
+  const [vocabMeaningInput, setVocabMeaningInput] = useState('');
+  const [vocabPosInput, setVocabPosInput] = useState('名詞');
+  const [vocabBulkText, setVocabBulkText] = useState('');
 
   const [manualUnitTitle, setManualUnitTitle] = useState('');
   const [unitListFilter, setUnitListFilter] = useState<Subject>('理科');
@@ -87,9 +105,67 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
 
   const handleSubjectChange = (subj: Subject) => {
     setSelectedSubject(subj);
-    setTextbookName(subj === '理科' ? '啓林館 教科書ワーク' : '文理 教科書ワーク');
+    setNewUnitTextbook(subj === '理科' ? '啓林館 教科書ワーク' : '文理 教科書ワーク');
     const firstUnit = allUnits.find((u) => u.subject === subj);
     if (firstUnit) setSelectedUnitId(firstUnit.id);
+  };
+
+  const handleGenerateFromTopic = async () => {
+    const targetUnit = allUnits.find((u) => u.id === selectedUnitId);
+    const effectiveTitle = createNewUnitMode
+      ? newUnitTitle.trim()
+      : targetUnit?.title || selectedSubject;
+    const effectiveTextbook = createNewUnitMode
+      ? newUnitTextbook.trim()
+      : targetUnit?.textbook || '教科書ワーク';
+
+    if (!effectiveTitle) {
+      setErrorMessage('単元タイトルを入力または選択してください。');
+      return;
+    }
+    if (!apiKey.trim()) {
+      setShowApiKeyBox(true);
+      setErrorMessage('AI自動作成には Gemini APIキーが必要です（手動追加はキー不要で使えます）。');
+      return;
+    }
+
+    saveGeminiApiKey(apiKey);
+    setIsAnalyzing(true);
+    setErrorMessage('');
+    setStatusMessage('');
+
+    try {
+      const result = await generateQuestionsFromTopic(
+        apiKey,
+        selectedSubject,
+        effectiveTitle,
+        effectiveTextbook,
+        generateCount,
+        topicHint
+      );
+      setQuestionDrafts((prev) => [...prev, ...result]);
+      setStatusMessage(
+        `「${effectiveTitle}」の4択問題を ${result.length} 問作成しました。確認して登録してください。`
+      );
+    } catch (err) {
+      setErrorMessage(err instanceof Error ? err.message : '問題作成に失敗しました。');
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
+  const handleAddEmptyQuestionRow = () => {
+    setQuestionDrafts((prev) => [
+      ...prev,
+      {
+        checked: true,
+        question: '',
+        options: ['選択肢A', '選択肢B', '選択肢C', '選択肢D'],
+        answerIndex: 0,
+        explanation: '',
+      },
+    ]);
+    setErrorMessage('');
   };
 
   const handleFilesSelected = async (files: FileList | null) => {
@@ -105,14 +181,14 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
     }
   };
 
-  const handleAnalyze = async () => {
+  const handleAnalyzeImages = async () => {
     if (images.length === 0) {
       setErrorMessage('先にページを撮影するか、写真を選んでください。');
       return;
     }
     if (!apiKey.trim()) {
       setShowApiKeyBox(true);
-      setErrorMessage('Gemini APIキーを入力してください。');
+      setErrorMessage('写真読み取りには Gemini APIキーを入力してください。');
       return;
     }
 
@@ -122,36 +198,27 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
     setStatusMessage('');
 
     try {
-      if (importMode === 'units') {
-        const nextOrder = subjectUnits.length > 0 ? Math.max(...subjectUnits.map((u) => u.order)) + 1 : 1;
-        const result = await extractUnitsFromImages(
-          apiKey,
-          images,
-          selectedSubject,
-          textbookName,
-          nextOrder
-        );
-        setUnitDrafts(result);
-        setStatusMessage(`${result.length} 件の単元候補を読み取りました。内容を確認して登録してください。`);
-      } else if (importMode === 'questions') {
+      if (importMode === 'questions') {
         const targetUnit = allUnits.find((u) => u.id === selectedUnitId);
-        const unitTitle = targetUnit?.title || selectedSubject;
+        const unitTitle = createNewUnitMode
+          ? newUnitTitle.trim() || selectedSubject
+          : targetUnit?.title || selectedSubject;
         const result = await extractQuestionsFromImages(
           apiKey,
           images,
           selectedSubject,
           unitTitle
         );
-        setQuestionDrafts(result);
-        setStatusMessage(`${result.length} 問の4択問題を生成しました。確認して登録してください。`);
+        setQuestionDrafts((prev) => [...prev, ...result]);
+        setStatusMessage(`写真から ${result.length} 問の4択問題を生成しました。`);
       } else if (importMode === 'kanji') {
         const result = await extractKanjiFromImages(apiKey, images);
-        setKanjiDrafts(result);
-        setStatusMessage(`${result.length} 字の漢字問題を読み取りました。`);
+        setKanjiDrafts((prev) => [...prev, ...result]);
+        setStatusMessage(`写真から ${result.length} 字の漢字を読み取りました。`);
       } else {
         const result = await extractVocabFromImages(apiKey, images);
-        setVocabDrafts(result);
-        setStatusMessage(`${result.length} 語の英単語を読み取りました。`);
+        setVocabDrafts((prev) => [...prev, ...result]);
+        setStatusMessage(`写真から ${result.length} 語の英単語を読み取りました。`);
       }
     } catch (err) {
       setErrorMessage(err instanceof Error ? err.message : 'AI解析に失敗しました。');
@@ -160,46 +227,148 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
     }
   };
 
+  const handleAddManualKanjiDraft = () => {
+    const ch = kanjiChar.trim().charAt(0);
+    if (!ch) {
+      setErrorMessage('漢字1文字を入力してください。');
+      return;
+    }
+    const word = kanjiWord.trim() || ch;
+    const reading = kanjiReading.trim() || 'よみ';
+    const q = kanjiQuestion.trim() || `${word}の［${reading}］を書く。`;
+
+    setKanjiDrafts((prev) => [
+      ...prev,
+      {
+        checked: true,
+        kanji: ch,
+        question: q.includes('［') ? q : `${q}（［${reading}］）`,
+        targetWord: word,
+        targetCharReading: reading,
+        targetReading: reading,
+        on: reading,
+        kun: '—',
+        strokes: 10,
+        radical: '—',
+        hint: kanjiHint.trim() || `${word}で使われる漢字です。`,
+        examples: [word],
+      },
+    ]);
+    setKanjiChar('');
+    setKanjiWord('');
+    setKanjiReading('');
+    setKanjiQuestion('');
+    setKanjiHint('');
+    setErrorMessage('');
+  };
+
+  const handleAddManualVocabDraft = () => {
+    const w = vocabWordInput.trim();
+    const m = vocabMeaningInput.trim();
+    if (!w || !m) {
+      setErrorMessage('英単語と意味を入力してください。');
+      return;
+    }
+    setVocabDrafts((prev) => [
+      ...prev,
+      {
+        checked: true,
+        word: w,
+        meaning: m,
+        partOfSpeech: vocabPosInput.trim() || '単語',
+      },
+    ]);
+    setVocabWordInput('');
+    setVocabMeaningInput('');
+    setErrorMessage('');
+  };
+
+  const handleParseBulkVocab = () => {
+    const lines = vocabBulkText
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    if (lines.length === 0) return;
+
+    const parsed: ExtractedVocabDraft[] = [];
+    for (const line of lines) {
+      const parts = line.split(/[,\t，、]+/).map((p) => p.trim());
+      if (parts.length >= 2 && parts[0] && parts[1]) {
+        parsed.push({
+          checked: true,
+          word: parts[0],
+          meaning: parts[1],
+          partOfSpeech: parts[2] || '単語',
+        });
+      }
+    }
+    if (parsed.length === 0) {
+      setErrorMessage('「単語, 意味」の形式で1行ずつ入力してください。');
+      return;
+    }
+    setVocabDrafts((prev) => [...prev, ...parsed]);
+    setVocabBulkText('');
+    setErrorMessage('');
+    setStatusMessage(`${parsed.length} 語を下書きリストに追加しました。`);
+  };
+
   const handleSaveDrafts = async () => {
     setErrorMessage('');
     const nowIso = new Date().toISOString();
 
     try {
-      if (importMode === 'units') {
-        const checked = unitDrafts.filter((d) => d.checked && d.title.trim());
-        if (checked.length === 0) return;
-        const toAdd: Unit[] = checked.map((d, idx) => ({
-          id: `custom_unit_${Date.now()}_${idx}`,
-          subject: selectedSubject,
-          textbook: (textbookName.trim() || '教科書ワーク').slice(0, 80),
-          order: Math.min(500, Math.max(1, Math.round(Number(d.order) || idx + 1))),
-          title: d.title.trim().slice(0, 160),
-          isCustom: true,
-          createdAt: nowIso,
-        }));
-        await onAddUnits(toAdd);
-        setUnitDrafts([]);
-        setImages([]);
-        setStatusMessage(`${toAdd.length} 件の単元を追加・同期しました！`);
-      } else if (importMode === 'questions') {
+      if (importMode === 'questions') {
         const checked = questionDrafts.filter((d) => d.checked && d.question.trim());
         if (checked.length === 0) return;
-        const targetUnit = allUnits.find((u) => u.id === selectedUnitId);
+
+        let targetUnitId = selectedUnitId;
+        let targetUnitTitle =
+          allUnits.find((u) => u.id === selectedUnitId)?.title || selectedSubject;
+
+        if (createNewUnitMode) {
+          const cleanNewTitle = newUnitTitle.trim();
+          if (!cleanNewTitle) {
+            setErrorMessage('新しい単元名を入力してください。');
+            return;
+          }
+          const sameSubject = allUnits.filter((u) => u.subject === selectedSubject);
+          const nextOrder =
+            sameSubject.length > 0 ? Math.max(...sameSubject.map((u) => u.order)) + 1 : 1;
+          const createdUnit: Unit = {
+            id: `custom_unit_${Date.now()}`,
+            subject: selectedSubject,
+            textbook: (newUnitTextbook.trim() || '教科書ワーク').slice(0, 80),
+            order: Math.min(500, Math.max(1, Math.round(nextOrder))),
+            title: cleanNewTitle.slice(0, 160),
+            isCustom: true,
+            createdAt: nowIso,
+          };
+          await onAddUnits([createdUnit]);
+          targetUnitId = createdUnit.id;
+          targetUnitTitle = createdUnit.title;
+          setSelectedUnitId(createdUnit.id);
+          setCreateNewUnitMode(false);
+          setNewUnitTitle('');
+        }
+
         const toAdd: Question[] = checked.map((d, idx) => ({
           id: `custom_q_${Date.now()}_${idx}`,
           subject: selectedSubject,
-          category: (targetUnit?.title || selectedSubject).slice(0, 200),
-          unitId: selectedUnitId,
+          category: targetUnitTitle.slice(0, 200),
+          unitId: targetUnitId,
           question: d.question.trim().slice(0, 1000),
           options: d.options.map((o) => o.slice(0, 500)) as [string, string, string, string],
           answerIndex: Math.min(3, Math.max(0, Math.round(d.answerIndex))),
-          explanation: d.explanation.trim().slice(0, 1000),
+          explanation: (d.explanation.trim() || '教科書・ワークの基本事項を確認しましょう。').slice(
+            0,
+            1000
+          ),
           isCustom: true,
         }));
         await onAddQuestions(toAdd);
         setQuestionDrafts([]);
         setImages([]);
-        setStatusMessage(`${toAdd.length} 問の問題を追加・同期しました！`);
+        setStatusMessage(`${toAdd.length} 問の問題を「${targetUnitTitle}」へ登録しました！`);
       } else if (importMode === 'kanji') {
         const checked = kanjiDrafts.filter((d) => d.checked && d.kanji.trim());
         if (checked.length === 0) return;
@@ -222,7 +391,7 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
         await onAddKanji(toAdd);
         setKanjiDrafts([]);
         setImages([]);
-        setStatusMessage(`${toAdd.length} 字の漢字を追加・同期しました！`);
+        setStatusMessage(`${toAdd.length} 字の漢字を手書きドリルへ登録しました！`);
       } else {
         const checked = vocabDrafts.filter((d) => d.checked && d.word.trim() && d.meaning.trim());
         if (checked.length === 0) return;
@@ -237,7 +406,7 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
         await onAddVocab(toAdd);
         setVocabDrafts([]);
         setImages([]);
-        setStatusMessage(`${toAdd.length} 語の英単語を追加・同期しました！`);
+        setStatusMessage(`${toAdd.length} 語の英単語を登録しました！`);
       }
     } catch (err) {
       setErrorMessage(err instanceof Error ? err.message : '保存中にエラーが発生しました。');
@@ -254,8 +423,8 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
         id: `custom_unit_${Date.now()}`,
         subject: unitListFilter,
         textbook: unitListFilter === '理科' ? '啓林館 教科書ワーク' : '文理 教科書ワーク',
-        order: nextOrder,
-        title,
+        order: Math.min(500, Math.max(1, Math.round(nextOrder))),
+        title: title.slice(0, 160),
         isCustom: true,
         createdAt: new Date().toISOString(),
       },
@@ -265,96 +434,68 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
   };
 
   const hasDrafts =
-    (importMode === 'units' && unitDrafts.length > 0) ||
     (importMode === 'questions' && questionDrafts.length > 0) ||
     (importMode === 'kanji' && kanjiDrafts.length > 0) ||
     (importMode === 'vocab' && vocabDrafts.length > 0);
 
   return (
     <div className="space-y-4">
-      {/* Gemini API Key Bar */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-3.5 shadow-sm">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <KeyRound className="h-4 w-4 text-purple-600" />
-            <span className="text-xs font-extrabold text-slate-800">
-              AI画像読み取り（Gemini API）
-            </span>
-          </div>
+      {/* Mode Selector */}
+      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm space-y-3">
+        <p className="text-xs font-extrabold text-slate-700">追加するデータを選ぶ</p>
+        <div className="grid grid-cols-3 gap-2">
           <button
             type="button"
-            onClick={() => setShowApiKeyBox((prev) => !prev)}
-            className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${
-              apiKey.trim()
-                ? 'bg-emerald-100 text-emerald-700'
-                : 'bg-rose-100 text-rose-700'
+            onClick={() => {
+              setImportMode('questions');
+              setErrorMessage('');
+            }}
+            className={`flex flex-col items-center gap-1 rounded-xl border p-2.5 text-center text-[11px] font-bold transition ${
+              importMode === 'questions'
+                ? 'border-indigo-600 bg-indigo-50 text-indigo-800'
+                : 'border-slate-200 bg-slate-50 text-slate-700'
             }`}
           >
-            {apiKey.trim() ? '設定済み（変更）' : '未設定（タップして入力）'}
+            <BookPlus className="h-4 w-4" />
+            <span>単元問題</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setImportMode('kanji');
+              setErrorMessage('');
+            }}
+            className={`flex flex-col items-center gap-1 rounded-xl border p-2.5 text-center text-[11px] font-bold transition ${
+              importMode === 'kanji'
+                ? 'border-blue-600 bg-blue-50 text-blue-800'
+                : 'border-slate-200 bg-slate-50 text-slate-700'
+            }`}
+          >
+            <PenTool className="h-4 w-4" />
+            <span>漢字を手動追加</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setImportMode('vocab');
+              setErrorMessage('');
+            }}
+            className={`flex flex-col items-center gap-1 rounded-xl border p-2.5 text-center text-[11px] font-bold transition ${
+              importMode === 'vocab'
+                ? 'border-violet-600 bg-violet-50 text-violet-800'
+                : 'border-slate-200 bg-slate-50 text-slate-700'
+            }`}
+          >
+            <Zap className="h-4 w-4" />
+            <span>単語を手動追加</span>
           </button>
         </div>
 
-        {showApiKeyBox && (
-          <div className="mt-2.5 space-y-2 border-t border-slate-100 pt-2.5">
-            <p className="text-[11px] text-slate-500">
-              Google AI Studio の無料 Gemini APIキーを貼り付けてください（この端末内に保存されます）。
-            </p>
-            <div className="flex gap-2">
-              <input
-                type="password"
-                value={apiKey}
-                onChange={(e) => setApiKey(e.target.value)}
-                placeholder="AIza..."
-                className="flex-1 rounded-xl border border-slate-300 px-3 py-2 text-xs focus:border-purple-500 focus:outline-none"
-              />
-              <button
-                type="button"
-                onClick={() => {
-                  saveGeminiApiKey(apiKey);
-                  setShowApiKeyBox(false);
-                  setStatusMessage('Gemini APIキーを保存しました。');
-                }}
-                className="rounded-xl bg-purple-600 px-3.5 py-2 text-xs font-bold text-white"
-              >
-                保存
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Mode Selector */}
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm space-y-3">
-        <p className="text-xs font-extrabold text-slate-700">1. 撮影して追加する内容を選ぶ</p>
-        <div className="grid grid-cols-2 gap-2">
-          {(
-            [
-              { id: 'questions', label: '📝 問題ページ → 4択作成' },
-              { id: 'units', label: '📑 目次ページ → 単元登録' },
-              { id: 'kanji', label: '✍️ 漢字プリント → 手書き登録' },
-              { id: 'vocab', label: '🔤 英単語帳 → 単語登録' },
-            ] as const
-          ).map((tab) => (
-            <button
-              key={tab.id}
-              type="button"
-              onClick={() => {
-                setImportMode(tab.id);
-                setErrorMessage('');
-              }}
-              className={`rounded-xl border px-2.5 py-2.5 text-left text-xs font-bold transition ${
-                importMode === tab.id
-                  ? 'border-purple-600 bg-purple-50 text-purple-800'
-                  : 'border-slate-200 bg-slate-50 text-slate-700'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {(importMode === 'questions' || importMode === 'units') && (
-          <div className="grid grid-cols-1 gap-2.5 pt-1">
+        {/* MODE 1: TOPIC-BASED QUESTION GENERATION + MANUAL */}
+        {importMode === 'questions' && (
+          <div className="space-y-3 pt-1">
             <div>
               <label className="block text-[11px] font-bold text-slate-600 mb-1">教科</label>
               <div className="flex flex-wrap gap-1.5">
@@ -375,23 +516,36 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
               </div>
             </div>
 
-            {importMode === 'units' ? (
-              <div>
-                <label className="block text-[11px] font-bold text-slate-600 mb-1">
-                  教材・教科書名
-                </label>
-                <input
-                  type="text"
-                  value={textbookName}
-                  onChange={(e) => setTextbookName(e.target.value)}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2 text-xs font-bold"
-                />
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <label className="text-[11px] font-bold text-slate-600">対象単元</label>
+                <button
+                  type="button"
+                  onClick={() => setCreateNewUnitMode((prev) => !prev)}
+                  className="text-[11px] font-bold text-indigo-600 hover:underline"
+                >
+                  {createNewUnitMode ? '登録済み単元から選ぶ' : '＋ 新しい単元を作って登録'}
+                </button>
               </div>
-            ) : (
-              <div>
-                <label className="block text-[11px] font-bold text-slate-600 mb-1">
-                  登録先の単元
-                </label>
+
+              {createNewUnitMode ? (
+                <div className="space-y-2 rounded-xl border border-indigo-200 bg-indigo-50/40 p-2.5">
+                  <input
+                    type="text"
+                    value={newUnitTitle}
+                    onChange={(e) => setNewUnitTitle(e.target.value)}
+                    placeholder="例: Unit 5 比較表現と最上級"
+                    className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-bold"
+                  />
+                  <input
+                    type="text"
+                    value={newUnitTextbook}
+                    onChange={(e) => setNewUnitTextbook(e.target.value)}
+                    placeholder="教材名（例: 文理 教科書ワーク）"
+                    className="w-full rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-[11px]"
+                  />
+                </div>
+              ) : (
                 <select
                   value={selectedUnitId}
                   onChange={(e) => setSelectedUnitId(e.target.value)}
@@ -403,102 +557,334 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
                     </option>
                   ))}
                 </select>
+              )}
+            </div>
+
+            <div className="rounded-xl border border-indigo-100 bg-indigo-50/50 p-3 space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-extrabold text-indigo-900">
+                  ✨ 単元情報からWeb/AIで問題作成（写真不要）
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setShowApiKeyBox((prev) => !prev)}
+                  className="text-[10px] font-bold text-indigo-700 underline"
+                >
+                  {apiKey.trim() ? 'APIキー設定済み' : 'APIキー設定'}
+                </button>
               </div>
-            )}
+
+              {showApiKeyBox && (
+                <div className="flex gap-2">
+                  <input
+                    type="password"
+                    value={apiKey}
+                    onChange={(e) => setApiKey(e.target.value)}
+                    placeholder="Gemini APIキー (AIza...)"
+                    className="flex-1 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => {
+                      saveGeminiApiKey(apiKey);
+                      setShowApiKeyBox(false);
+                      setStatusMessage('Gemini APIキーを保存しました。');
+                    }}
+                    className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white"
+                  >
+                    保存
+                  </button>
+                </div>
+              )}
+
+              <input
+                type="text"
+                value={topicHint}
+                onChange={(e) => setTopicHint(e.target.value)}
+                placeholder="補足キーワード（任意：例 オームの法則、電力、並列回路）"
+                className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs"
+              />
+
+              <div className="flex items-center gap-2">
+                <div className="flex rounded-xl border border-slate-300 bg-white p-0.5 text-xs font-bold">
+                  {([5, 10] as const).map((cnt) => (
+                    <button
+                      key={cnt}
+                      type="button"
+                      onClick={() => setGenerateCount(cnt)}
+                      className={`rounded-lg px-2.5 py-1.5 ${
+                        generateCount === cnt ? 'bg-indigo-600 text-white' : 'text-slate-600'
+                      }`}
+                    >
+                      {cnt}問
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  disabled={isAnalyzing}
+                  onClick={handleGenerateFromTopic}
+                  className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-indigo-600 py-2.5 text-xs font-extrabold text-white shadow-sm disabled:opacity-60"
+                >
+                  {isAnalyzing ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      作成中...
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles className="h-4 w-4" />
+                      単元名から自動作成
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleAddEmptyQuestionRow}
+              className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-slate-50 py-2.5 text-xs font-extrabold text-slate-700 hover:bg-slate-100"
+            >
+              <Plus className="h-4 w-4" />
+              手動で4択問題を1問追加する（APIキー不要）
+            </button>
           </div>
         )}
 
-        {/* Camera / File Upload */}
-        <div className="pt-1 space-y-2.5">
-          <p className="text-xs font-extrabold text-slate-700">2. 教科書・ワークを撮影する</p>
-          <input
-            ref={cameraInputRef}
-            type="file"
-            accept="image/*"
-            capture="environment"
-            multiple
-            className="hidden"
-            onChange={(e) => {
-              handleFilesSelected(e.target.files);
-              e.target.value = '';
-            }}
-          />
-          <input
-            ref={albumInputRef}
-            type="file"
-            accept="image/*"
-            multiple
-            className="hidden"
-            onChange={(e) => {
-              handleFilesSelected(e.target.files);
-              e.target.value = '';
-            }}
-          />
-          <div className="grid grid-cols-2 gap-2.5">
+        {/* MODE 2: MANUAL KANJI */}
+        {importMode === 'kanji' && (
+          <div className="space-y-2.5 pt-1">
+            <p className="text-[11px] text-slate-500">
+              テスト範囲の漢字を手動で入力して「手書き漢字ドリル」に追加します。
+            </p>
+            <div className="grid grid-cols-3 gap-2">
+              <div>
+                <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                  漢字(1字)
+                </label>
+                <input
+                  type="text"
+                  maxLength={1}
+                  value={kanjiChar}
+                  onChange={(e) => setKanjiChar(e.target.value)}
+                  placeholder="例: 換"
+                  className="w-full rounded-xl border border-blue-300 bg-blue-50/40 px-2 py-2 text-center text-base font-black"
+                />
+              </div>
+              <div>
+                <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                  熟語
+                </label>
+                <input
+                  type="text"
+                  value={kanjiWord}
+                  onChange={(e) => setKanjiWord(e.target.value)}
+                  placeholder="例: 転換"
+                  className="w-full rounded-xl border border-slate-300 px-2.5 py-2 text-xs font-bold"
+                />
+              </div>
+              <div>
+                <label className="block text-[10px] font-bold text-rose-600 mb-0.5">
+                  書く読み(カタカナ)
+                </label>
+                <input
+                  type="text"
+                  value={kanjiReading}
+                  onChange={(e) => setKanjiReading(e.target.value)}
+                  placeholder="例: カン"
+                  className="w-full rounded-xl border border-rose-200 bg-rose-50/40 px-2.5 py-2 text-xs font-bold"
+                />
+              </div>
+            </div>
+            <input
+              type="text"
+              value={kanjiQuestion}
+              onChange={(e) => setKanjiQuestion(e.target.value)}
+              placeholder="問題文（例: 方向を転［カン］する。空欄なら自動作成）"
+              className="w-full rounded-xl border border-slate-300 px-3 py-2 text-xs"
+            />
+            <input
+              type="text"
+              value={kanjiHint}
+              onChange={(e) => setKanjiHint(e.target.value)}
+              placeholder="覚え方ヒント（任意）"
+              className="w-full rounded-xl border border-slate-300 px-3 py-2 text-xs"
+            />
             <button
               type="button"
-              onClick={() => cameraInputRef.current?.click()}
-              className="flex items-center justify-center gap-1.5 rounded-xl bg-purple-600 py-3 text-xs font-extrabold text-white shadow-sm active:scale-95"
+              onClick={handleAddManualKanjiDraft}
+              className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-blue-600 py-2.5 text-xs font-extrabold text-white shadow-sm"
             >
-              <Camera className="h-4 w-4" />
-              カメラで撮影
-            </button>
-            <button
-              type="button"
-              onClick={() => albumInputRef.current?.click()}
-              className="flex items-center justify-center gap-1.5 rounded-xl border border-purple-300 bg-purple-50 py-3 text-xs font-extrabold text-purple-800 active:scale-95"
-            >
-              <ImageIcon className="h-4 w-4" />
-              写真を選ぶ
+              <Plus className="h-4 w-4" />
+              下書きリストに追加する
             </button>
           </div>
+        )}
 
-          {images.length > 0 && (
-            <div className="space-y-2">
-              <div className="flex flex-wrap gap-2">
-                {images.map((img, idx) => (
-                  <div
-                    key={img.id}
-                    className="relative h-20 w-20 overflow-hidden rounded-xl border border-slate-200"
-                  >
-                    <img
-                      src={img.dataUrl}
-                      alt={`撮影${idx + 1}`}
-                      className="h-full w-full object-cover"
-                    />
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setImages((prev) => prev.filter((item) => item.id !== img.id))
-                      }
-                      className="absolute top-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-rose-600 text-[10px] font-bold text-white"
-                    >
-                      ✕
-                    </button>
-                  </div>
-                ))}
-              </div>
+        {/* MODE 3: MANUAL VOCAB */}
+        {importMode === 'vocab' && (
+          <div className="space-y-3 pt-1">
+            <div className="grid grid-cols-5 gap-2">
+              <input
+                type="text"
+                value={vocabWordInput}
+                onChange={(e) => setVocabWordInput(e.target.value)}
+                placeholder="単語 (例: environment)"
+                className="col-span-2 rounded-xl border border-slate-300 px-2.5 py-2 text-xs font-bold"
+              />
+              <input
+                type="text"
+                value={vocabMeaningInput}
+                onChange={(e) => setVocabMeaningInput(e.target.value)}
+                placeholder="意味 (例: 環境)"
+                className="col-span-2 rounded-xl border border-slate-300 px-2.5 py-2 text-xs"
+              />
+              <input
+                type="text"
+                value={vocabPosInput}
+                onChange={(e) => setVocabPosInput(e.target.value)}
+                placeholder="品詞"
+                className="col-span-1 rounded-xl border border-slate-300 px-2 py-2 text-xs"
+              />
+            </div>
+            <button
+              type="button"
+              onClick={handleAddManualVocabDraft}
+              className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-violet-600 py-2.5 text-xs font-extrabold text-white shadow-sm"
+            >
+              <Plus className="h-4 w-4" />
+              1語追加する
+            </button>
+
+            <div className="border-t border-slate-100 pt-2.5 space-y-2">
+              <p className="text-[11px] font-bold text-slate-600">
+                まとめて貼り付け（1行に「単語, 意味, 品詞」）
+              </p>
+              <textarea
+                rows={3}
+                value={vocabBulkText}
+                onChange={(e) => setVocabBulkText(e.target.value)}
+                placeholder={'experience, 経験, 名詞\nimprove, 改善する, 動詞'}
+                className="w-full rounded-xl border border-slate-300 p-2.5 text-xs"
+              />
               <button
                 type="button"
-                disabled={isAnalyzing}
-                onClick={handleAnalyze}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 py-3 text-xs font-extrabold text-white shadow-md disabled:opacity-60"
+                onClick={handleParseBulkVocab}
+                className="w-full rounded-xl border border-violet-300 bg-violet-50 py-2 text-xs font-extrabold text-violet-800"
               >
-                {isAnalyzing ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin" />
-                    AIが写真を解析しています...
-                  </>
-                ) : (
-                  <>
-                    <Sparkles className="h-4 w-4" />
-                    AIで読み取って作成する（{images.length}枚）
-                  </>
-                )}
+                まとめて下書きへ読み込む
               </button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+
+        {/* Optional Photo OCR (Collapsed by default) */}
+        <details className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5">
+          <summary className="cursor-pointer text-[11px] font-bold text-slate-600 flex items-center gap-1.5">
+            <Camera className="h-3.5 w-3.5" />
+            写真から読み取りたい場合（任意・必要なときのみ）
+          </summary>
+          <div className="mt-2.5 space-y-2">
+            {!apiKey.trim() && (
+              <div className="flex gap-2">
+                <KeyRound className="h-4 w-4 text-slate-500 mt-1.5 shrink-0" />
+                <input
+                  type="password"
+                  value={apiKey}
+                  onChange={(e) => setApiKey(e.target.value)}
+                  placeholder="Gemini APIキー (AIza...)"
+                  className="flex-1 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs"
+                />
+                <button
+                  type="button"
+                  onClick={() => saveGeminiApiKey(apiKey)}
+                  className="rounded-lg bg-slate-700 px-3 py-1.5 text-xs font-bold text-white"
+                >
+                  保存
+                </button>
+              </div>
+            )}
+
+            <input
+              ref={cameraInputRef}
+              type="file"
+              accept="image/*"
+              capture="environment"
+              multiple
+              className="hidden"
+              onChange={(e) => {
+                handleFilesSelected(e.target.files);
+                e.target.value = '';
+              }}
+            />
+            <input
+              ref={albumInputRef}
+              type="file"
+              accept="image/*"
+              multiple
+              className="hidden"
+              onChange={(e) => {
+                handleFilesSelected(e.target.files);
+                e.target.value = '';
+              }}
+            />
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => cameraInputRef.current?.click()}
+                className="flex items-center justify-center gap-1 rounded-lg bg-purple-600 py-2 text-[11px] font-bold text-white"
+              >
+                <Camera className="h-3.5 w-3.5" />
+                カメラで撮影
+              </button>
+              <button
+                type="button"
+                onClick={() => albumInputRef.current?.click()}
+                className="flex items-center justify-center gap-1 rounded-lg border border-purple-300 bg-white py-2 text-[11px] font-bold text-purple-800"
+              >
+                <ImageIcon className="h-3.5 w-3.5" />
+                写真を選ぶ
+              </button>
+            </div>
+
+            {images.length > 0 && (
+              <div className="space-y-2">
+                <div className="flex flex-wrap gap-2">
+                  {images.map((img, idx) => (
+                    <div
+                      key={img.id}
+                      className="relative h-16 w-16 overflow-hidden rounded-lg border border-slate-200"
+                    >
+                      <img
+                        src={img.dataUrl}
+                        alt={`撮影${idx + 1}`}
+                        className="h-full w-full object-cover"
+                      />
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setImages((prev) => prev.filter((item) => item.id !== img.id))
+                        }
+                        className="absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-rose-600 text-[9px] font-bold text-white"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  disabled={isAnalyzing}
+                  onClick={handleAnalyzeImages}
+                  className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-purple-600 py-2 text-xs font-extrabold text-white disabled:opacity-60"
+                >
+                  {isAnalyzing ? '解析中...' : `写真（${images.length}枚）を読み取る`}
+                </button>
+              </div>
+            )}
+          </div>
+        </details>
       </div>
 
       {errorMessage && (
@@ -515,11 +901,9 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
 
       {/* Preview & Edit Drafts */}
       {hasDrafts && (
-        <div className="rounded-2xl border-2 border-purple-200 bg-white p-4 shadow-sm space-y-3">
+        <div className="rounded-2xl border-2 border-indigo-200 bg-white p-4 shadow-sm space-y-3">
           <div className="flex items-center justify-between">
-            <h4 className="text-sm font-extrabold text-slate-900">
-              読み取り結果の確認・編集
-            </h4>
+            <h4 className="text-sm font-extrabold text-slate-900">登録前の確認・編集</h4>
             <button
               type="button"
               onClick={handleSaveDrafts}
@@ -529,54 +913,6 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
               チェック項目を登録
             </button>
           </div>
-
-          {importMode === 'units' && (
-            <div className="space-y-2">
-              {unitDrafts.map((draft, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-2 rounded-xl border border-slate-200 p-2.5"
-                >
-                  <input
-                    type="checkbox"
-                    checked={draft.checked}
-                    onChange={(e) =>
-                      setUnitDrafts((prev) =>
-                        prev.map((d, i) =>
-                          i === idx ? { ...d, checked: e.target.checked } : d
-                        )
-                      )
-                    }
-                    className="h-4 w-4 accent-purple-600"
-                  />
-                  <input
-                    type="number"
-                    value={draft.order}
-                    onChange={(e) =>
-                      setUnitDrafts((prev) =>
-                        prev.map((d, i) =>
-                          i === idx ? { ...d, order: Number(e.target.value) || 1 } : d
-                        )
-                      )
-                    }
-                    className="w-14 rounded-lg border border-slate-200 px-2 py-1 text-xs font-bold"
-                  />
-                  <input
-                    type="text"
-                    value={draft.title}
-                    onChange={(e) =>
-                      setUnitDrafts((prev) =>
-                        prev.map((d, i) =>
-                          i === idx ? { ...d, title: e.target.value } : d
-                        )
-                      )
-                    }
-                    className="flex-1 rounded-lg border border-slate-200 px-2 py-1 text-xs font-bold"
-                  />
-                </div>
-              ))}
-            </div>
-          )}
 
           {importMode === 'questions' && (
             <div className="space-y-3">
@@ -596,11 +932,12 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
                           )
                         )
                       }
-                      className="mt-1 h-4 w-4 accent-purple-600"
+                      className="mt-1 h-4 w-4 accent-indigo-600"
                     />
                     <textarea
                       rows={2}
                       value={draft.question}
+                      placeholder="問題文を入力..."
                       onChange={(e) =>
                         setQuestionDrafts((prev) =>
                           prev.map((d, i) =>
@@ -672,10 +1009,7 @@ export const CameraImportPanel: React.FC<CameraImportPanelProps> = ({
           {importMode === 'kanji' && (
             <div className="space-y-2">
               {kanjiDrafts.map((draft, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-xl border border-slate-200 p-2.5 space-y-1.5"
-                >
+                <div key={idx} className="rounded-xl border border-slate-200 p-2.5 space-y-1.5">
                   <div className="flex items-center gap-2">
                     <input
                       type="checkbox"

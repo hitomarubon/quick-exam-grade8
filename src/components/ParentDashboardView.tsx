@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import {
   BarChart3,
+  BookPlus,
   Calendar,
-  Camera,
   CheckCircle2,
   ChevronLeft,
   Cloud,
@@ -348,7 +348,7 @@ export const ParentDashboardView: React.FC<ParentDashboardViewProps> = ({
           [
             { id: 'stats', label: '実績', icon: BarChart3 },
             { id: 'schedule', label: '時間割', icon: Calendar },
-            { id: 'camera', label: 'カメラ', icon: Camera },
+            { id: 'camera', label: '問題追加', icon: BookPlus },
             { id: 'firebase', label: '設定', icon: Settings },
           ] as const
         ).map((tab) => {

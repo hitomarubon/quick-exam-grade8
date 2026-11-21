@@ -1,6 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import defaultQuestionsRaw from '../data/questions.json';
 import extraQuestionsRaw from '../data/extraQuestions.json';
+import webQuestionsEngMathRaw from '../data/webQuestions_eng_math.json';
+import webQuestionsSciJpnRaw from '../data/webQuestions_sci_jpn.json';
+import webQuestionsSocRaw from '../data/webQuestions_soc.json';
 import defaultUnitsRaw from '../data/defaultUnits.json';
 import kanjiDataRaw from '../data/kanjiData.json';
 import vocabWordsRaw from '../data/vocabWords.json';
@@ -369,7 +372,13 @@ export function useStudyHub() {
       }
     }
 
-    const base = [...(defaultQuestionsRaw as Question[]), ...(extraQuestionsRaw as Question[])].map(
+    const base = [
+      ...(defaultQuestionsRaw as Question[]),
+      ...(extraQuestionsRaw as Question[]),
+      ...(webQuestionsEngMathRaw as Question[]),
+      ...(webQuestionsSciJpnRaw as Question[]),
+      ...(webQuestionsSocRaw as Question[]),
+    ].map(
       (q) => {
         if (q.unitId) return q;
         const mappedUnitId = legacyCategoryMap.get(`${q.subject}::${q.category}`);

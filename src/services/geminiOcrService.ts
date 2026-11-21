@@ -108,10 +108,62 @@ export function resizeImageFile(file: File, maxDim = 1600): Promise<SelectedImag
   });
 }
 
+interface RawQuestionItem {
+  question?: string;
+  options?: string[];
+  answerIndex?: number;
+  explanation?: string;
+}
+
+function parseJsonArrayText<T>(rawText: string): T[] {
+  const cleaned = rawText
+    .replace(/```json\s*/gi, '')
+    .replace(/```\s*/g, '')
+    .trim();
+
+  let jsonText = cleaned;
+  if (!cleaned.startsWith('[') && !cleaned.startsWith('{')) {
+    const start = cleaned.indexOf('[');
+    const end = cleaned.lastIndexOf(']');
+    if (start !== -1 && end > start) {
+      jsonText = cleaned.slice(start, end + 1);
+    }
+  }
+
+  const parsed = JSON.parse(jsonText);
+  if (Array.isArray(parsed)) return parsed as T[];
+  if (parsed && Array.isArray(parsed.items)) return parsed.items as T[];
+  if (parsed && Array.isArray(parsed.units)) return parsed.units as T[];
+  if (parsed && Array.isArray(parsed.questions)) return parsed.questions as T[];
+  if (parsed && Array.isArray(parsed.words)) return parsed.words as T[];
+  return [parsed as T];
+}
+
+function normalizeQuestionDrafts(raw: RawQuestionItem[]): ExtractedQuestionDraft[] {
+  return raw
+    .filter((r) => r && r.question && Array.isArray(r.options) && r.options.length >= 2)
+    .map((r) => {
+      const opts = [...(r.options || [])].slice(0, 4).map((o) => String(o));
+      while (opts.length < 4) {
+        opts.push(`選択肢${opts.length + 1}`);
+      }
+      const rawIdx = Number(r.answerIndex);
+      const safeIdx = Number.isInteger(rawIdx) && rawIdx >= 0 && rawIdx < 4 ? rawIdx : 0;
+      return {
+        checked: true,
+        question: String(r.question).trim(),
+        options: opts as [string, string, string, string],
+        answerIndex: safeIdx,
+        explanation: String(r.explanation || '教科書・ワークの基本事項を確認しましょう。').trim(),
+      };
+    });
+}
+
 async function fetchGeminiWithFallback<T>(
   apiKey: string,
   prompt: string,
-  images: SelectedImageItem[]
+  images: SelectedImageItem[] = [],
+  useWebSearch = false
 ): Promise<T[]> {
   const cleanKey = apiKey.trim();
   if (!cleanKey) {
@@ -132,28 +184,43 @@ async function fetchGeminiWithFallback<T>(
   }
 
   const models = ['gemini-2.5-flash', 'gemini-2.0-flash'];
+  const attempts: Array<{ model: string; search: boolean }> = useWebSearch
+    ? [
+        { model: 'gemini-2.5-flash', search: true },
+        { model: 'gemini-2.5-flash', search: false },
+        { model: 'gemini-2.0-flash', search: false },
+      ]
+    : models.map((model) => ({ model, search: false }));
+
   let lastError: Error | null = null;
 
-  for (const model of models) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(
+  for (const attempt of attempts) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${attempt.model}:generateContent?key=${encodeURIComponent(
       cleanKey
     )}`;
     try {
+      const bodyPayload: Record<string, unknown> = {
+        contents: [{ parts }],
+        generationConfig: attempt.search
+          ? { temperature: 0.25 }
+          : {
+              temperature: 0.2,
+              responseMimeType: 'application/json',
+            },
+      };
+      if (attempt.search) {
+        bodyPayload.tools = [{ google_search: {} }];
+      }
+
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts }],
-          generationConfig: {
-            temperature: 0.2,
-            responseMimeType: 'application/json',
-          },
-        }),
+        body: JSON.stringify(bodyPayload),
       });
 
       if (!response.ok) {
         const errBody = await response.text();
-        throw new Error(`Model ${model} HTTP ${response.status}: ${errBody.slice(0, 200)}`);
+        throw new Error(`Model ${attempt.model} HTTP ${response.status}: ${errBody.slice(0, 200)}`);
       }
 
       const result = await response.json();
@@ -162,17 +229,7 @@ async function fetchGeminiWithFallback<T>(
         throw new Error('AIからの応答が空でした。');
       }
 
-      const cleaned = rawText
-        .replace(/```json\s*/gi, '')
-        .replace(/```\s*/g, '')
-        .trim();
-      const parsed = JSON.parse(cleaned);
-      if (Array.isArray(parsed)) return parsed as T[];
-      if (parsed && Array.isArray(parsed.items)) return parsed.items as T[];
-      if (parsed && Array.isArray(parsed.units)) return parsed.units as T[];
-      if (parsed && Array.isArray(parsed.questions)) return parsed.questions as T[];
-      if (parsed && Array.isArray(parsed.words)) return parsed.words as T[];
-      return [parsed as T];
+      return parseJsonArrayText<T>(rawText);
     } catch (err) {
       lastError = err instanceof Error ? err : new Error(String(err));
     }
@@ -245,30 +302,46 @@ export async function extractQuestionsFromImages(
   }
 ]`;
 
-  const raw = await fetchGeminiWithFallback<{
-    question?: string;
-    options?: string[];
-    answerIndex?: number;
-    explanation?: string;
-  }>(apiKey, prompt, images);
+  const raw = await fetchGeminiWithFallback<RawQuestionItem>(apiKey, prompt, images);
+  return normalizeQuestionDrafts(raw);
+}
 
-  return raw
-    .filter((r) => r && r.question && Array.isArray(r.options) && r.options.length >= 2)
-    .map((r) => {
-      const opts = [...(r.options || [])].slice(0, 4).map((o) => String(o));
-      while (opts.length < 4) {
-        opts.push(`選択肢${opts.length + 1}`);
-      }
-      const rawIdx = Number(r.answerIndex);
-      const safeIdx = Number.isInteger(rawIdx) && rawIdx >= 0 && rawIdx < 4 ? rawIdx : 0;
-      return {
-        checked: true,
-        question: String(r.question).trim(),
-        options: opts as [string, string, string, string],
-        answerIndex: safeIdx,
-        explanation: String(r.explanation || '教科書・ワークの基本事項を確認しましょう。').trim(),
-      };
-    });
+export async function generateQuestionsFromTopic(
+  apiKey: string,
+  subject: Subject,
+  unitTitle: string,
+  textbook: string,
+  count = 5,
+  extraHint = ''
+): Promise<ExtractedQuestionDraft[]> {
+  const safeCount = Math.min(10, Math.max(1, Math.round(count)));
+  const hintLine = extraHint.trim() ? `\n補足キーワード・範囲: ${extraHint.trim()}` : '';
+  const prompt = `あなたは日本の中学2年生の定期テスト対策問題を作成する専門教師AIです。
+Webの学習指導要領や教科書知識をもとに、次の単元について予習・復習に最適な4択問題を${safeCount}問作成し、JSON配列のみで出力してください。
+
+教科: ${subject}
+教材目安: ${textbook}
+単元: ${unitTitle}${hintLine}
+
+【ルール】
+1. 中学2年生の定期テストで出題される基本〜標準問題を${safeCount}問作成してください。
+2. options は必ず4つの選択肢文字列にしてください。
+3. answerIndex は正解のインデックス（0〜3の整数）とし、0ばかりに偏らないよう分散させてください。
+4. explanation は中学生が読んでスッキリ理解できる1〜2文の解説にしてください。
+5. 出力は純粋なJSON配列のみ（説明文やMarkdown記法なし）にしてください。
+
+【出力スキーマ】
+[
+  {
+    "question": "問題文",
+    "options": ["選択肢1", "選択肢2", "選択肢3", "選択肢4"],
+    "answerIndex": 1,
+    "explanation": "わかりやすい解説"
+  }
+]`;
+
+  const raw = await fetchGeminiWithFallback<RawQuestionItem>(apiKey, prompt, [], true);
+  return normalizeQuestionDrafts(raw);
 }
 
 export async function extractKanjiFromImages(

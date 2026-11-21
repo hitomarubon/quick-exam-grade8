@@ -1,0 +1,982 @@
+[
+  {
+    "id": "web-eng-1-01",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「私はそのとき部屋を掃除していました。」\nI (   ) cleaning my room then.",
+    "options": ["was", "were", "am", "is"],
+    "answerIndex": 0,
+    "explanation": "「〜していた」という過去進行形は〈was / were ＋ 動詞-ing〉で表します。主語が I なので was を使います。"
+  },
+  {
+    "id": "web-eng-1-02",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「あなたたちは昨日8時にサッカーをしていましたか。」\n(   ) you playing soccer at eight yesterday?",
+    "options": ["Did", "Were", "Was", "Are"],
+    "answerIndex": 1,
+    "explanation": "過去進行形の疑問文は、主語に合わせて Was または Were を文頭に出します。主語が you なので Were を使います。"
+  },
+  {
+    "id": "web-eng-1-03",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の質問に対する返答として最も適切なものを選びなさい。\n\"Was Ken studying English at that time?\"\n\"No, he (   ).\"",
+    "options": ["didn't", "isn't", "wasn't", "weren't"],
+    "answerIndex": 2,
+    "explanation": "Was で聞かれた過去進行形の疑問文には、同じ be動詞（was / wasn't）を使って答えます。"
+  },
+  {
+    "id": "web-eng-1-04",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の空欄に入る語句として最も適切なものを選びなさい。\n「ケンは当時、音楽を聴いていませんでした。」\nKen (   ) to music at that time.",
+    "options": ["not listened", "wasn't listen", "didn't listening", "wasn't listening"],
+    "answerIndex": 3,
+    "explanation": "過去進行形の否定文は〈was / were ＋ not ＋ 動詞-ing〉で作ります。was not の短縮形は wasn't です。"
+  },
+  {
+    "id": "web-eng-1-05",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "「そのとき」という意味で、過去進行形の文末によく使われる表現はどれか。",
+    "options": ["at that time", "next week", "every day", "tomorrow"],
+    "answerIndex": 0,
+    "explanation": "then や at that time（そのとき・当時）は、過去のある時点を表すため過去進行形と一緒によく使われます。"
+  },
+  {
+    "id": "web-eng-1-06",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「私は来週京都を訪れる予定です。」\nI am (   ) to visit Kyoto next week.",
+    "options": ["will", "going", "go", "went"],
+    "answerIndex": 1,
+    "explanation": "前もって決まっている予定を表す未来表現は〈be going to ＋ 動詞の原形〉で表します。"
+  },
+  {
+    "id": "web-eng-1-07",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の文の (   ) に入る最も適切な語を選びなさい。\n「明日は雨が降るでしょう。」\nIt (   ) rain tomorrow.",
+    "options": ["is", "going to", "will", "was"],
+    "answerIndex": 2,
+    "explanation": "〈will ＋ 動詞の原形〉で「〜でしょう」「〜するつもりだ」という未来を表します。rain が動詞の原形なので will を入れます。"
+  },
+  {
+    "id": "web-eng-1-08",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "will not の短縮形として正しいものはどれか。",
+    "options": ["willn't", "wan't", "isn't", "won't"],
+    "answerIndex": 3,
+    "explanation": "will not の短縮形は won't です。つづりに注意しましょう。"
+  },
+  {
+    "id": "web-eng-1-09",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "次の日本文に合う英文になるよう、空欄に入る語を選びなさい。\n「あなたは今度の日曜日、何をする予定ですか。」\nWhat (   ) you going to do this Sunday?",
+    "options": ["are", "will", "do", "did"],
+    "answerIndex": 0,
+    "explanation": "be going to の疑問文は be動詞を主語の前に出します。主語が you なので are を使います。"
+  },
+  {
+    "id": "web-eng-1-10",
+    "subject": "英語",
+    "unitId": "eng-1",
+    "category": "Unit 1 過去進行形・未来表現（be going to / will）",
+    "question": "「（電話などが鳴って）私が出ますよ」のように、その場で決めた意志を表すときに自然なのはどれか。",
+    "options": ["I'm going to answer it.", "I'll answer it.", "I was answering it.", "I answered it."],
+    "answerIndex": 1,
+    "explanation": "あらかじめ計画していた予定には be going to、その場で思いついた意志や申し出には will（I'll）を使うのが自然です。"
+  },
+  {
+    "id": "web-eng-2-01",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の空欄に入る最も適切な接続詞を選びなさい。\n「私は昨日家に帰ったとき、手を洗いました。」\nI washed my hands (   ) I got home yesterday.",
+    "options": ["if", "because", "when", "that"],
+    "answerIndex": 2,
+    "explanation": "「〜するとき」を表す接続詞は when です。"
+  },
+  {
+    "id": "web-eng-2-02",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「もし明日晴れなら、私たちはテニスをします。」\nIf it (   ) sunny tomorrow, we will play tennis.",
+    "options": ["will be", "was", "are", "is"],
+    "answerIndex": 3,
+    "explanation": "時（when）や条件（if）を表す節の中では、未来の内容でも現在形を使うルールがあります。そのため is を選びます。"
+  },
+  {
+    "id": "web-eng-2-03",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の英文の句読法（カンマの使い方）として正しいものを選びなさい。\n「暇なときはいつでも私に電話してください。」",
+    "options": [
+      "When you are free, please call me.",
+      "When you are free please call me.",
+      "Please call me, when you are free.",
+      "When, you are free please call me."
+    ],
+    "answerIndex": 0,
+    "explanation": "接続詞 when や if で始まる節を文の先頭に置くときは、その節の終わりにカンマ（,）が必要です。文の後半に置くときはカンマは不要です。"
+  },
+  {
+    "id": "web-eng-2-04",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の空欄に入る最も適切な接続詞を選びなさい。\n「私はユミが親切な女の子だと思います。」\nI think (   ) Yumi is a kind girl.",
+    "options": ["if", "that", "when", "because"],
+    "answerIndex": 1,
+    "explanation": "I think that 〜 で「私は〜だと思う」という意味になります。この that は省略されることもあります。"
+  },
+  {
+    "id": "web-eng-2-05",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の空欄に入る最も適切な接続詞を選びなさい。\n「病気だったので、彼は学校を休みました。」\nHe didn't go to school (   ) he was sick.",
+    "options": ["when", "if", "because", "that"],
+    "answerIndex": 2,
+    "explanation": "「なぜなら〜だから」と理由を表す接続詞は because です。"
+  },
+  {
+    "id": "web-eng-2-06",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の日本文に合う英文になるよう、空欄に入る語を選びなさい。\n「私は、あなたに明日また会えるといいと思います（願っています）。」\nI (   ) that I can see you again tomorrow.",
+    "options": ["know", "look", "want", "hope"],
+    "answerIndex": 3,
+    "explanation": "〈I hope (that) 〜〉で「〜だといいなと思う」「〜を望む」という意味になります。"
+  },
+  {
+    "id": "web-eng-2-07",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の英文の空欄に入る最も適切な語を選びなさい。\n「私が部屋に入ったとき、妹はピアノを弾いていました。」\nWhen I entered the room, my sister (   ) the piano.",
+    "options": ["was playing", "plays", "is playing", "will play"],
+    "answerIndex": 0,
+    "explanation": "前半が entered（過去形）なので、その時点で進行中だった動作は過去進行形（was playing）で表します。"
+  },
+  {
+    "id": "web-eng-2-08",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の質問に対する答えとして、意味が合うように空欄に入る語を選びなさい。\n\"Why were you late?\"\n\"(   ) I missed the bus.\"",
+    "options": ["When", "Because", "If", "That"],
+    "answerIndex": 1,
+    "explanation": "Why 〜?（なぜ〜ですか）という理由を問う質問には、Because 〜.（〜だからです）で答えるのが定番です。"
+  },
+  {
+    "id": "web-eng-2-09",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「彼は、日本のアニメが好きだと言っていました。」\nHe said (   ) he liked Japanese anime.",
+    "options": ["what", "if", "that", "when"],
+    "answerIndex": 2,
+    "explanation": "say (that) ＋ 主語＋動詞 で「〜と言う」という意味になります。主節が said（過去形）なので従属節も liked と過去形にしています。"
+  },
+  {
+    "id": "web-eng-2-10",
+    "subject": "英語",
+    "unitId": "eng-2",
+    "category": "Unit 2 接続詞（when / if / that）",
+    "question": "「寝る前に歯をみがきなさい」を英語で表すとき、空欄に入る最も適切な接続詞はどれか。\nBrush your teeth (   ) you go to bed.",
+    "options": ["after", "if", "because", "before"],
+    "answerIndex": 3,
+    "explanation": "before は「〜する前に」、after は「〜したあとで」を表す接続詞です。"
+  },
+  {
+    "id": "web-eng-3-01",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の日本文に合うよう、空欄に入る語句を選びなさい。\n「私は将来医者になりたいです。」\nI want (   ) a doctor in the future.",
+    "options": ["to be", "being", "be", "am"],
+    "answerIndex": 0,
+    "explanation": "want の後ろに「〜すること」を置くときは不定詞（to ＋ 動詞の原形）を使います。「〜になる」は be または become を使います。"
+  },
+  {
+    "id": "web-eng-3-02",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の英文の下線部と同じ用法の不定詞を含む文はどれか。\nI went to the library **to study** math.",
+    "options": [
+      "I like to play the guitar.",
+      "She got up early to catch the first train.",
+      "My dream is to visit Australia.",
+      "He has a lot of homework to do."
+    ],
+    "answerIndex": 1,
+    "explanation": "例文の to study は「勉強するために」という副詞的用法（目的）です。同じ「〜するために」は to catch（乗るために）です。"
+  },
+  {
+    "id": "web-eng-3-03",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「その知らせを聞いて、私はとてもうれしかったです。」\nI was very happy (   ) the news.",
+    "options": ["hear", "hearing", "to hear", "heard"],
+    "answerIndex": 2,
+    "explanation": "感情を表す形容詞（happy, sad, glad など）の後ろに〈to ＋ 動詞の原形〉を置くと「〜して（うれしい・悲しい）」という感情の原因を表します。"
+  },
+  {
+    "id": "web-eng-3-04",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「私は音楽を聴くことを楽しみました。」\nI enjoyed (   ) to music.",
+    "options": ["listen", "to listen", "listened", "listening"],
+    "answerIndex": 3,
+    "explanation": "enjoy の後ろには不定詞（to 〜）ではなく、動名詞（動詞-ing）だけを目的語として置きます。"
+  },
+  {
+    "id": "web-eng-3-05",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の文とほぼ同じ意味になるように、空欄に入る語を選びなさい。\nTo speak English is interesting.\n= (   ) English is interesting.",
+    "options": ["Speaking", "Speak", "Spoke", "To speaking"],
+    "answerIndex": 0,
+    "explanation": "文の主語になる「〜すること」は、不定詞の名詞的用法（To speak）と動名詞（Speaking）のどちらでも表せます。"
+  },
+  {
+    "id": "web-eng-3-06",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の動詞のうち、後ろに動名詞（-ing）のみを目的語にとり、to 不定詞を後ろに置けないものはどれか。",
+    "options": ["want", "finish", "hope", "like"],
+    "answerIndex": 1,
+    "explanation": "finish / enjoy / stop / practice などは後ろに動名詞（-ing）をとります。want と hope は後ろに to 不定詞をとります。"
+  },
+  {
+    "id": "web-eng-3-07",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の日本文に合う英文になるよう、空欄に入る語を選びなさい。\n「彼は昨日、部屋を掃除するのを終えました。」\nHe finished (   ) his room yesterday.",
+    "options": ["clean", "to clean", "cleaning", "cleaned"],
+    "answerIndex": 2,
+    "explanation": "「〜し終える」は〈finish ＋ 動詞-ing〉で表します。"
+  },
+  {
+    "id": "web-eng-3-08",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「彼は毎日ピアノを練習し始めました。」\nHe started (   ) the piano every day.",
+    "options": ["play", "played", "plays", "playing"],
+    "answerIndex": 3,
+    "explanation": "start の後ろには to play と playing のどちらも置けますが、選択肢の中で正しい形は動名詞の playing です。"
+  },
+  {
+    "id": "web-eng-3-09",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の空欄に入る最も適切な前置詞を選びなさい。\n「彼女は絵を描くのが得意です。」\nShe is good (   ) drawing pictures.",
+    "options": ["at", "to", "for", "on"],
+    "answerIndex": 0,
+    "explanation": "〈be good at 〜ing〉で「〜するのが得意だ」という重要熟語です。前置詞の後ろなので動詞は -ing 形にします。"
+  },
+  {
+    "id": "web-eng-3-10",
+    "subject": "英語",
+    "unitId": "eng-3",
+    "category": "Unit 3 不定詞（名詞的・副詞的用法）・動名詞",
+    "question": "次の日本文を英語にするとき、空欄に入る語句として正しいものはどれか。\n「私たちは夕食をとるためにそのレストランに立ち寄りました。」\nWe stopped at the restaurant (   ) dinner.",
+    "options": ["having", "to have", "have", "had"],
+    "answerIndex": 1,
+    "explanation": "「〜するために立ち止まる・立ち寄る」は〈stop ＋ to 動詞の原形〉（不定詞の副詞的用法）です。stop 〜ing は「〜するのをやめる」という意味になります。"
+  },
+  {
+    "id": "web-eng-8-01",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「ケンは私より背が高いです。」\nKen is (   ) than I.",
+    "options": ["tall", "tallest", "taller", "more tall"],
+    "answerIndex": 2,
+    "explanation": "「〜より…だ」という比較級は、短い形容詞の場合〈語尾に -er ＋ than〉で表します。"
+  },
+  {
+    "id": "web-eng-8-02",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「この本はあの本よりおもしろいです。」\nThis book is (   ) interesting than that one.",
+    "options": ["most", "very", "much", "more"],
+    "answerIndex": 3,
+    "explanation": "interesting や famous など長い形容詞の比較級は、語尾に -er をつけず前に more を置きます。"
+  },
+  {
+    "id": "web-eng-8-03",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る最も適切な前置詞を選びなさい。\n「富士山は日本で一番高い山です。」\nMt. Fuji is the highest mountain (   ) Japan.",
+    "options": ["in", "of", "at", "for"],
+    "answerIndex": 0,
+    "explanation": "最上級で範囲を表すとき、Japan や class などの「場所・集団（単数名詞）」の前には in を使います。複数名詞や期間の前には of を使います。"
+  },
+  {
+    "id": "web-eng-8-04",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「この箱は4つの中で一番重いです。」\nThis box is the heaviest (   ) the four.",
+    "options": ["in", "of", "than", "from"],
+    "answerIndex": 1,
+    "explanation": "「4つの中で（複数）」のように数を表す複数語句の前には of を使います。"
+  },
+  {
+    "id": "web-eng-8-05",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "形容詞 good（良い）の「比較級」と「最上級」の正しい組み合わせはどれか。",
+    "options": [
+      "gooder / goodest",
+      "more good / most good",
+      "better / best",
+      "worse / worst"
+    ],
+    "answerIndex": 2,
+    "explanation": "good（および well）は不規則変化をし、good - better - best となります。bad は worse - worst です。"
+  },
+  {
+    "id": "web-eng-8-06",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「ユミはユキと同じくらい速く走ることができます。」\nYumi can run as (   ) as Yuki.",
+    "options": ["faster", "fastest", "more fast", "fast"],
+    "answerIndex": 3,
+    "explanation": "「〜と同じくらい…」を表す〈as ＋ 原級 ＋ as〉の間には、比較級や最上級ではなく元の形（原級）を入れます。"
+  },
+  {
+    "id": "web-eng-8-07",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "「野球とサッカーではどちらがより好きですか」を英語にするとき、空欄に入る疑問詞はどれか。\n(   ) do you like better, baseball or soccer?",
+    "options": ["Which", "What", "Who", "Whose"],
+    "answerIndex": 0,
+    "explanation": "2つ以上のものを比べて「どちらが〜か」と尋ねるときは疑問詞 Which を使います。"
+  },
+  {
+    "id": "web-eng-8-08",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の文とほぼ同じ意味を表す文になるように、空欄に入る語を選びなさい。\nTokyo is larger than any other city in Japan.\n= Tokyo is (   ) city in Japan.",
+    "options": ["larger", "the largest", "as large as", "more large"],
+    "answerIndex": 1,
+    "explanation": "〈比較級 ＋ than any other ＋ 単数名詞〉は「他のどの〜よりも…だ」つまり「一番…だ」という最上級と同じ意味になります。"
+  },
+  {
+    "id": "web-eng-8-09",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の空欄に入る語として正しいものはどれか。\n「トムはクラスの中で一番人気のある生徒です。」\nTom is (   ) popular student in his class.",
+    "options": ["most", "more", "the most", "the more"],
+    "answerIndex": 2,
+    "explanation": "長い形容詞の最上級は〈the most ＋ 原級〉で作ります。最上級には原則として the をつけます。"
+  },
+  {
+    "id": "web-eng-8-10",
+    "subject": "英語",
+    "unitId": "eng-8",
+    "category": "比較（比較級・最上級・as〜as）",
+    "question": "次の日本文の意味になるように、空欄に入る語を選びなさい。\n「このカバンはあのカバンほど高価ではありません。」\nThis bag is (   ) expensive as that one.",
+    "options": ["more", "most", "as", "not as"],
+    "answerIndex": 3,
+    "explanation": "〈not as（so）＋ 原級 ＋ as 〜〉で「〜ほど…ではない」という意味になります。"
+  },
+  {
+    "id": "web-eng-9-01",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「英語は世界中の多くの国々で話されています。」\nEnglish is (   ) in many countries around the world.",
+    "options": ["spoken", "speak", "spoke", "speaking"],
+    "answerIndex": 0,
+    "explanation": "「〜される」という受け身（受動態）は〈be動詞 ＋ 過去分詞〉で表します。speak の過去分詞は spoken（speak-spoke-spoken）です。"
+  },
+  {
+    "id": "web-eng-9-02",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「この橋は去年建てられました。」\nThis bridge (   ) built last year.",
+    "options": ["is", "was", "were", "did"],
+    "answerIndex": 1,
+    "explanation": "last year（去年）があるので過去の受動態〈was / were ＋ 過去分詞〉にします。主語が This bridge（単数）なので was を使います。"
+  },
+  {
+    "id": "web-eng-9-03",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "受動態の文で「〜によって」と動作主を表すときに使う前置詞はどれか。\nThis picture was painted (   ) my brother.",
+    "options": ["in", "at", "by", "on"],
+    "answerIndex": 2,
+    "explanation": "受け身の文で「〜によって」を表す前置詞は by です。"
+  },
+  {
+    "id": "web-eng-9-04",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "不規則動詞 write（書く）の「過去分詞」として正しいものはどれか。",
+    "options": ["wrote", "writed", "writing", "written"],
+    "answerIndex": 3,
+    "explanation": "write の活用は write - wrote - written です。t が2つ重なる点に注意しましょう。"
+  },
+  {
+    "id": "web-eng-9-05",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の能動態の文を受動態に書き換えたとき、正しいものはどれか。\nMany people love this song.",
+    "options": [
+      "This song is loved by many people.",
+      "This song was loved by many people.",
+      "Many people are loved by this song.",
+      "This song loves by many people."
+    ],
+    "answerIndex": 0,
+    "explanation": "元の文の目的語 this song を主語にし、love が現在形なので is loved とします。動作主の many people は by の後ろに置きます。"
+  },
+  {
+    "id": "web-eng-9-06",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「その部屋は昨日掃除されませんでした。」\nThe room (   ) cleaned yesterday.",
+    "options": ["didn't", "wasn't", "isn't", "weren't"],
+    "answerIndex": 1,
+    "explanation": "受動態の否定文は be動詞の後ろに not を置きます。主語が単数で yesterday があるので wasn't にします。"
+  },
+  {
+    "id": "web-eng-9-07",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の質問の文として正しいものはどれか。\n「これらのパソコンは日本で使われていますか。」",
+    "options": [
+      "Do these computers use in Japan?",
+      "Is these computers used in Japan?",
+      "Are these computers used in Japan?",
+      "Were these computers use in Japan?"
+    ],
+    "answerIndex": 2,
+    "explanation": "受動態の疑問文は be動詞を文頭に出します。these computers が複数で現在の話なので Are ... used とします。"
+  },
+  {
+    "id": "web-eng-9-08",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "「この机は木でできています」のように、完成品を見て材料がわかるときに使う熟語はどれか。\nThis desk is (   ) wood.",
+    "options": ["made from", "known to", "interested in", "made of"],
+    "answerIndex": 3,
+    "explanation": "見た目で材料がわかるときは be made of 〜、見た目ではわからないほど変化している原料（牛乳からチーズなど）には be made from 〜 を使います。"
+  },
+  {
+    "id": "web-eng-9-09",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "「彼はみんなに知られています」を表す受動態の熟語として正しい前置詞を選びなさい。\nHe is known (   ) everyone.",
+    "options": ["to", "by", "of", "at"],
+    "answerIndex": 0,
+    "explanation": "「〜に知られている」は by ではなく 〈be known to 〜〉を使うのが定番の決まり表現です。"
+  },
+  {
+    "id": "web-eng-9-10",
+    "subject": "英語",
+    "unitId": "eng-9",
+    "category": "受け身（受動態）の基本と表現",
+    "question": "次の空欄に入る最も適切な語を選びなさい。\n「その本は10年前に有名な作家によって書かれました。」\nThe book was (   ) by a famous writer ten years ago.",
+    "options": ["wrote", "written", "write", "writing"],
+    "answerIndex": 1,
+    "explanation": "〈was ＋ 過去分詞〉にするため、write の過去分詞形 written を入れます。"
+  },
+  {
+    "id": "web-math-1-01",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "多項式 4x² - 3xy + 5y - 2 は何次式か。",
+    "options": ["1次式", "3次式", "2次式", "4次式"],
+    "answerIndex": 2,
+    "explanation": "各項の次数は 4x²（2次）、-3xy（2次）、5y（1次）、-2（0次）であり、最も高い次数は 2 なので 2次式 です。"
+  },
+  {
+    "id": "web-math-1-02",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "次の計算をしなさい。\n(5x - 3y) - (2x - 7y)",
+    "options": ["3x - 10y", "7x - 10y", "3x - 4y", "3x + 4y"],
+    "answerIndex": 3,
+    "explanation": "カッコを外すと 5x - 3y - 2x + 7y となり、同類項をまとめると 3x + 4y になります。符号の反転（-(-7y) = +7y）に注意！"
+  },
+  {
+    "id": "web-math-1-03",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "次の計算をしなさい。\n2(3a - 4b) - 3(a - 2b)",
+    "options": ["3a - 2b", "3a - 14b", "9a - 2b", "3a + 2b"],
+    "answerIndex": 0,
+    "explanation": "分配法則より 6a - 8b - 3a + 6b = (6-3)a + (-8+6)b = 3a - 2b となります。"
+  },
+  {
+    "id": "web-math-1-04",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "次の計算をしなさい。\n(-3a)² × 2ab",
+    "options": ["6a³b", "18a³b", "-18a³b", "18a²b"],
+    "answerIndex": 1,
+    "explanation": "(-3a)² = 9a² なので、9a² × 2ab = 18a³b となります。"
+  },
+  {
+    "id": "web-math-1-05",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "次の計算をしなさい。\n12x²y ÷ (-4xy) × 3y",
+    "options": ["9xy", "-9x", "-9xy", "9x²y"],
+    "answerIndex": 2,
+    "explanation": "割り算を分母にして計算します。(12x²y × 3y) / (-4xy) = 36x²y² / (-4xy) = -9xy です。"
+  },
+  {
+    "id": "web-math-1-06",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "x = 2, y = -3 のとき、3(2x - y) - (5x - 4y) の値はいくらか。",
+    "options": ["-5", "5", "1", "-1"],
+    "answerIndex": 3,
+    "explanation": "先に式を簡単にします：6x - 3y - 5x + 4y = x + y。これに x=2, y=-3 を代入すると 2 + (-3) = -1 になります。"
+  },
+  {
+    "id": "web-math-1-07",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "等式 3x + 2y = 8 を y について解きなさい。",
+    "options": [
+      "y = (-3x + 8) / 2",
+      "y = (3x + 8) / 2",
+      "y = -3x + 4",
+      "y = (-3x - 8) / 2"
+    ],
+    "answerIndex": 0,
+    "explanation": "3x を右辺に移項すると 2y = -3x + 8。両辺を 2 で割ると y = (-3x + 8) / 2（または -3/2 x + 4）になります。"
+  },
+  {
+    "id": "web-math-1-08",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "連続する3つの整数の和が必ず3の倍数になることを説明するとき、真ん中の整数を n とすると3つの数の和はどう表せるか。",
+    "options": ["n + 3", "3n", "3n + 3", "6n"],
+    "answerIndex": 1,
+    "explanation": "真ん中を n とすると、3つの整数は n-1, n, n+1 なので、和は (n-1) + n + (n+1) = 3n となり、3×整数 の形になります。"
+  },
+  {
+    "id": "web-math-1-09",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "次の計算をしなさい。\n(x + 2y)/2 - (x - y)/3",
+    "options": [
+      "(x + 4y)/6",
+      "(x + 8y)/3",
+      "(x + 8y)/6",
+      "(5x + 4y)/6"
+    ],
+    "answerIndex": 2,
+    "explanation": "分母を 6 に通分します： {3(x + 2y) - 2(x - y)} / 6 = (3x + 6y - 2x + 2y) / 6 = (x + 8y) / 6 となります。"
+  },
+  {
+    "id": "web-math-1-10",
+    "subject": "数学",
+    "unitId": "math-1",
+    "category": "式の計算（単項式・多項式・文字式の利用）",
+    "question": "底面の半径が r、高さが h の円柱の体積 V = πr²h を h について解きなさい。",
+    "options": [
+      "h = V - πr²",
+      "h = πr² / V",
+      "h = V / (2πr)",
+      "h = V / (πr²)"
+    ],
+    "answerIndex": 3,
+    "explanation": "両辺を πr² で割ることで h = V / (πr²) となります。"
+  },
+  {
+    "id": "web-math-2-01",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "次の連立方程式を解きなさい。\nx + y = 7\nx - y = 3",
+    "options": ["x = 5, y = 2", "x = 2, y = 5", "x = 4, y = 3", "x = 6, y = 1"],
+    "answerIndex": 0,
+    "explanation": "2つの式を足すと 2x = 10 より x = 5。これを上の式に代入して 5 + y = 7 より y = 2 になります。"
+  },
+  {
+    "id": "web-math-2-02",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "次の連立方程式を解きなさい。\ny = 2x - 1\n3x + 2y = 12",
+    "options": ["x = 3, y = 5", "x = 2, y = 3", "x = 1, y = 1", "x = 4, y = 7"],
+    "answerIndex": 1,
+    "explanation": "上の式を下の式に代入（代入法）：3x + 2(2x - 1) = 12 → 7x - 2 = 12 → 7x = 14 → x = 2。よって y = 2(2) - 1 = 3。"
+  },
+  {
+    "id": "web-math-2-03",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "次の連立方程式を解きなさい。\n2x + 3y = 12\n3x - 2y = 5",
+    "options": ["x = 2, y = 3", "x = 1, y = 4", "x = 3, y = 2", "x = 4, y = 1"],
+    "answerIndex": 2,
+    "explanation": "上の式×2＋下の式×3 をすると y が消去でき、(4x + 9x) = 24 + 15 → 13x = 39 → x = 3。代入して y = 2。"
+  },
+  {
+    "id": "web-math-2-04",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "連立方程式 ax + by = 7、bx + ay = 8 の解が x = 2, y = 1 のとき、a と b の値はいくらか。",
+    "options": ["a = 1, b = 5", "a = 3, b = 1", "a = 4, b = -1", "a = 2, b = 3"],
+    "answerIndex": 3,
+    "explanation": "x = 2, y = 1 を代入すると 2a + b = 7 と a + 2b = 8 が成り立ちます。上の式×2（4a + 2b = 14）から下の式を引くと 3a = 6 より a = 2、代入して b = 3 です。"
+  },
+  {
+    "id": "web-math-2-05",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "次の連立方程式を解きなさい。\n0.2x + 0.3y = 1.6\nx - y = 3",
+    "options": ["x = 5, y = 2", "x = 2, y = -1", "x = 4, y = 1", "x = 6, y = 3"],
+    "answerIndex": 0,
+    "explanation": "上の式の両辺を10倍して整数にします：2x + 3y = 16。下の式×3（3x - 3y = 9）を足すと 5x = 25 → x = 5、y = 2。"
+  },
+  {
+    "id": "web-math-2-06",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "1個80円のりんごと1個50円のみかんを合わせて10個買い、代金が620円でした。りんごは何個買ったか。",
+    "options": ["6個", "4個", "5個", "3個"],
+    "answerIndex": 1,
+    "explanation": "りんごを x 個、みかんを y 個とすると x + y = 10、80x + 50y = 620。これを解くと 30x = 120 より x = 4個になります。"
+  },
+  {
+    "id": "web-math-2-07",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "家から1200m離れた駅へ行くのに、はじめは毎分60mで歩き、途中から毎分120mで走ったところ、全部で15分かかりました。歩いた道のりは何mか。",
+    "options": ["400m", "800m", "600m", "900m"],
+    "answerIndex": 2,
+    "explanation": "歩いた道のりを x m、走った道のりを y m とすると x + y = 1200、x/60 + y/120 = 15。下の式を120倍して 2x + y = 1800。引くと x = 600m です。"
+  },
+  {
+    "id": "web-math-2-08",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "連立方程式 3x + y = 2x - y = 5 を解きなさい。",
+    "options": ["x = 1, y = 2", "x = -2, y = 1", "x = 3, y = -4", "x = 2, y = -1"],
+    "answerIndex": 3,
+    "explanation": "3x + y = 5 と 2x - y = 5 の2つの式に分けます。両辺を足すと 5x = 10 より x = 2。代入して y = -1 になります。"
+  },
+  {
+    "id": "web-math-2-09",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "ある中学校の昨年の生徒数は男女合わせて300人でした。今年は男子が6％増え、女子が4％減ったため、全体で3人増えました。昨年の男子の生徒数は何人か。",
+    "options": ["150人", "140人", "160人", "180人"],
+    "answerIndex": 0,
+    "explanation": "昨年の男子を x 人、女子を y 人とすると x + y = 300、0.06x - 0.04y = 3。下の式×100（6x - 4y = 300）と上の式×4（4x + 4y = 1200）を足すと 10x = 1500 より x = 150人です。"
+  },
+  {
+    "id": "web-math-2-10",
+    "subject": "数学",
+    "unitId": "math-2",
+    "category": "連立方程式（加減法・代入法・文章題）",
+    "question": "4％の食塩水 x g と 9％の食塩水 y g を混ぜて、6％の食塩水を500g作ります。4％の食塩水は何g必要か。",
+    "options": ["200g", "300g", "250g", "350g"],
+    "answerIndex": 1,
+    "explanation": "x + y = 500、0.04x + 0.09y = 500×0.06 = 30。下の式×100：4x + 9y = 3000。上の式×9（9x+9y=4500）から引くと 5x = 1500 → x = 300g。"
+  },
+  {
+    "id": "web-math-8-01",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "AB = AC の二等辺三角形ABCで、頂角 ∠A = 40° のとき、底角 ∠B の大きさは何度か。",
+    "options": ["40°", "60°", "70°", "80°"],
+    "answerIndex": 2,
+    "explanation": "二等辺三角形の2つの底角は等しいので、(180° - 40°) ÷ 2 = 70° になります。"
+  },
+  {
+    "id": "web-math-8-02",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "二等辺三角形の「頂角の二等分線」の性質として正しいものはどれか。",
+    "options": [
+      "底辺と平行になる",
+      "底辺の長さを半分にするが垂直にはならない",
+      "必ず他の辺と同じ長さになる",
+      "底辺を垂直に二等分する"
+    ],
+    "answerIndex": 3,
+    "explanation": "二等辺三角形の頂角の二等分線は、底辺を垂直に二等分するという重要な定理があります。"
+  },
+  {
+    "id": "web-math-8-03",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "直角三角形の合同条件として正しい組み合わせはどれか。",
+    "options": [
+      "斜辺と1つの鋭角がそれぞれ等しい / 斜辺と他の1辺がそれぞれ等しい",
+      "斜辺と直角がそれぞれ等しい / 2つの鋭角がそれぞれ等しい",
+      "3つの角がそれぞれ等しい / 斜辺のみが等しい",
+      "底辺と高さが等しい / 面積が等しい"
+    ],
+    "answerIndex": 0,
+    "explanation": "直角三角形の合同条件は「斜辺と1つの鋭角がそれぞれ等しい」と「斜辺と他の1辺がそれぞれ等しい」の2つです。"
+  },
+  {
+    "id": "web-math-8-04",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "平行四辺形ABCDで、∠A = 65° のとき、∠B の大きさは何度か。",
+    "options": ["65°", "115°", "125°", "130°"],
+    "answerIndex": 1,
+    "explanation": "平行四辺形では対角が等しく（∠A = ∠C = 65°）、隣り合う内角の和は 180° になるため、∠B = 180° - 65° = 115° です。"
+  },
+  {
+    "id": "web-math-8-05",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "平行四辺形の対角線に関する性質として正しいものはどれか。",
+    "options": [
+      "2本の対角線の長さは常に等しい",
+      "2本の対角線は必ず垂直に交わる",
+      "対角線はそれぞれの中点で交わる",
+      "対角線は内角を必ず二等分する"
+    ],
+    "answerIndex": 2,
+    "explanation": "「対角線がそれぞれの中点で交わる」は平行四辺形の基本性質です。長さが等しいのは長方形・正方形、垂直に交わるのはひし形・正方形の性質です。"
+  },
+  {
+    "id": "web-math-8-06",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "次のうち、四角形ABCDが「平行四辺形になるための条件」として正しくないものはどれか。",
+    "options": [
+      "2組の対辺がそれぞれ平行である",
+      "2組の対角がそれぞれ等しい",
+      "1組の対辺が平行でその長さが等しい",
+      "1組の対辺が平行で、もう1組の対辺の長さが等しい"
+    ],
+    "answerIndex": 3,
+    "explanation": "平行四辺形になる条件は「同じ1組」の対辺が平行かつ長さが等しい場合です。別の1組の長さが等しい場合は等脚台形になり得ます。"
+  },
+  {
+    "id": "web-math-8-07",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "正三角形の1つの内角と1つの外角の大きさはそれぞれ何度か。",
+    "options": ["内角60°、外角120°", "内角60°、外角60°", "内角120°、外角60°", "内角90°、外角90°"],
+    "answerIndex": 0,
+    "explanation": "正三角形は3つの角がすべて等しく 180° ÷ 3 = 60°。外角は 180° - 60° = 120° です。"
+  },
+  {
+    "id": "web-math-8-08",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "底辺の長さが同じで、平行な2直線 l // m の間に頂点がある2つの三角形の面積についていえることは何か。",
+    "options": [
+      "形が違えば面積も必ず違う",
+      "底辺と高さが共通なので面積は等しい",
+      "周の長さが等しくなる",
+      "必ず合同になる"
+    ],
+    "answerIndex": 1,
+    "explanation": "平行線間の距離（高さ）が一定なので、底辺を共有する三角形は形が変わっても面積が等しくなります（等積変形）。"
+  },
+  {
+    "id": "web-math-8-09",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "平行四辺形ABCDにおいて、さらに「AB = BC」と「∠A = 90°」の両方が成り立つとき、この四角形は必ず何になるか。",
+    "options": ["ひし形（正方形でない）", "長方形（正方形でない）", "正方形", "台形"],
+    "answerIndex": 2,
+    "explanation": "隣り合う辺が等しい平行四辺形はひし形、1つの角が90°の平行四辺形は長方形であり、両方を満たすと「正方形」になります。"
+  },
+  {
+    "id": "web-math-8-10",
+    "subject": "数学",
+    "unitId": "math-8",
+    "category": "二等辺三角形・直角三角形・平行四辺形",
+    "question": "「二等辺三角形の2つの底角は等しい」の「逆」は正しいか。正しい場合はどのような名称で表されるか。",
+    "options": [
+      "正しくない（反例がある）",
+      "正しいが、二等辺三角形とは限らない",
+      "正三角形の場合だけ正しい",
+      "正しい（2つの角が等しい三角形は二等辺三角形である）"
+    ],
+    "answerIndex": 3,
+    "explanation": "「2つの角が等しい三角形は、二等辺三角形である」という逆の命題も真（正しい）であり、二等辺三角形になる条件として使われます。"
+  },
+  {
+    "id": "web-math-9-01",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "1枚の硬貨を2回投げるとき、1回目が表で、2回目が裏になる確率はいくらか。",
+    "options": ["1/4", "1/2", "1/3", "3/4"],
+    "answerIndex": 0,
+    "explanation": "出方は（表表, 表裏, 裏表, 裏裏）の4通りで、表裏はそのうち1通りなので確率は 1/4 です。"
+  },
+  {
+    "id": "web-math-9-02",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "大小2つのさいころを同時に投げるとき、出た目の和が 5 になる確率はいくらか。",
+    "options": ["1/6", "1/9", "1/12", "5/36"],
+    "answerIndex": 1,
+    "explanation": "全体の通り数は 6×6 = 36通り。和が5になるのは (1,4), (2,3), (3,2), (4,1) の4通りなので、4/36 = 1/9 です。"
+  },
+  {
+    "id": "web-math-9-03",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "1, 2, 3, 4 の4枚のカードから同時に2枚を引くとき、書かれた数の和が奇数になる確率はいくらか。",
+    "options": ["1/3", "1/2", "2/3", "3/4"],
+    "answerIndex": 2,
+    "explanation": "2枚の組み合わせは (1,2),(1,3),(1,4),(2,3),(2,4),(3,4) の6通り。和が奇数になるのは (1,2),(1,4),(2,3),(3,4) の4通りなので 4/6 = 2/3 です。"
+  },
+  {
+    "id": "web-math-9-04",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "2枚の硬貨を同時に投げるとき、「少なくとも1枚は表が出る」確率はいくらか。",
+    "options": ["1/4", "1/2", "2/3", "3/4"],
+    "answerIndex": 3,
+    "explanation": "すべて裏になる確率が 1/4 なので、少なくとも1枚表が出る確率は 1 - 1/4 = 3/4 です。"
+  },
+  {
+    "id": "web-math-9-05",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "赤玉3個、白玉2個が入った袋から1個を取り出すとき、白玉が出る確率はいくらか。",
+    "options": ["2/5", "3/5", "1/2", "2/3"],
+    "answerIndex": 0,
+    "explanation": "全部で 3+2 = 5個あり、白玉は2個なので 2/5 です。"
+  },
+  {
+    "id": "web-math-9-06",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "箱ひげ図の「箱」の中にある太い線（仕切り線）が表す値は何か。",
+    "options": ["平均値", "中央値（第2四分位数）", "最頻値", "第1四分位数"],
+    "answerIndex": 1,
+    "explanation": "箱ひげ図の箱の中の線は、データを小さい順に並べたど真ん中の値である「中央値（第2四分位数）」を表します。"
+  },
+  {
+    "id": "web-math-9-07",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "あるデータの最小値が 12、第1四分位数が 20、中央値が 28、第3四分位数が 35、最大値が 50 のとき、「四分位範囲」はいくらか。",
+    "options": ["38", "8", "15", "30"],
+    "answerIndex": 2,
+    "explanation": "四分位範囲 ＝ 第3四分位数 － 第1四分位数 ＝ 35 － 20 ＝ 15 です。（範囲は 50 － 12 ＝ 38）"
+  },
+  {
+    "id": "web-math-9-08",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "次の7個のデータについて、第1四分位数と第3四分位数を求めなさい。\n[ 3, 5, 8, 10, 14, 17, 21 ]",
+    "options": [
+      "第1四分位数 3、第3四分位数 21",
+      "第1四分位数 6.5、第3四分位数 15.5",
+      "第1四分位数 8、第3四分位数 14",
+      "第1四分位数 5、第3四分位数 17"
+    ],
+    "answerIndex": 3,
+    "explanation": "中央値は10。下半分 [3, 5, 8] の中央値が第1四分位数（5）、上半分 [14, 17, 21] の中央値が第3四分位数（17）になります。"
+  },
+  {
+    "id": "web-math-9-09",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "箱ひげ図の「箱」の部分（第1四分位数から第3四分位数まで）には、全データの約何％が含まれているか。",
+    "options": ["約50％", "約25％", "約75％", "約100％"],
+    "answerIndex": 0,
+    "explanation": "データを4等分した中央の2区間（第1〜第3四分位数）が「箱」になるため、全体の約50％のデータが箱の中に集まっています。"
+  },
+  {
+    "id": "web-math-9-10",
+    "subject": "数学",
+    "unitId": "math-9",
+    "category": "確率・データの比較（箱ひげ図）",
+    "question": "A〜Dの4人が1本だけ当たりがある4本のくじをAから順番に引きます（引いたくじは戻さない）。AとDではどちらが当たりやすいか。",
+    "options": [
+      "最初に引くAのほうが当たりやすい",
+      "どちらも確率は 1/4 で同じ",
+      "最後に引くDのほうが当たりやすい",
+      "Aは 1/4 だが、Dは 1/2 になる"
+    ],
+    "answerIndex": 1,
+    "explanation": "くじを引く順番に関係なく、どの人が当たる確率もすべて同じ 1/4 になります。"
+  }
+]
